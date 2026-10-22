@@ -1,0 +1,100 @@
+[
+  {
+    "at": {
+      "epoch_seconds": 1792656645.985995,
+      "beijing": "2026-10-22T16:10:45.985995+08:00",
+      "monotonic_seconds": 2101.0
+    },
+    "method": "init",
+    "args": [
+      "2026-10-22T16:10:45.965048+08:00",
+      "real"
+    ],
+    "result": null
+  },
+  {
+    "at": {
+      "epoch_seconds": 1792656646.0081317,
+      "beijing": "2026-10-22T16:10:46.008131+08:00",
+      "monotonic_seconds": 2101.015
+    },
+    "method": "ingest",
+    "args": [
+      "realtime_e2e_user",
+      {
+        "type": "transaction",
+        "id": "RT1",
+        "merchant": "REALTIME_FIXTURE",
+        "amount": 3000,
+        "at": "2026-10-22T16:05:45+08:00"
+      }
+    ],
+    "result": "accepted"
+  },
+  {
+    "at": {
+      "epoch_seconds": 1792656646.0299804,
+      "beijing": "2026-10-22T16:10:46.029980+08:00",
+      "monotonic_seconds": 2101.046
+    },
+    "method": "ingest",
+    "args": [
+      "realtime_e2e_user",
+      {
+        "type": "transaction",
+        "id": "RT2",
+        "merchant": "REALTIME_FIXTURE",
+        "amount": 3000,
+        "at": "2026-10-22T16:09:45+08:00"
+      }
+    ],
+    "result": "accepted"
+  },
+  {
+    "at": {
+      "epoch_seconds": 1792656646.1182423,
+      "beijing": "2026-10-22T16:10:46.118242+08:00",
+      "monotonic_seconds": 2101.125
+    },
+    "method": "cycle",
+    "args": [
+      "realtime_e2e_user"
+    ],
+    "result": [
+      {
+        "user": "realtime_e2e_user",
+        "operation_id": "25ac2c21ff3b462d87506b1e2dc4bc90",
+        "result": "sent"
+      }
+    ]
+  },
+  {
+    "at": {
+      "epoch_seconds": 1792656646.152473,
+      "beijing": "2026-10-22T16:10:46.152473+08:00",
+      "monotonic_seconds": 2101.156
+    },
+    "method": "act",
+    "args": [
+      "realtime_e2e_user",
+      "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "confirm"
+    ],
+    "result": "accepted"
+  },
+  {
+    "at": {
+      "epoch_seconds": 1792656646.1733768,
+      "beijing": "2026-10-22T16:10:46.173376+08:00",
+      "monotonic_seconds": 2101.187
+    },
+    "method": "act",
+    "args": [
+      "realtime_e2e_user",
+      "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "schedule",
+      "2026-10-22T16:10:54+08:00"
+    ],
+    "result": "accepted"
+  }
+]

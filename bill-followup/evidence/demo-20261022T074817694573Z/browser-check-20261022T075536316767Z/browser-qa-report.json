@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "--headless=new",
+    "--disable-gpu",
+    "--no-first-run",
+    "--no-default-browser-check",
+    "--disable-extensions",
+    "--disable-background-networking",
+    "--disable-component-update",
+    "--disable-crash-reporter",
+    "--disable-breakpad",
+    "--disable-crashpad-for-testing",
+    "--hide-scrollbars",
+    "--window-size=1440,1080",
+    "--virtual-time-budget=1000",
+    "--user-data-dir=D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\demo-20261022T074817694573Z\\browser-check-20261022T075536316767Z\\browser-profile",
+    "--screenshot=D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\demo-20261022T074817694573Z\\browser-check-20261022T075536316767Z\\preview.png",
+    "--dump-dom",
+    "file:///D:/DocumentsChatGPT/gis/bill-followup/evidence/demo-20261022T074817694573Z/browser-check-20261022T075536316767Z/browser-qa.html"
+  ],
+  "exit_code": 3221225477,
+  "dom_assertions_passed": false,
+  "screenshot_exists": false,
+  "scope": "实际安装的浏览器无头渲染，检查章节、播放/暂停/定位/速度/数据展示；不是录屏或7分钟实时时长测量。"
+}

@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "--headless=new",
+    "--disable-gpu",
+    "--no-first-run",
+    "--no-default-browser-check",
+    "--disable-extensions",
+    "--disable-background-networking",
+    "--disable-component-update",
+    "--hide-scrollbars",
+    "--window-size=1440,1080",
+    "--virtual-time-budget=1000",
+    "--user-data-dir=D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\demo-20261022T074817694573Z\\browser-profile",
+    "--screenshot=D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\demo-20261022T074817694573Z\\preview.png",
+    "--dump-dom",
+    "file:///D:/DocumentsChatGPT/gis/bill-followup/evidence/demo-20261022T074817694573Z/browser-qa.html"
+  ],
+  "exit_code": 4294930433,
+  "dom_assertions_passed": false,
+  "screenshot_exists": false,
+  "scope": "实际安装的浏览器无头渲染，检查章节、播放/暂停/定位/速度/数据展示；不是录屏或7分钟实时时长测量。"
+}

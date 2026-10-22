@@ -1,0 +1,4 @@
+[
+  {"type":"transaction","id":"T1","merchant":"M1","amount":3000,"at":"2026-10-22T09:00:00+08:00"},
+  {"type":"transaction","id":"T2","merchant":"M1","amount":3000,"at":"2026-10-22T09:05:00+08:00"}
+]

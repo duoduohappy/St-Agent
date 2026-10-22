@@ -1,0 +1,602 @@
+{
+  "test": "test_17_unknown_stays_unknown",
+  "expectation": "核对仍未知，继续展示未知；关闭后也不盲目重试。",
+  "steps": [
+    {
+      "input_facts": [
+        {
+          "type": "transaction",
+          "id": "T1",
+          "merchant": "M1",
+          "amount": 3000,
+          "at": "2026-10-22T09:00:00+08:00"
+        },
+        {
+          "type": "transaction",
+          "id": "T2",
+          "merchant": "M1",
+          "amount": 3000,
+          "at": "2026-10-22T09:05:00+08:00"
+        }
+      ],
+      "ingest_results": [
+        "accepted",
+        "accepted"
+      ]
+    },
+    {
+      "label": "pair_created",
+      "snapshot": {
+        "now": 1792631400,
+        "now_beijing": "2026-10-22T09:10:00+08:00",
+        "user": "alice",
+        "mode": "active",
+        "issues": [
+          {
+            "user": "alice",
+            "id": "dup:0aa15efad4db5178a218deb55f34c89b",
+            "kind": "duplicate",
+            "refs": [
+              "T1",
+              "T2"
+            ],
+            "status": "open",
+            "phase": "awaiting_reply",
+            "basis": null,
+            "created": 1792631400,
+            "first_sent": null,
+            "last_sent": null,
+            "extra": 0,
+            "defer_until": null,
+            "needs_time": 0,
+            "next_unanswered_at": 1792631400,
+            "pending_reconciliation": [],
+            "automatic_reminders_enabled": true
+          }
+        ],
+        "facts": [
+          {
+            "user": "alice",
+            "kind": "transaction",
+            "id": "T1",
+            "payload": "{\"amount\":3000,\"at\":1792630800,\"id\":\"T1\",\"merchant\":\"M1\",\"type\":\"transaction\"}",
+            "conflict": 0
+          },
+          {
+            "user": "alice",
+            "kind": "transaction",
+            "id": "T2",
+            "payload": "{\"amount\":3000,\"at\":1792631100,\"id\":\"T2\",\"merchant\":\"M1\",\"type\":\"transaction\"}",
+            "conflict": 0
+          }
+        ],
+        "inputs": [
+          {
+            "seq": 1,
+            "user": "alice",
+            "received": 1792631400,
+            "payload": "{\"amount\":3000,\"at\":\"2026-10-22T09:00:00+08:00\",\"id\":\"T1\",\"merchant\":\"M1\",\"type\":\"transaction\"}",
+            "result": "accepted"
+          },
+          {
+            "seq": 2,
+            "user": "alice",
+            "received": 1792631400,
+            "payload": "{\"amount\":3000,\"at\":\"2026-10-22T09:05:00+08:00\",\"id\":\"T2\",\"merchant\":\"M1\",\"type\":\"transaction\"}",
+            "result": "accepted"
+          }
+        ],
+        "notices": [
+          {
+            "user": "alice",
+            "id": "926faa5fe24248ffb13743f87f119c6c",
+            "issue": "dup:0aa15efad4db5178a218deb55f34c89b",
+            "kind": "initial",
+            "slot": "0",
+            "status": "queued",
+            "created": 1792631400,
+            "submitted": null,
+            "sent_at": null,
+            "body": "{\"message\":\"疑似重复消费，请确认是否为两次正常购买；尚未证实错扣\",\"transaction_ids\":[\"T1\",\"T2\"]}",
+            "behavior": "success",
+            "attempts": 0
+          }
+        ],
+        "appointments": [],
+        "history": [
+          {
+            "seq": 1,
+            "user": "alice",
+            "issue": null,
+            "at": 1792631400,
+            "event": "fact_received",
+            "detail": "{\"payload\":{\"amount\":3000,\"at\":\"2026-10-22T09:00:00+08:00\",\"id\":\"T1\",\"merchant\":\"M1\",\"type\":\"transaction\"},\"result\":\"accepted\"}"
+          },
+          {
+            "seq": 2,
+            "user": "alice",
+            "issue": null,
+            "at": 1792631400,
+            "event": "fact_received",
+            "detail": "{\"payload\":{\"amount\":3000,\"at\":\"2026-10-22T09:05:00+08:00\",\"id\":\"T2\",\"merchant\":\"M1\",\"type\":\"transaction\"},\"result\":\"accepted\"}"
+          },
+          {
+            "seq": 3,
+            "user": "alice",
+            "issue": "dup:0aa15efad4db5178a218deb55f34c89b",
+            "at": 1792631400,
+            "event": "issue_created",
+            "detail": "{\"basis\":null,\"kind\":\"duplicate\",\"refs\":[\"T1\",\"T2\"],\"status\":\"open\"}"
+          },
+          {
+            "seq": 4,
+            "user": "alice",
+            "issue": "dup:0aa15efad4db5178a218deb55f34c89b",
+            "at": 1792631400,
+            "event": "notice_queued",
+            "detail": "{\"kind\":\"initial\",\"operation_id\":\"926faa5fe24248ffb13743f87f119c6c\",\"slot\":\"0\"}"
+          }
+        ],
+        "refund_facts": []
+      }
+    },
+    {
+      "label": "queued",
+      "snapshot": {
+        "now": 1792631400,
+        "now_beijing": "2026-10-22T09:10:00+08:00",
+        "user": "alice",
+        "mode": "active",
+        "issues": [
+          {
+            "user": "alice",
+            "id": "dup:0aa15efad4db5178a218deb55f34c89b",
+            "kind": "duplicate",
+            "refs": [
+              "T1",
+              "T2"
+            ],
+            "status": "open",
+            "phase": "awaiting_reply",
+            "basis": null,
+            "created": 1792631400,
+            "first_sent": null,
+            "last_sent": null,
+            "extra": 0,
+            "defer_until": null,
+            "needs_time": 0,
+            "next_unanswered_at": 1792631400,
+            "pending_reconciliation": [],
+            "automatic_reminders_enabled": true
+          }
+        ],
+        "facts": [
+          {
+            "user": "alice",
+            "kind": "transaction",
+            "id": "T1",
+            "payload": "{\"amount\":3000,\"at\":1792630800,\"id\":\"T1\",\"merchant\":\"M1\",\"type\":\"transaction\"}",
+            "conflict": 0
+          },
+          {
+            "user": "alice",
+            "kind": "transaction",
+            "id": "T2",
+            "payload": "{\"amount\":3000,\"at\":1792631100,\"id\":\"T2\",\"merchant\":\"M1\",\"type\":\"transaction\"}",
+            "conflict": 0
+          }
+        ],
+        "inputs": [
+          {
+            "seq": 1,
+            "user": "alice",
+            "received": 1792631400,
+            "payload": "{\"amount\":3000,\"at\":\"2026-10-22T09:00:00+08:00\",\"id\":\"T1\",\"merchant\":\"M1\",\"type\":\"transaction\"}",
+            "result": "accepted"
+          },
+          {
+            "seq": 2,
+            "user": "alice",
+            "received": 1792631400,
+            "payload": "{\"amount\":3000,\"at\":\"2026-10-22T09:05:00+08:00\",\"id\":\"T2\",\"merchant\":\"M1\",\"type\":\"transaction\"}",
+            "result": "accepted"
+          }
+        ],
+        "notices": [
+          {
+            "user": "alice",
+            "id": "926faa5fe24248ffb13743f87f119c6c",
+            "issue": "dup:0aa15efad4db5178a218deb55f34c89b",
+            "kind": "initial",
+            "slot": "0",
+            "status": "queued",
+            "created": 1792631400,
+            "submitted": null,
+            "sent_at": null,
+            "body": "{\"message\":\"疑似重复消费，请确认是否为两次正常购买；尚未证实错扣\",\"transaction_ids\":[\"T1\",\"T2\"]}",
+            "behavior": "success",
+            "attempts": 0
+          }
+        ],
+        "appointments": [],
+        "history": [
+          {
+            "seq": 1,
+            "user": "alice",
+            "issue": null,
+            "at": 1792631400,
+            "event": "fact_received",
+            "detail": "{\"payload\":{\"amount\":3000,\"at\":\"2026-10-22T09:00:00+08:00\",\"id\":\"T1\",\"merchant\":\"M1\",\"type\":\"transaction\"},\"result\":\"accepted\"}"
+          },
+          {
+            "seq": 2,
+            "user": "alice",
+            "issue": null,
+            "at": 1792631400,
+            "event": "fact_received",
+            "detail": "{\"payload\":{\"amount\":3000,\"at\":\"2026-10-22T09:05:00+08:00\",\"id\":\"T2\",\"merchant\":\"M1\",\"type\":\"transaction\"},\"result\":\"accepted\"}"
+          },
+          {
+            "seq": 3,
+            "user": "alice",
+            "issue": "dup:0aa15efad4db5178a218deb55f34c89b",
+            "at": 1792631400,
+            "event": "issue_created",
+            "detail": "{\"basis\":null,\"kind\":\"duplicate\",\"refs\":[\"T1\",\"T2\"],\"status\":\"open\"}"
+          },
+          {
+            "seq": 4,
+            "user": "alice",
+            "issue": "dup:0aa15efad4db5178a218deb55f34c89b",
+            "at": 1792631400,
+            "event": "notice_queued",
+            "detail": "{\"kind\":\"initial\",\"operation_id\":\"926faa5fe24248ffb13743f87f119c6c\",\"slot\":\"0\"}"
+          }
+        ],
+        "refund_facts": []
+      }
+    },
+    {
+      "label": "still_unknown",
+      "snapshot": {
+        "now": 1792631400,
+        "now_beijing": "2026-10-22T09:10:00+08:00",
+        "user": "alice",
+        "mode": "closed",
+        "issues": [
+          {
+            "user": "alice",
+            "id": "dup:0aa15efad4db5178a218deb55f34c89b",
+            "kind": "duplicate",
+            "refs": [
+              "T1",
+              "T2"
+            ],
+            "status": "open",
+            "phase": "awaiting_reply",
+            "basis": null,
+            "created": 1792631400,
+            "first_sent": null,
+            "last_sent": null,
+            "extra": 0,
+            "defer_until": null,
+            "needs_time": 0,
+            "next_unanswered_at": null,
+            "pending_reconciliation": [
+              "926faa5fe24248ffb13743f87f119c6c"
+            ],
+            "automatic_reminders_enabled": false
+          }
+        ],
+        "facts": [
+          {
+            "user": "alice",
+            "kind": "transaction",
+            "id": "T1",
+            "payload": "{\"amount\":3000,\"at\":1792630800,\"id\":\"T1\",\"merchant\":\"M1\",\"type\":\"transaction\"}",
+            "conflict": 0
+          },
+          {
+            "user": "alice",
+            "kind": "transaction",
+            "id": "T2",
+            "payload": "{\"amount\":3000,\"at\":1792631100,\"id\":\"T2\",\"merchant\":\"M1\",\"type\":\"transaction\"}",
+            "conflict": 0
+          }
+        ],
+        "inputs": [
+          {
+            "seq": 1,
+            "user": "alice",
+            "received": 1792631400,
+            "payload": "{\"amount\":3000,\"at\":\"2026-10-22T09:00:00+08:00\",\"id\":\"T1\",\"merchant\":\"M1\",\"type\":\"transaction\"}",
+            "result": "accepted"
+          },
+          {
+            "seq": 2,
+            "user": "alice",
+            "received": 1792631400,
+            "payload": "{\"amount\":3000,\"at\":\"2026-10-22T09:05:00+08:00\",\"id\":\"T2\",\"merchant\":\"M1\",\"type\":\"transaction\"}",
+            "result": "accepted"
+          }
+        ],
+        "notices": [
+          {
+            "user": "alice",
+            "id": "926faa5fe24248ffb13743f87f119c6c",
+            "issue": "dup:0aa15efad4db5178a218deb55f34c89b",
+            "kind": "initial",
+            "slot": "0",
+            "status": "unknown",
+            "created": 1792631400,
+            "submitted": 1792631400,
+            "sent_at": null,
+            "body": "{\"message\":\"疑似重复消费，请确认是否为两次正常购买；尚未证实错扣\",\"transaction_ids\":[\"T1\",\"T2\"]}",
+            "behavior": "unknown_pending",
+            "attempts": 1
+          }
+        ],
+        "appointments": [],
+        "history": [
+          {
+            "seq": 1,
+            "user": "alice",
+            "issue": null,
+            "at": 1792631400,
+            "event": "fact_received",
+            "detail": "{\"payload\":{\"amount\":3000,\"at\":\"2026-10-22T09:00:00+08:00\",\"id\":\"T1\",\"merchant\":\"M1\",\"type\":\"transaction\"},\"result\":\"accepted\"}"
+          },
+          {
+            "seq": 2,
+            "user": "alice",
+            "issue": null,
+            "at": 1792631400,
+            "event": "fact_received",
+            "detail": "{\"payload\":{\"amount\":3000,\"at\":\"2026-10-22T09:05:00+08:00\",\"id\":\"T2\",\"merchant\":\"M1\",\"type\":\"transaction\"},\"result\":\"accepted\"}"
+          },
+          {
+            "seq": 3,
+            "user": "alice",
+            "issue": "dup:0aa15efad4db5178a218deb55f34c89b",
+            "at": 1792631400,
+            "event": "issue_created",
+            "detail": "{\"basis\":null,\"kind\":\"duplicate\",\"refs\":[\"T1\",\"T2\"],\"status\":\"open\"}"
+          },
+          {
+            "seq": 4,
+            "user": "alice",
+            "issue": "dup:0aa15efad4db5178a218deb55f34c89b",
+            "at": 1792631400,
+            "event": "notice_queued",
+            "detail": "{\"kind\":\"initial\",\"operation_id\":\"926faa5fe24248ffb13743f87f119c6c\",\"slot\":\"0\"}"
+          },
+          {
+            "seq": 5,
+            "user": "alice",
+            "issue": "dup:0aa15efad4db5178a218deb55f34c89b",
+            "at": 1792631400,
+            "event": "send_submitted",
+            "detail": "{\"operation_id\":\"926faa5fe24248ffb13743f87f119c6c\",\"simulated_behavior\":\"unknown_pending\"}"
+          },
+          {
+            "seq": 6,
+            "user": "alice",
+            "issue": "dup:0aa15efad4db5178a218deb55f34c89b",
+            "at": 1792631400,
+            "event": "mock_provider_effect",
+            "detail": "{\"operation_id\":\"926faa5fe24248ffb13743f87f119c6c\",\"state\":\"pending\"}"
+          },
+          {
+            "seq": 7,
+            "user": "alice",
+            "issue": null,
+            "at": 1792631400,
+            "event": "queued_notices_cancelled",
+            "detail": "{\"reason\":\"user_closed\"}"
+          },
+          {
+            "seq": 8,
+            "user": "alice",
+            "issue": null,
+            "at": 1792631400,
+            "event": "control_accepted",
+            "detail": "{\"action\":\"close\",\"mode\":\"closed\"}"
+          },
+          {
+            "seq": 9,
+            "user": "alice",
+            "issue": "dup:0aa15efad4db5178a218deb55f34c89b",
+            "at": 1792631400,
+            "event": "reconcile_unknown",
+            "detail": "{\"operation_id\":\"926faa5fe24248ffb13743f87f119c6c\"}"
+          },
+          {
+            "seq": 10,
+            "user": "alice",
+            "issue": "dup:0aa15efad4db5178a218deb55f34c89b",
+            "at": 1792631400,
+            "event": "reconcile_unknown",
+            "detail": "{\"operation_id\":\"926faa5fe24248ffb13743f87f119c6c\"}"
+          }
+        ],
+        "refund_facts": []
+      }
+    }
+  ],
+  "final_alice": {
+    "now": 1792631400,
+    "now_beijing": "2026-10-22T09:10:00+08:00",
+    "user": "alice",
+    "mode": "closed",
+    "issues": [
+      {
+        "user": "alice",
+        "id": "dup:0aa15efad4db5178a218deb55f34c89b",
+        "kind": "duplicate",
+        "refs": [
+          "T1",
+          "T2"
+        ],
+        "status": "open",
+        "phase": "awaiting_reply",
+        "basis": null,
+        "created": 1792631400,
+        "first_sent": null,
+        "last_sent": null,
+        "extra": 0,
+        "defer_until": null,
+        "needs_time": 0,
+        "next_unanswered_at": null,
+        "pending_reconciliation": [
+          "926faa5fe24248ffb13743f87f119c6c"
+        ],
+        "automatic_reminders_enabled": false
+      }
+    ],
+    "facts": [
+      {
+        "user": "alice",
+        "kind": "transaction",
+        "id": "T1",
+        "payload": "{\"amount\":3000,\"at\":1792630800,\"id\":\"T1\",\"merchant\":\"M1\",\"type\":\"transaction\"}",
+        "conflict": 0
+      },
+      {
+        "user": "alice",
+        "kind": "transaction",
+        "id": "T2",
+        "payload": "{\"amount\":3000,\"at\":1792631100,\"id\":\"T2\",\"merchant\":\"M1\",\"type\":\"transaction\"}",
+        "conflict": 0
+      }
+    ],
+    "inputs": [
+      {
+        "seq": 1,
+        "user": "alice",
+        "received": 1792631400,
+        "payload": "{\"amount\":3000,\"at\":\"2026-10-22T09:00:00+08:00\",\"id\":\"T1\",\"merchant\":\"M1\",\"type\":\"transaction\"}",
+        "result": "accepted"
+      },
+      {
+        "seq": 2,
+        "user": "alice",
+        "received": 1792631400,
+        "payload": "{\"amount\":3000,\"at\":\"2026-10-22T09:05:00+08:00\",\"id\":\"T2\",\"merchant\":\"M1\",\"type\":\"transaction\"}",
+        "result": "accepted"
+      }
+    ],
+    "notices": [
+      {
+        "user": "alice",
+        "id": "926faa5fe24248ffb13743f87f119c6c",
+        "issue": "dup:0aa15efad4db5178a218deb55f34c89b",
+        "kind": "initial",
+        "slot": "0",
+        "status": "unknown",
+        "created": 1792631400,
+        "submitted": 1792631400,
+        "sent_at": null,
+        "body": "{\"message\":\"疑似重复消费，请确认是否为两次正常购买；尚未证实错扣\",\"transaction_ids\":[\"T1\",\"T2\"]}",
+        "behavior": "unknown_pending",
+        "attempts": 1
+      }
+    ],
+    "appointments": [],
+    "history": [
+      {
+        "seq": 1,
+        "user": "alice",
+        "issue": null,
+        "at": 1792631400,
+        "event": "fact_received",
+        "detail": "{\"payload\":{\"amount\":3000,\"at\":\"2026-10-22T09:00:00+08:00\",\"id\":\"T1\",\"merchant\":\"M1\",\"type\":\"transaction\"},\"result\":\"accepted\"}"
+      },
+      {
+        "seq": 2,
+        "user": "alice",
+        "issue": null,
+        "at": 1792631400,
+        "event": "fact_received",
+        "detail": "{\"payload\":{\"amount\":3000,\"at\":\"2026-10-22T09:05:00+08:00\",\"id\":\"T2\",\"merchant\":\"M1\",\"type\":\"transaction\"},\"result\":\"accepted\"}"
+      },
+      {
+        "seq": 3,
+        "user": "alice",
+        "issue": "dup:0aa15efad4db5178a218deb55f34c89b",
+        "at": 1792631400,
+        "event": "issue_created",
+        "detail": "{\"basis\":null,\"kind\":\"duplicate\",\"refs\":[\"T1\",\"T2\"],\"status\":\"open\"}"
+      },
+      {
+        "seq": 4,
+        "user": "alice",
+        "issue": "dup:0aa15efad4db5178a218deb55f34c89b",
+        "at": 1792631400,
+        "event": "notice_queued",
+        "detail": "{\"kind\":\"initial\",\"operation_id\":\"926faa5fe24248ffb13743f87f119c6c\",\"slot\":\"0\"}"
+      },
+      {
+        "seq": 5,
+        "user": "alice",
+        "issue": "dup:0aa15efad4db5178a218deb55f34c89b",
+        "at": 1792631400,
+        "event": "send_submitted",
+        "detail": "{\"operation_id\":\"926faa5fe24248ffb13743f87f119c6c\",\"simulated_behavior\":\"unknown_pending\"}"
+      },
+      {
+        "seq": 6,
+        "user": "alice",
+        "issue": "dup:0aa15efad4db5178a218deb55f34c89b",
+        "at": 1792631400,
+        "event": "mock_provider_effect",
+        "detail": "{\"operation_id\":\"926faa5fe24248ffb13743f87f119c6c\",\"state\":\"pending\"}"
+      },
+      {
+        "seq": 7,
+        "user": "alice",
+        "issue": null,
+        "at": 1792631400,
+        "event": "queued_notices_cancelled",
+        "detail": "{\"reason\":\"user_closed\"}"
+      },
+      {
+        "seq": 8,
+        "user": "alice",
+        "issue": null,
+        "at": 1792631400,
+        "event": "control_accepted",
+        "detail": "{\"action\":\"close\",\"mode\":\"closed\"}"
+      },
+      {
+        "seq": 9,
+        "user": "alice",
+        "issue": "dup:0aa15efad4db5178a218deb55f34c89b",
+        "at": 1792631400,
+        "event": "reconcile_unknown",
+        "detail": "{\"operation_id\":\"926faa5fe24248ffb13743f87f119c6c\"}"
+      },
+      {
+        "seq": 10,
+        "user": "alice",
+        "issue": "dup:0aa15efad4db5178a218deb55f34c89b",
+        "at": 1792631400,
+        "event": "reconcile_unknown",
+        "detail": "{\"operation_id\":\"926faa5fe24248ffb13743f87f119c6c\"}"
+      }
+    ],
+    "refund_facts": []
+  },
+  "final_bob": {
+    "now": 1792631400,
+    "now_beijing": "2026-10-22T09:10:00+08:00",
+    "user": "bob",
+    "mode": null,
+    "issues": [],
+    "facts": [],
+    "inputs": [],
+    "notices": [],
+    "appointments": [],
+    "history": [],
+    "refund_facts": []
+  }
+}

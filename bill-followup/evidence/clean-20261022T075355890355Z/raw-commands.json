@@ -1,0 +1,85 @@
+[
+  {
+    "argv": [
+      "C:\\Users\\TempAdmin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "-m",
+      "venv",
+      "--without-pip",
+      "D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\clean-20261022T075355890355Z\\venv"
+    ],
+    "cwd": "D:\\DocumentsChatGPT\\gis\\bill-followup",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\clean-20261022T075355890355Z\\venv\\Scripts\\python.exe",
+      "-c",
+      "import sys,importlib.util,json,sqlite3; print(json.dumps({'python':sys.version,'prefix':sys.prefix,'base_prefix':sys.base_prefix,'pip_present':importlib.util.find_spec('pip') is not None,'sqlite':sqlite3.sqlite_version}))"
+    ],
+    "cwd": "D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\clean-20261022T075355890355Z\\workspace",
+    "exit_code": 0,
+    "stdout": "{\"python\": \"3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]\", \"prefix\": \"D:\\\\DocumentsChatGPT\\\\gis\\\\bill-followup\\\\evidence\\\\clean-20261022T075355890355Z\\\\venv\", \"base_prefix\": \"C:\\\\Users\\\\TempAdmin\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python311\", \"pip_present\": false, \"sqlite\": \"3.45.1\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\clean-20261022T075355890355Z\\venv\\Scripts\\python.exe",
+      "-m",
+      "followup",
+      "--db",
+      "smoke.sqlite",
+      "--user",
+      "clean",
+      "init"
+    ],
+    "cwd": "D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\clean-20261022T075355890355Z\\workspace",
+    "exit_code": 0,
+    "stdout": "{\n  \"initialized\": \"smoke.sqlite\",\n  \"clock\": \"simulated\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\clean-20261022T075355890355Z\\venv\\Scripts\\python.exe",
+      "-m",
+      "followup",
+      "--db",
+      "smoke.sqlite",
+      "--user",
+      "clean",
+      "ingest",
+      "fixtures/duplicate.json"
+    ],
+    "cwd": "D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\clean-20261022T075355890355Z\\workspace",
+    "exit_code": 0,
+    "stdout": "{\n  \"ingest\": [\n    \"accepted\",\n    \"accepted\"\n  ],\n  \"notifications\": [\n    {\n      \"user\": \"clean\",\n      \"operation_id\": \"f874e0e13cd7425399c28921de0bab4b\",\n      \"result\": \"sent\"\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\clean-20261022T075355890355Z\\venv\\Scripts\\python.exe",
+      "-m",
+      "followup",
+      "--db",
+      "smoke.sqlite",
+      "--user",
+      "clean",
+      "show"
+    ],
+    "cwd": "D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\clean-20261022T075355890355Z\\workspace",
+    "exit_code": 0,
+    "stdout": "{\n  \"now\": 1792631400,\n  \"now_beijing\": \"2026-10-22T09:10:00+08:00\",\n  \"user\": \"clean\",\n  \"mode\": \"active\",\n  \"issues\": [\n    {\n      \"user\": \"clean\",\n      \"id\": \"dup:0aa15efad4db5178a218deb55f34c89b\",\n      \"kind\": \"duplicate\",\n      \"refs\": [\n        \"T1\",\n        \"T2\"\n      ],\n      \"status\": \"open\",\n      \"phase\": \"awaiting_reply\",\n      \"basis\": null,\n      \"created\": 1792631400,\n      \"first_sent\": 1792631400,\n      \"last_sent\": 1792631400,\n      \"extra\": 0,\n      \"defer_until\": null,\n      \"needs_time\": 0,\n      \"next_unanswered_at\": 1792717800,\n      \"pending_reconciliation\": [],\n      \"automatic_reminders_enabled\": true\n    }\n  ],\n  \"facts\": [\n    {\n      \"user\": \"clean\",\n      \"kind\": \"transaction\",\n      \"id\": \"T1\",\n      \"payload\": \"{\\\"amount\\\":3000,\\\"at\\\":1792630800,\\\"id\\\":\\\"T1\\\",\\\"merchant\\\":\\\"M1\\\",\\\"type\\\":\\\"transaction\\\"}\",\n      \"conflict\": 0\n    },\n    {\n      \"user\": \"clean\",\n      \"kind\": \"transaction\",\n      \"id\": \"T2\",\n      \"payload\": \"{\\\"amount\\\":3000,\\\"at\\\":1792631100,\\\"id\\\":\\\"T2\\\",\\\"merchant\\\":\\\"M1\\\",\\\"type\\\":\\\"transaction\\\"}\",\n      \"conflict\": 0\n    }\n  ],\n  \"inputs\": [\n    {\n      \"seq\": 1,\n      \"user\": \"clean\",\n      \"received\": 1792631400,\n      \"payload\": \"{\\\"amount\\\":3000,\\\"at\\\":\\\"2026-10-22T09:00:00+08:00\\\",\\\"id\\\":\\\"T1\\\",\\\"merchant\\\":\\\"M1\\\",\\\"type\\\":\\\"transaction\\\"}\",\n      \"result\": \"accepted\"\n    },\n    {\n      \"seq\": 2,\n      \"user\": \"clean\",\n      \"received\": 1792631400,\n      \"payload\": \"{\\\"amount\\\":3000,\\\"at\\\":\\\"2026-10-22T09:05:00+08:00\\\",\\\"id\\\":\\\"T2\\\",\\\"merchant\\\":\\\"M1\\\",\\\"type\\\":\\\"transaction\\\"}\",\n      \"result\": \"accepted\"\n    }\n  ],\n  \"notices\": [\n    {\n      \"user\": \"clean\",\n      \"id\": \"f874e0e13cd7425399c28921de0bab4b\",\n      \"issue\": \"dup:0aa15efad4db5178a218deb55f34c89b\",\n      \"kind\": \"initial\",\n      \"slot\": \"0\",\n      \"status\": \"sent\",\n      \"created\": 1792631400,\n      \"submitted\": 1792631400,\n      \"sent_at\": 1792631400,\n      \"body\": \"{\\\"message\\\":\\\"疑似重复消费，请确认是否为两次正常购买；尚未证实错扣\\\",\\\"transaction_ids\\\":[\\\"T1\\\",\\\"T2\\\"]}\",\n      \"behavior\": \"success\",\n      \"attempts\": 1\n    }\n  ],\n  \"appointments\": [],\n  \"history\": [\n    {\n      \"seq\": 1,\n      \"user\": \"clean\",\n      \"issue\": null,\n      \"at\": 1792631400,\n      \"event\": \"fact_received\",\n      \"detail\": \"{\\\"payload\\\":{\\\"amount\\\":3000,\\\"at\\\":\\\"2026-10-22T09:00:00+08:00\\\",\\\"id\\\":\\\"T1\\\",\\\"merchant\\\":\\\"M1\\\",\\\"type\\\":\\\"transaction\\\"},\\\"result\\\":\\\"accepted\\\"}\"\n    },\n    {\n      \"seq\": 2,\n      \"user\": \"clean\",\n      \"issue\": null,\n      \"at\": 1792631400,\n      \"event\": \"fact_received\",\n      \"detail\": \"{\\\"payload\\\":{\\\"amount\\\":3000,\\\"at\\\":\\\"2026-10-22T09:05:00+08:00\\\",\\\"id\\\":\\\"T2\\\",\\\"merchant\\\":\\\"M1\\\",\\\"type\\\":\\\"transaction\\\"},\\\"result\\\":\\\"accepted\\\"}\"\n    },\n    {\n      \"seq\": 3,\n      \"user\": \"clean\",\n      \"issue\": \"dup:0aa15efad4db5178a218deb55f34c89b\",\n      \"at\": 1792631400,\n      \"event\": \"issue_created\",\n      \"detail\": \"{\\\"basis\\\":null,\\\"kind\\\":\\\"duplicate\\\",\\\"refs\\\":[\\\"T1\\\",\\\"T2\\\"],\\\"status\\\":\\\"open\\\"}\"\n    },\n    {\n      \"seq\": 4,\n      \"user\": \"clean\",\n      \"issue\": \"dup:0aa15efad4db5178a218deb55f34c89b\",\n      \"at\": 1792631400,\n      \"event\": \"notice_queued\",\n      \"detail\": \"{\\\"kind\\\":\\\"initial\\\",\\\"operation_id\\\":\\\"f874e0e13cd7425399c28921de0bab4b\\\",\\\"slot\\\":\\\"0\\\"}\"\n    },\n    {\n      \"seq\": 5,\n      \"user\": \"clean\",\n      \"issue\": \"dup:0aa15efad4db5178a218deb55f34c89b\",\n      \"at\": 1792631400,\n      \"event\": \"send_submitted\",\n      \"detail\": \"{\\\"operation_id\\\":\\\"f874e0e13cd7425399c28921de0bab4b\\\",\\\"simulated_behavior\\\":\\\"success\\\"}\"\n    },\n    {\n      \"seq\": 6,\n      \"user\": \"clean\",\n      \"issue\": \"dup:0aa15efad4db5178a218deb55f34c89b\",\n      \"at\": 1792631400,\n      \"event\": \"mock_provider_effect\",\n      \"detail\": \"{\\\"operation_id\\\":\\\"f874e0e13cd7425399c28921de0bab4b\\\",\\\"state\\\":\\\"sent\\\"}\"\n    },\n    {\n      \"seq\": 7,\n      \"user\": \"clean\",\n      \"issue\": \"dup:0aa15efad4db5178a218deb55f34c89b\",\n      \"at\": 1792631400,\n      \"event\": \"send_confirmed\",\n      \"detail\": \"{\\\"kind\\\":\\\"initial\\\",\\\"operation_id\\\":\\\"f874e0e13cd7425399c28921de0bab4b\\\",\\\"sent_at\\\":1792631400}\"\n    }\n  ],\n  \"refund_facts\": []\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\clean-20261022T075355890355Z\\venv\\Scripts\\python.exe",
+      "tools/run_acceptance.py"
+    ],
+    "cwd": "D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\clean-20261022T075355890355Z\\workspace",
+    "exit_code": 0,
+    "stdout": "test_01_duplicate_pair (test_acceptance.Acceptance.test_01_duplicate_pair)\n题面1：两笔同商户同30元交易产生一个疑似问题；原交易不删除。 ... ok\ntest_02_normal_replay (test_acceptance.Acceptance.test_02_normal_replay)\n题面2：标正常后反向重放，正常结论保留，不重开不再发送。 ... ok\ntest_03_three_pairs (test_acceptance.Acceptance.test_03_three_pairs)\n题面3：三笔交易形成3个唯一无序交易对，乱序重放无新增。 ... ok\ntest_04_partial_full_replay (test_acceptance.Acceptance.test_04_partial_full_replay)\n题面4：退款100，满72小时提醒；60后差40，40后验证解决；重放不累计。 ... ok\ntest_05_receipt_before_request (test_acceptance.Acceptance.test_05_receipt_before_request)\n题面5：全额到账先于申请，资料齐全后已到账，不发送过期提醒。 ... ok\ntest_06_unanswered_limit (test_acceptance.Acceptance.test_06_unanswered_limit)\n题面6：24/48小时前不追加，恰好边界可追加，总共3次后停止。 ... ok\ntest_07_tomorrow_preserves_quota (test_acceptance.Acceptance.test_07_tomorrow_preserves_quota)\n题面7：明天=max(当前+24h,已有最早时间)，追加次数不重置。 ... ok\ntest_08_confirm_stops_chain (test_acceptance.Acceptance.test_08_confirm_stops_chain)\n题面8：确认有问题保持待解决；之后不再沿用未回复催办。 ... ok\ntest_09_closed_receives_fact (test_acceptance.Acceptance.test_09_closed_receives_fact)\n题面9：关闭后全额到账只补事实，关闭结论与依据不变。 ... ok\ntest_10_restart (test_acceptance.Acceptance.test_10_restart)\n题面10：提醒后重启保留次数和状态，不重复处理事实或发送。 ... ok\ntest_11_pause_resume_latest (test_acceptance.Acceptance.test_11_pause_resume_latest)\n暂停持久化原始事实但不建问题；恢复按最新数据解决，不补过期提醒。 ... ok\ntest_12_pause_no_burst (test_acceptance.Acceptance.test_12_pause_no_burst)\n暂停跨多天，恢复最多一次当前提醒，次数不重置，下一次距实际发送24h。 ... ok\ntest_13_close_layers (test_acceptance.Acceptance.test_13_close_layers)\n恢复暂停不能开启已关闭功能；重开自动跟进不重开关闭问题，新交易对可建。 ... ok\ntest_14_close_before_send_concurrent (test_acceptance.Acceptance.test_14_close_before_send_concurrent)\n真实双连接并发：已提交但发送生效前接受关闭，发送门禁取消，不产生外部发送。 ... ok\ntest_15_send_before_close_concurrent (test_acceptance.Acceptance.test_15_send_before_close_concurrent)\n真实双连接并发：模拟发送已生效后关闭；仍如实记录已发送，不声称撤回。 ... ok\ntest_16_unknown_sent_reconcile_once (test_acceptance.Acceptance.test_16_unknown_sent_reconcile_once)\n发送成功但响应丢失：未知不计成功、不重试；重启后核对只记一次，关闭不取消已发送。 ... ok\ntest_17_unknown_stays_unknown (test_acceptance.Acceptance.test_17_unknown_stays_unknown)\n核对仍未知，继续展示未知；关闭后也不盲目重试。 ... ok\ntest_18_user_isolation_injection (test_acceptance.Acceptance.test_18_user_isolation_injection)\n跨用户相同交易编号隔离；事实内伪造身份或指令不授权。 ... ok\ntest_19_missing_receipt_id (test_acceptance.Acceptance.test_19_missing_receipt_id)\n无稳定到账编号原样保留待核对，不猜测去重；余额保持未知。 ... ok\ntest_20_receipt_conflict (test_acceptance.Acceptance.test_20_receipt_conflict)\n同编号到账内容冲突不静默覆盖、不累计、不验证解决。 ... ok\ntest_21_date_needs_time (test_acceptance.Acceptance.test_21_date_needs_time)\n日期没有时刻时记录澄清，不猜时间；提供明确时刻后再执行。 ... ok\ntest_22_appointment_independent (test_acceptance.Acceptance.test_22_appointment_independent)\n确认后独立约定提醒只发一次；原追加次数保持不变，原链不恢复。 ... ok\ntest_23_partial_preserves_quota (test_acceptance.Acceptance.test_23_partial_preserves_quota)\n部分到账不重置次数，后续提醒采用最新差额。 ... ok\ntest_24_exact_boundaries (test_acceptance.Acceptance.test_24_exact_boundaries)\n10分钟包含边界，11分钟不匹配；退款72小时之前不提醒。 ... ok\ntest_25_known_failure_retry (test_acceptance.Acceptance.test_25_known_failure_retry)\n明确失败不写成功；只有核实未发送且仍允许时可人工重试。 ... ok\ntest_26_crash_after_send (test_acceptance.Acceptance.test_26_crash_after_send)\n真实子进程在发送生效后退出，重启仍为待核对，核对成功一次。 ... ok\ntest_27_runner_consumes_persisted_event (test_acceptance.Acceptance.test_27_runner_consumes_persisted_event)\n持续运行入口自行处理已到达事件，无需再次发送聊天指令。 ... ok\ntest_28_missing_request_data (test_acceptance.Acceptance.test_28_missing_request_data)\n申请缺金额或确认时间，显示未知，不写成零、逾期或解决。 ... ok\ntest_29_paused_existing_no_auto_resolution (test_acceptance.Acceptance.test_29_paused_existing_no_auto_resolution)\n暂停中到账只更新事实展示，问题结论不自动推进，恢复后才验证解决。 ... ok\ntest_30_incomplete_request_enrichment (test_acceptance.Acceptance.test_30_incomplete_request_enrichment)\n申请缺资料后允许无冲突补齐，保留两次原始输入；到账先到仍不发过期提醒。 ... ok\ntest_31_conflicting_refund_association (test_acceptance.Acceptance.test_31_conflicting_refund_association)\n同到账ID改指另一退款时，两边均待核对，不能误判另一退款全额到账。 ... ok\ntest_32_unordered_oracle_and_refund_permutations (test_acceptance.Acceptance.test_32_unordered_oracle_and_refund_permutations)\n用独立组合预期验证无序对；6种申请/到账到达顺序均不重复累计或误结案。 ... ok\ntest_33_issue_close_before_send (test_acceptance.Acceptance.test_33_issue_close_before_send)\n关闭此问题也受同一发送门禁保护，不仅用户级关闭有效。 ... ok\ntest_34_receipt_after_plan_refreshes_body (test_acceptance.Acceptance.test_34_receipt_after_plan_refreshes_body)\n排队后、发送前新到账，发送时重算差额；全额到账则不发送。 ... ok\ntest_35_unknown_not_sent_retry_after_reconcile (test_acceptance.Acceptance.test_35_unknown_not_sent_retry_after_reconcile)\n待核对先保持未知；模拟器明确未发送、核对后才允许重试。 ... ok\n\n----------------------------------------------------------------------\nRan 35 tests in 8.086s\n\nOK\nEvidence: D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\clean-20261022T075355890355Z\\workspace\\evidence\\acceptance-20261022T075400280474Z\n",
+    "stderr": ""
+  }
+]

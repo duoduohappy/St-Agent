@@ -1,0 +1,16 @@
+{
+  "scope": "本机新建无pip虚拟环境及隔离源码副本；不是全新操作系统",
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "prefix": "D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\clean-20261022T075355890355Z\\venv",
+    "base_prefix": "C:\\Users\\TempAdmin\\AppData\\Local\\Programs\\Python\\Python311",
+    "pip_present": false,
+    "sqlite": "3.45.1"
+  },
+  "startup_successful": true,
+  "smoke_issues": 1,
+  "smoke_notice_status": "sent",
+  "tests_run": 35,
+  "tests_successful": true,
+  "evidence": "D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\clean-20261022T075355890355Z"
+}

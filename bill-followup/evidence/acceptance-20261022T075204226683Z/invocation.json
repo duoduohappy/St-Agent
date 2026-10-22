@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "C:\\Users\\TempAdmin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "tools/suite.py"
+  ],
+  "cwd": "D:\\DocumentsChatGPT\\gis\\bill-followup",
+  "exit_code": 0,
+  "source_sha256": {
+    "followup\\engine.py": "5389d8abd9c2c0d96fa899301b0e9e504c03ccb8f9127e1a262f0df83144ee31",
+    "followup\\__init__.py": "ce7e9e6b44ae41f7238e27668df7017a98ecdc0fb22a4227d94cb2f391520d4e",
+    "followup\\__main__.py": "49433158c327b3d67efd5e224096d1c4a3a944e9afa1fa026dc808b8045e4bea",
+    "tests\\test_acceptance.py": "289ffdfe95f31e2d9f03487afe8b31504ef85d3c11c5f873afae17a7ae8e1eef",
+    "tools\\build_demo.py": "85ef94cdf090fd4ae4b234637fd20b977ff294b3a38d2ede15aa3cef61ff7a93",
+    "tools\\export_collaboration.py": "3ded9f72dffe3ca42c1081ba9fc23204c98660b57b123eed745f07a0ac082039",
+    "tools\\run_acceptance.py": "ba496e25bc9560442092d57cc09d63b9b389195d5616f3a7890d59365fe6c5a3",
+    "tools\\stage_one.py": "9cefd1971b2219e9eb5afa2ad66fd05b19854bc2001cc7aaac57b3ea5ed08264",
+    "tools\\suite.py": "2ddcbfe14517dd2664e013cab8f95a6ddfb3455288c0ee25ec6ac7fce606d33f"
+  },
+  "environment_overrides": {
+    "PYTHONUTF8": "1",
+    "FOLLOWUP_EVIDENCE": "D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\acceptance-20261022T075204226683Z"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "suite-output.txt": {
+    "file_encoding": "utf-16",
+    "preserved_original": true,
+    "finding": "中文在外层转存前已误解码，保留乱码原件",
+    "sha256": "fa8ee73d87e0008da896a9d2710158ef53fa9a2e1741accdadcd3119a83c72a3"
+  },
+  "realtime-output.txt": {
+    "file_encoding": "utf-16",
+    "preserved_original": true,
+    "finding": "中文在外层转存前已误解码，保留乱码原件",
+    "sha256": "a4d2de2ed32f687f9f93059d3d68eaeca86702e618cefa826841a05426ca3f5b"
+  },
+  "execution-summary.json": {
+    "file_encoding": "utf-16",
+    "preserved_original": true,
+    "finding": "中文正常，两个退出码均为0",
+    "sha256": "3fb7cc033fa52c6417b35332c9f8f0e78a600f12603d2d2b68384fd346ea5266"
+  },
+  "acceptance-20261022T084553401827Z\\results.json": {
+    "file_encoding": "UTF-8",
+    "finding": "中文正常；直接写入的原始证据",
+    "sha256": "3b52f55a4f4aa9bae4d1eb1bb9b8aae7b59ec3da47709c1d7eaf86c929b5888c"
+  },
+  "acceptance-20261022T084553401827Z\\stderr.txt": {
+    "file_encoding": "UTF-8",
+    "finding": "中文正常；直接写入的原始证据",
+    "sha256": "079d005c934465f944fd263cad1931bfa42ec46548f7332fa65091003b554719"
+  },
+  "realtime-e2e-20261022T084559992884Z\\report.json": {
+    "file_encoding": "UTF-8",
+    "finding": "中文正常；直接写入的原始证据",
+    "sha256": "5adf9ad15fa632b4423da1c8d64f2eb52568cce7d280ebc9226dc265ba45e093"
+  }
+}

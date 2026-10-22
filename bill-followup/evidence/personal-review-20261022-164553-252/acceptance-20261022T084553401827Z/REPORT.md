@@ -1,0 +1,43 @@
+# 实际验收结果
+
+本次执行 35 项；整体成功：True。
+
+每项实际状态、输入、步骤快照及历史见所链接JSON；断言见对应测试源码。
+
+| 用例 | 预期 | 实际 | 证据 |
+|---|---|---|---|
+| test_01_duplicate_pair | 题面1：两笔同商户同30元交易产生一个疑似问题；原交易不删除。 | PASS | [原始执行证据](test_01_duplicate_pair/evidence.json) |
+| test_02_normal_replay | 题面2：标正常后反向重放，正常结论保留，不重开不再发送。 | PASS | [原始执行证据](test_02_normal_replay/evidence.json) |
+| test_03_three_pairs | 题面3：三笔交易形成3个唯一无序交易对，乱序重放无新增。 | PASS | [原始执行证据](test_03_three_pairs/evidence.json) |
+| test_04_partial_full_replay | 题面4：退款100，满72小时提醒；60后差40，40后验证解决；重放不累计。 | PASS | [原始执行证据](test_04_partial_full_replay/evidence.json) |
+| test_05_receipt_before_request | 题面5：全额到账先于申请，资料齐全后已到账，不发送过期提醒。 | PASS | [原始执行证据](test_05_receipt_before_request/evidence.json) |
+| test_06_unanswered_limit | 题面6：24/48小时前不追加，恰好边界可追加，总共3次后停止。 | PASS | [原始执行证据](test_06_unanswered_limit/evidence.json) |
+| test_07_tomorrow_preserves_quota | 题面7：明天=max(当前+24h,已有最早时间)，追加次数不重置。 | PASS | [原始执行证据](test_07_tomorrow_preserves_quota/evidence.json) |
+| test_08_confirm_stops_chain | 题面8：确认有问题保持待解决；之后不再沿用未回复催办。 | PASS | [原始执行证据](test_08_confirm_stops_chain/evidence.json) |
+| test_09_closed_receives_fact | 题面9：关闭后全额到账只补事实，关闭结论与依据不变。 | PASS | [原始执行证据](test_09_closed_receives_fact/evidence.json) |
+| test_10_restart | 题面10：提醒后重启保留次数和状态，不重复处理事实或发送。 | PASS | [原始执行证据](test_10_restart/evidence.json) |
+| test_11_pause_resume_latest | 暂停持久化原始事实但不建问题；恢复按最新数据解决，不补过期提醒。 | PASS | [原始执行证据](test_11_pause_resume_latest/evidence.json) |
+| test_12_pause_no_burst | 暂停跨多天，恢复最多一次当前提醒，次数不重置，下一次距实际发送24h。 | PASS | [原始执行证据](test_12_pause_no_burst/evidence.json) |
+| test_13_close_layers | 恢复暂停不能开启已关闭功能；重开自动跟进不重开关闭问题，新交易对可建。 | PASS | [原始执行证据](test_13_close_layers/evidence.json) |
+| test_14_close_before_send_concurrent | 真实双连接并发：已提交但发送生效前接受关闭，发送门禁取消，不产生外部发送。 | PASS | [原始执行证据](test_14_close_before_send_concurrent/evidence.json) |
+| test_15_send_before_close_concurrent | 真实双连接并发：模拟发送已生效后关闭；仍如实记录已发送，不声称撤回。 | PASS | [原始执行证据](test_15_send_before_close_concurrent/evidence.json) |
+| test_16_unknown_sent_reconcile_once | 发送成功但响应丢失：未知不计成功、不重试；重启后核对只记一次，关闭不取消已发送。 | PASS | [原始执行证据](test_16_unknown_sent_reconcile_once/evidence.json) |
+| test_17_unknown_stays_unknown | 核对仍未知，继续展示未知；关闭后也不盲目重试。 | PASS | [原始执行证据](test_17_unknown_stays_unknown/evidence.json) |
+| test_18_user_isolation_injection | 跨用户相同交易编号隔离；事实内伪造身份或指令不授权。 | PASS | [原始执行证据](test_18_user_isolation_injection/evidence.json) |
+| test_19_missing_receipt_id | 无稳定到账编号原样保留待核对，不猜测去重；余额保持未知。 | PASS | [原始执行证据](test_19_missing_receipt_id/evidence.json) |
+| test_20_receipt_conflict | 同编号到账内容冲突不静默覆盖、不累计、不验证解决。 | PASS | [原始执行证据](test_20_receipt_conflict/evidence.json) |
+| test_21_date_needs_time | 日期没有时刻时记录澄清，不猜时间；提供明确时刻后再执行。 | PASS | [原始执行证据](test_21_date_needs_time/evidence.json) |
+| test_22_appointment_independent | 确认后独立约定提醒只发一次；原追加次数保持不变，原链不恢复。 | PASS | [原始执行证据](test_22_appointment_independent/evidence.json) |
+| test_23_partial_preserves_quota | 部分到账不重置次数，后续提醒采用最新差额。 | PASS | [原始执行证据](test_23_partial_preserves_quota/evidence.json) |
+| test_24_exact_boundaries | 10分钟包含边界，11分钟不匹配；退款72小时之前不提醒。 | PASS | [原始执行证据](test_24_exact_boundaries/evidence.json) |
+| test_25_known_failure_retry | 明确失败不写成功；只有核实未发送且仍允许时可人工重试。 | PASS | [原始执行证据](test_25_known_failure_retry/evidence.json) |
+| test_26_crash_after_send | 真实子进程在发送生效后退出，重启仍为待核对，核对成功一次。 | PASS | [原始执行证据](test_26_crash_after_send/evidence.json) |
+| test_27_runner_consumes_persisted_event | 持续运行入口自行处理已到达事件，无需再次发送聊天指令。 | PASS | [原始执行证据](test_27_runner_consumes_persisted_event/evidence.json) |
+| test_28_missing_request_data | 申请缺金额或确认时间，显示未知，不写成零、逾期或解决。 | PASS | [原始执行证据](test_28_missing_request_data/evidence.json) |
+| test_29_paused_existing_no_auto_resolution | 暂停中到账只更新事实展示，问题结论不自动推进，恢复后才验证解决。 | PASS | [原始执行证据](test_29_paused_existing_no_auto_resolution/evidence.json) |
+| test_30_incomplete_request_enrichment | 申请缺资料后允许无冲突补齐，保留两次原始输入；到账先到仍不发过期提醒。 | PASS | [原始执行证据](test_30_incomplete_request_enrichment/evidence.json) |
+| test_31_conflicting_refund_association | 同到账ID改指另一退款时，两边均待核对，不能误判另一退款全额到账。 | PASS | [原始执行证据](test_31_conflicting_refund_association/evidence.json) |
+| test_32_unordered_oracle_and_refund_permutations | 6种申请/到账到达顺序均不重复累计或误结案。 | PASS | [原始执行证据](test_32_unordered_oracle_and_refund_permutations/evidence.json) |
+| test_33_issue_close_before_send | 关闭此问题也受同一发送门禁保护，不仅用户级关闭有效。 | PASS | [原始执行证据](test_33_issue_close_before_send/evidence.json) |
+| test_34_receipt_after_plan_refreshes_body | 排队后、发送前新到账，发送时重算差额；全额到账则不发送。 | PASS | [原始执行证据](test_34_receipt_after_plan_refreshes_body/evidence.json) |
+| test_35_unknown_not_sent_retry_after_reconcile | 待核对先保持未知；模拟器明确未发送、核对后才允许重试。 | PASS | [原始执行证据](test_35_unknown_not_sent_retry_after_reconcile/evidence.json) |

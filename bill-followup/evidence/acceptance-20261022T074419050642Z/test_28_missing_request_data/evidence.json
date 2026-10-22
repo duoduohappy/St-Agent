@@ -1,0 +1,142 @@
+{
+  "test": "test_28_missing_request_data",
+  "expectation": "申请缺金额或确认时间，显示未知，不写成零、逾期或解决。",
+  "steps": [
+    {
+      "input_facts": [
+        {
+          "type": "refund",
+          "id": "R1"
+        }
+      ],
+      "ingest_results": [
+        "accepted"
+      ]
+    },
+    {
+      "advance_seconds": 864000
+    },
+    {
+      "label": "incomplete_request",
+      "snapshot": {
+        "now": 1793495400,
+        "now_beijing": "2026-11-01T09:10:00+08:00",
+        "user": "alice",
+        "mode": "active",
+        "issues": [],
+        "facts": [
+          {
+            "user": "alice",
+            "kind": "refund",
+            "id": "R1",
+            "payload": "{\"id\":\"R1\",\"type\":\"refund\"}",
+            "conflict": 0
+          }
+        ],
+        "inputs": [
+          {
+            "seq": 1,
+            "user": "alice",
+            "received": 1792631400,
+            "payload": "{\"id\":\"R1\",\"type\":\"refund\"}",
+            "result": "accepted"
+          }
+        ],
+        "notices": [],
+        "appointments": [],
+        "history": [
+          {
+            "seq": 1,
+            "user": "alice",
+            "issue": null,
+            "at": 1792631400,
+            "event": "fact_received",
+            "detail": "{\"payload\":{\"id\":\"R1\",\"type\":\"refund\"},\"result\":\"accepted\"}"
+          }
+        ],
+        "refund_facts": [
+          {
+            "refund_id": "R1",
+            "expected": null,
+            "confirmed_at": null,
+            "trusted_received": 0,
+            "received_total": 0,
+            "remaining": null,
+            "complete": false,
+            "conflict": false,
+            "pending_input_ids": [],
+            "reliable": false,
+            "receipt_ids": [],
+            "verified_full": false
+          }
+        ]
+      }
+    }
+  ],
+  "final_alice": {
+    "now": 1793495400,
+    "now_beijing": "2026-11-01T09:10:00+08:00",
+    "user": "alice",
+    "mode": "active",
+    "issues": [],
+    "facts": [
+      {
+        "user": "alice",
+        "kind": "refund",
+        "id": "R1",
+        "payload": "{\"id\":\"R1\",\"type\":\"refund\"}",
+        "conflict": 0
+      }
+    ],
+    "inputs": [
+      {
+        "seq": 1,
+        "user": "alice",
+        "received": 1792631400,
+        "payload": "{\"id\":\"R1\",\"type\":\"refund\"}",
+        "result": "accepted"
+      }
+    ],
+    "notices": [],
+    "appointments": [],
+    "history": [
+      {
+        "seq": 1,
+        "user": "alice",
+        "issue": null,
+        "at": 1792631400,
+        "event": "fact_received",
+        "detail": "{\"payload\":{\"id\":\"R1\",\"type\":\"refund\"},\"result\":\"accepted\"}"
+      }
+    ],
+    "refund_facts": [
+      {
+        "refund_id": "R1",
+        "expected": null,
+        "confirmed_at": null,
+        "trusted_received": 0,
+        "received_total": 0,
+        "remaining": null,
+        "complete": false,
+        "conflict": false,
+        "pending_input_ids": [],
+        "reliable": false,
+        "receipt_ids": [],
+        "verified_full": false
+      }
+    ]
+  },
+  "final_bob": {
+    "now": 1793495400,
+    "now_beijing": "2026-11-01T09:10:00+08:00",
+    "user": "bob",
+    "mode": null,
+    "issues": [],
+    "facts": [],
+    "inputs": [],
+    "notices": [],
+    "appointments": [],
+    "history": [],
+    "refund_facts": []
+  }
+}

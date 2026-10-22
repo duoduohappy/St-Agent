@@ -1,0 +1,25 @@
+{
+  "startup": {
+    "initialized": "D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\stage-one-20261022T072930821011Z\\core.sqlite",
+    "clock": "simulated"
+  },
+  "first": {
+    "status": "open",
+    "notices": 1,
+    "send_status": "sent"
+  },
+  "after60": {
+    "status": "open",
+    "remaining_fen": 4000
+  },
+  "after40": {
+    "status": "resolved",
+    "basis": "verified_receipts"
+  },
+  "after_replay_and_process_restart": {
+    "received_fen": 10000,
+    "notices": 1,
+    "extra": 0
+  },
+  "evidence": "D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\stage-one-20261022T072930821011Z"
+}

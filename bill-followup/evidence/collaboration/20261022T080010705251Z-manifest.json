@@ -1,0 +1,619 @@
+{
+  "exported_at_utc": "2026-10-22T08:00:10.706476+00:00",
+  "source_basename": "rollout-2026-10-22T12-55-12-01a161f6-9687-7510-8808-1474e5a5e3b5.jsonl",
+  "source_bytes_at_snapshot": 1452821,
+  "source_snapshot_sha256": "5a4d9acb5e953f5a024215f1efe66784e746bded35b4f51c1a88258f76fb6d49",
+  "export_file": "20261022T080010705251Z-visible-original.jsonl",
+  "export_sha256": "daa1011d5b6da83b188c3d2409dbcd7a46beacbc0f00ddcce616ed2530c8a6e1",
+  "selected_original_lines": 73,
+  "index": [
+    {
+      "source_line": 39,
+      "export_line": 1,
+      "timestamp": "2026-10-22T07:13:06.880Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null
+    },
+    {
+      "source_line": 42,
+      "export_line": 2,
+      "timestamp": "2026-10-22T07:14:48.264Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null
+    },
+    {
+      "source_line": 43,
+      "export_line": 3,
+      "timestamp": "2026-10-22T07:14:53.405Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_eb35c31a2e3348168de5fe15eccff1ed"
+    },
+    {
+      "source_line": 46,
+      "export_line": 4,
+      "timestamp": "2026-10-22T07:14:54.548Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_eb35c31a2e3348168de5fe15eccff1ed"
+    },
+    {
+      "source_line": 53,
+      "export_line": 5,
+      "timestamp": "2026-10-22T07:15:45.115Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null
+    },
+    {
+      "source_line": 57,
+      "export_line": 6,
+      "timestamp": "2026-10-22T07:17:52.694Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null
+    },
+    {
+      "source_line": 64,
+      "export_line": 7,
+      "timestamp": "2026-10-22T07:20:23.200Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null
+    },
+    {
+      "source_line": 67,
+      "export_line": 8,
+      "timestamp": "2026-10-22T07:20:30.013Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null
+    },
+    {
+      "source_line": 68,
+      "export_line": 9,
+      "timestamp": "2026-10-22T07:20:33.638Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_f3c0175e8b8b408382c56a8085173e62"
+    },
+    {
+      "source_line": 71,
+      "export_line": 10,
+      "timestamp": "2026-10-22T07:20:35.942Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_f3c0175e8b8b408382c56a8085173e62"
+    },
+    {
+      "source_line": 76,
+      "export_line": 11,
+      "timestamp": "2026-10-22T07:20:45.857Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null
+    },
+    {
+      "source_line": 77,
+      "export_line": 12,
+      "timestamp": "2026-10-22T07:20:48.633Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_063ed68f4abe4b11baeff8351e21ba08"
+    },
+    {
+      "source_line": 80,
+      "export_line": 13,
+      "timestamp": "2026-10-22T07:20:52.581Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_063ed68f4abe4b11baeff8351e21ba08"
+    },
+    {
+      "source_line": 82,
+      "export_line": 14,
+      "timestamp": "2026-10-22T07:20:58.417Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_f136b324d36547ccb37a0d897dfd0357"
+    },
+    {
+      "source_line": 86,
+      "export_line": 15,
+      "timestamp": "2026-10-22T07:21:02.271Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_f136b324d36547ccb37a0d897dfd0357"
+    },
+    {
+      "source_line": 90,
+      "export_line": 16,
+      "timestamp": "2026-10-22T07:21:35.832Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_feb834f257114b0e944cc45f94f8a900"
+    },
+    {
+      "source_line": 94,
+      "export_line": 17,
+      "timestamp": "2026-10-22T07:21:39.418Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_feb834f257114b0e944cc45f94f8a900"
+    },
+    {
+      "source_line": 98,
+      "export_line": 18,
+      "timestamp": "2026-10-22T07:24:49.255Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_78c69c45c0ec47118ffe4e1d032f81ff"
+    },
+    {
+      "source_line": 101,
+      "export_line": 19,
+      "timestamp": "2026-10-22T07:24:52.036Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_78c69c45c0ec47118ffe4e1d032f81ff"
+    },
+    {
+      "source_line": 106,
+      "export_line": 20,
+      "timestamp": "2026-10-22T07:24:59.502Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null
+    },
+    {
+      "source_line": 109,
+      "export_line": 21,
+      "timestamp": "2026-10-22T07:28:25.258Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_290d23c59285464dbb500b72998b6974"
+    },
+    {
+      "source_line": 113,
+      "export_line": 22,
+      "timestamp": "2026-10-22T07:28:34.377Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_290d23c59285464dbb500b72998b6974"
+    },
+    {
+      "source_line": 117,
+      "export_line": 23,
+      "timestamp": "2026-10-22T07:29:29.062Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_258a21d1ffbf4ff9af2c32614e9fbcbc"
+    },
+    {
+      "source_line": 121,
+      "export_line": 24,
+      "timestamp": "2026-10-22T07:29:47.312Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_258a21d1ffbf4ff9af2c32614e9fbcbc"
+    },
+    {
+      "source_line": 126,
+      "export_line": 25,
+      "timestamp": "2026-10-22T07:29:59.667Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null
+    },
+    {
+      "source_line": 131,
+      "export_line": 26,
+      "timestamp": "2026-10-22T07:30:46.375Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_dab621bbfb0e46eca95f65d28630355b"
+    },
+    {
+      "source_line": 134,
+      "export_line": 27,
+      "timestamp": "2026-10-22T07:30:49.374Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_dab621bbfb0e46eca95f65d28630355b"
+    },
+    {
+      "source_line": 138,
+      "export_line": 28,
+      "timestamp": "2026-10-22T07:32:07.280Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_a51febe473574642b8bb9e2276f51149"
+    },
+    {
+      "source_line": 142,
+      "export_line": 29,
+      "timestamp": "2026-10-22T07:32:23.357Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_a51febe473574642b8bb9e2276f51149"
+    },
+    {
+      "source_line": 152,
+      "export_line": 30,
+      "timestamp": "2026-10-22T07:42:15.949Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null
+    },
+    {
+      "source_line": 156,
+      "export_line": 31,
+      "timestamp": "2026-10-22T07:42:15.956Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null
+    },
+    {
+      "source_line": 159,
+      "export_line": 32,
+      "timestamp": "2026-10-22T07:42:15.961Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null
+    },
+    {
+      "source_line": 162,
+      "export_line": 33,
+      "timestamp": "2026-10-22T07:43:58.122Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null
+    },
+    {
+      "source_line": 163,
+      "export_line": 34,
+      "timestamp": "2026-10-22T07:43:59.760Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_5200060cc82944e29910c2bf75e73751"
+    },
+    {
+      "source_line": 166,
+      "export_line": 35,
+      "timestamp": "2026-10-22T07:44:03.214Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_5200060cc82944e29910c2bf75e73751"
+    },
+    {
+      "source_line": 170,
+      "export_line": 36,
+      "timestamp": "2026-10-22T07:44:17.058Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_e2dc8fca88174325bf8ea85c4d1f4832"
+    },
+    {
+      "source_line": 173,
+      "export_line": 37,
+      "timestamp": "2026-10-22T07:44:27.707Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_e2dc8fca88174325bf8ea85c4d1f4832"
+    },
+    {
+      "source_line": 177,
+      "export_line": 38,
+      "timestamp": "2026-10-22T07:44:32.548Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_a728babb21b745dcb37cd9acaf35f1ec"
+    },
+    {
+      "source_line": 180,
+      "export_line": 39,
+      "timestamp": "2026-10-22T07:44:36.035Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_a728babb21b745dcb37cd9acaf35f1ec"
+    },
+    {
+      "source_line": 191,
+      "export_line": 40,
+      "timestamp": "2026-10-22T07:45:49.601Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null
+    },
+    {
+      "source_line": 192,
+      "export_line": 41,
+      "timestamp": "2026-10-22T07:48:15.742Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_3c0be522e4db4ee69b93ca1f6f9f5275"
+    },
+    {
+      "source_line": 196,
+      "export_line": 42,
+      "timestamp": "2026-10-22T07:48:19.402Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_3c0be522e4db4ee69b93ca1f6f9f5275"
+    },
+    {
+      "source_line": 201,
+      "export_line": 43,
+      "timestamp": "2026-10-22T07:48:30.102Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null
+    },
+    {
+      "source_line": 202,
+      "export_line": 44,
+      "timestamp": "2026-10-22T07:52:00.369Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_0c0f639942d14f0284f10885f8eac513"
+    },
+    {
+      "source_line": 205,
+      "export_line": 45,
+      "timestamp": "2026-10-22T07:52:13.505Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_0c0f639942d14f0284f10885f8eac513"
+    },
+    {
+      "source_line": 210,
+      "export_line": 46,
+      "timestamp": "2026-10-22T07:52:23.212Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_699352d876854d64b638dd8dc8282b33"
+    },
+    {
+      "source_line": 212,
+      "export_line": 47,
+      "timestamp": "2026-10-22T07:52:23.691Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_699352d876854d64b638dd8dc8282b33"
+    },
+    {
+      "source_line": 216,
+      "export_line": 48,
+      "timestamp": "2026-10-22T07:52:42.669Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_91d6baf480fc4421ab6741fbd674a27c"
+    },
+    {
+      "source_line": 219,
+      "export_line": 49,
+      "timestamp": "2026-10-22T07:52:45.232Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_91d6baf480fc4421ab6741fbd674a27c"
+    },
+    {
+      "source_line": 223,
+      "export_line": 50,
+      "timestamp": "2026-10-22T07:53:54.128Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_c2621f869a4c4fbd9cae280fe56f3992"
+    },
+    {
+      "source_line": 226,
+      "export_line": 51,
+      "timestamp": "2026-10-22T07:54:05.194Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_c2621f869a4c4fbd9cae280fe56f3992"
+    },
+    {
+      "source_line": 233,
+      "export_line": 52,
+      "timestamp": "2026-10-22T07:54:53.835Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_ac9672e32e1f40cea01f5c9a6bf1cd7f"
+    },
+    {
+      "source_line": 237,
+      "export_line": 53,
+      "timestamp": "2026-10-22T07:54:57.762Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_ac9672e32e1f40cea01f5c9a6bf1cd7f"
+    },
+    {
+      "source_line": 242,
+      "export_line": 54,
+      "timestamp": "2026-10-22T07:55:08.426Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null
+    },
+    {
+      "source_line": 243,
+      "export_line": 55,
+      "timestamp": "2026-10-22T07:55:11.171Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_6d4e68179d41482d98970cbbec8104db"
+    },
+    {
+      "source_line": 246,
+      "export_line": 56,
+      "timestamp": "2026-10-22T07:55:12.488Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_6d4e68179d41482d98970cbbec8104db"
+    },
+    {
+      "source_line": 250,
+      "export_line": 57,
+      "timestamp": "2026-10-22T07:55:34.967Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_3c96144bd7ac4b9697c59f0fc0381604"
+    },
+    {
+      "source_line": 254,
+      "export_line": 58,
+      "timestamp": "2026-10-22T07:55:43.007Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_3c96144bd7ac4b9697c59f0fc0381604"
+    },
+    {
+      "source_line": 258,
+      "export_line": 59,
+      "timestamp": "2026-10-22T07:56:05.412Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_5283bbf07003464b9f2cb45de89a27c8"
+    },
+    {
+      "source_line": 262,
+      "export_line": 60,
+      "timestamp": "2026-10-22T07:56:09.174Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_5283bbf07003464b9f2cb45de89a27c8"
+    },
+    {
+      "source_line": 264,
+      "export_line": 61,
+      "timestamp": "2026-10-22T07:56:14.924Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_282b6f8647f849ee81690ae94fdea839"
+    },
+    {
+      "source_line": 267,
+      "export_line": 62,
+      "timestamp": "2026-10-22T07:56:17.338Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_282b6f8647f849ee81690ae94fdea839"
+    },
+    {
+      "source_line": 278,
+      "export_line": 63,
+      "timestamp": "2026-10-22T07:57:29.536Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null
+    },
+    {
+      "source_line": 279,
+      "export_line": 64,
+      "timestamp": "2026-10-22T07:57:59.921Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_088c181846ee4fafa7dcd193c7e0aa9e"
+    },
+    {
+      "source_line": 283,
+      "export_line": 65,
+      "timestamp": "2026-10-22T07:58:06.888Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_088c181846ee4fafa7dcd193c7e0aa9e"
+    },
+    {
+      "source_line": 289,
+      "export_line": 66,
+      "timestamp": "2026-10-22T07:58:53.453Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_96e550d887f8416ab53730ff0dabc321"
+    },
+    {
+      "source_line": 292,
+      "export_line": 67,
+      "timestamp": "2026-10-22T07:59:03.018Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_96e550d887f8416ab53730ff0dabc321"
+    },
+    {
+      "source_line": 296,
+      "export_line": 68,
+      "timestamp": "2026-10-22T07:59:28.156Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_f459ff4e06a74335a82c675d6ad5bb88"
+    },
+    {
+      "source_line": 299,
+      "export_line": 69,
+      "timestamp": "2026-10-22T07:59:30.378Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_f459ff4e06a74335a82c675d6ad5bb88"
+    },
+    {
+      "source_line": 303,
+      "export_line": 70,
+      "timestamp": "2026-10-22T07:59:42.919Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_0cb132cc4f824d45b46a9ba88e09ae48"
+    },
+    {
+      "source_line": 307,
+      "export_line": 71,
+      "timestamp": "2026-10-22T07:59:44.248Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_0cb132cc4f824d45b46a9ba88e09ae48"
+    },
+    {
+      "source_line": 312,
+      "export_line": 72,
+      "timestamp": "2026-10-22T08:00:07.749Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null
+    },
+    {
+      "source_line": 313,
+      "export_line": 73,
+      "timestamp": "2026-10-22T08:00:09.819Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_71ef1fe08de54c2783a20d3fc8d5b24b"
+    }
+  ],
+  "excluded_record_counts_since_start": {
+    "event_msg/item_completed": 92,
+    "token_usage_record/None": 29,
+    "event_msg/token_count": 29,
+    "response_item/reasoning": 37,
+    "event_msg/task_complete": 1,
+    "event_msg/thread_settings_applied": 3,
+    "event_msg/task_started": 2,
+    "turn_context/None": 2,
+    "response_item/message": 6,
+    "response_item/additional_tools": 1,
+    "world_state/None": 1
+  },
+  "unpaired_call_ids_at_snapshot": [
+    "call_71ef1fe08de54c2783a20d3fc8d5b24b"
+  ],
+  "scope": "正式分析请求起，用户消息、助手可见回复、工具调用及返回；每条选中行保持原始字节。非平台完整导出。",
+  "gaps": [
+    "当前仍执行中的调用或尚未刷盘的工具结果可能不在快照；以最后一次快照为准。",
+    "嵌套工具返回只能保留平台JSONL实际写入内容，平台未写入或截断的部分无法恢复。",
+    "隐藏推理、系统/开发者信息、重复事件镜像、正式协作前历史不在导出范围。",
+    "未调用子Agent；无子任务记录。未取得平台完整导出接口的验证。",
+    "部分当前工具schema元信息不在response_item可见导出中。"
+  ]
+}

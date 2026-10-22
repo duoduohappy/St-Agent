@@ -1,0 +1,241 @@
+{
+  "clock": [
+    {
+      "id": 1,
+      "now": 1792658760,
+      "mode": "real"
+    }
+  ],
+  "users": [
+    {
+      "user": "realtime_e2e_user",
+      "mode": "active"
+    }
+  ],
+  "inputs": [
+    {
+      "seq": 1,
+      "user": "realtime_e2e_user",
+      "received": 1792658760,
+      "payload": "{\"amount\":3000,\"at\":\"2026-10-22T16:41:00+08:00\",\"id\":\"RT1\",\"merchant\":\"REALTIME_FIXTURE\",\"type\":\"transaction\"}",
+      "result": "accepted"
+    },
+    {
+      "seq": 2,
+      "user": "realtime_e2e_user",
+      "received": 1792658760,
+      "payload": "{\"amount\":3000,\"at\":\"2026-10-22T16:45:00+08:00\",\"id\":\"RT2\",\"merchant\":\"REALTIME_FIXTURE\",\"type\":\"transaction\"}",
+      "result": "accepted"
+    }
+  ],
+  "facts": [
+    {
+      "user": "realtime_e2e_user",
+      "kind": "transaction",
+      "id": "RT1",
+      "payload": "{\"amount\":3000,\"at\":1792658460,\"id\":\"RT1\",\"merchant\":\"REALTIME_FIXTURE\",\"type\":\"transaction\"}",
+      "conflict": 0
+    },
+    {
+      "user": "realtime_e2e_user",
+      "kind": "transaction",
+      "id": "RT2",
+      "payload": "{\"amount\":3000,\"at\":1792658700,\"id\":\"RT2\",\"merchant\":\"REALTIME_FIXTURE\",\"type\":\"transaction\"}",
+      "conflict": 0
+    }
+  ],
+  "issues": [
+    {
+      "user": "realtime_e2e_user",
+      "id": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "kind": "duplicate",
+      "refs": "[\"RT1\",\"RT2\"]",
+      "status": "open",
+      "phase": "confirmed_problem",
+      "basis": null,
+      "created": 1792658760,
+      "first_sent": 1792658760,
+      "last_sent": 1792658760,
+      "extra": 0,
+      "defer_until": 1792658768,
+      "needs_time": 0
+    }
+  ],
+  "appointments": [
+    {
+      "user": "realtime_e2e_user",
+      "id": "6da10f417ea24a04a858556b9932a2a2",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "due": 1792658768,
+      "status": "sent"
+    }
+  ],
+  "notices": [
+    {
+      "user": "realtime_e2e_user",
+      "id": "6d671f52f50a4119b30fc13aabf689d9",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "kind": "initial",
+      "slot": "0",
+      "status": "sent",
+      "created": 1792658760,
+      "submitted": 1792658760,
+      "sent_at": 1792658760,
+      "body": "{\"message\":\"疑似重复消费，请确认是否为两次正常购买；尚未证实错扣\",\"transaction_ids\":[\"RT1\",\"RT2\"]}",
+      "behavior": "success",
+      "attempts": 1
+    },
+    {
+      "user": "realtime_e2e_user",
+      "id": "d87119c9dd9f4e0b90a58d0a38eff674",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "kind": "appointment",
+      "slot": "6da10f417ea24a04a858556b9932a2a2",
+      "status": "sent",
+      "created": 1792658768,
+      "submitted": 1792658768,
+      "sent_at": 1792658768,
+      "body": "{\"message\":\"疑似重复消费，请确认是否为两次正常购买；尚未证实错扣\",\"transaction_ids\":[\"RT1\",\"RT2\"]}",
+      "behavior": "success",
+      "attempts": 1
+    }
+  ],
+  "provider": [
+    {
+      "user": "realtime_e2e_user",
+      "op": "6d671f52f50a4119b30fc13aabf689d9",
+      "state": "sent",
+      "sent_at": 1792658760,
+      "body": "{\"message\":\"疑似重复消费，请确认是否为两次正常购买；尚未证实错扣\",\"transaction_ids\":[\"RT1\",\"RT2\"]}"
+    },
+    {
+      "user": "realtime_e2e_user",
+      "op": "d87119c9dd9f4e0b90a58d0a38eff674",
+      "state": "sent",
+      "sent_at": 1792658768,
+      "body": "{\"message\":\"疑似重复消费，请确认是否为两次正常购买；尚未证实错扣\",\"transaction_ids\":[\"RT1\",\"RT2\"]}"
+    }
+  ],
+  "history": [
+    {
+      "seq": 1,
+      "user": "realtime_e2e_user",
+      "issue": null,
+      "at": 1792658760,
+      "event": "fact_received",
+      "detail": "{\"payload\":{\"amount\":3000,\"at\":\"2026-10-22T16:41:00+08:00\",\"id\":\"RT1\",\"merchant\":\"REALTIME_FIXTURE\",\"type\":\"transaction\"},\"result\":\"accepted\"}"
+    },
+    {
+      "seq": 2,
+      "user": "realtime_e2e_user",
+      "issue": null,
+      "at": 1792658760,
+      "event": "fact_received",
+      "detail": "{\"payload\":{\"amount\":3000,\"at\":\"2026-10-22T16:45:00+08:00\",\"id\":\"RT2\",\"merchant\":\"REALTIME_FIXTURE\",\"type\":\"transaction\"},\"result\":\"accepted\"}"
+    },
+    {
+      "seq": 3,
+      "user": "realtime_e2e_user",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "at": 1792658760,
+      "event": "issue_created",
+      "detail": "{\"basis\":null,\"kind\":\"duplicate\",\"refs\":[\"RT1\",\"RT2\"],\"status\":\"open\"}"
+    },
+    {
+      "seq": 4,
+      "user": "realtime_e2e_user",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "at": 1792658760,
+      "event": "notice_queued",
+      "detail": "{\"kind\":\"initial\",\"operation_id\":\"6d671f52f50a4119b30fc13aabf689d9\",\"slot\":\"0\"}"
+    },
+    {
+      "seq": 5,
+      "user": "realtime_e2e_user",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "at": 1792658760,
+      "event": "send_submitted",
+      "detail": "{\"operation_id\":\"6d671f52f50a4119b30fc13aabf689d9\",\"simulated_behavior\":\"success\"}"
+    },
+    {
+      "seq": 6,
+      "user": "realtime_e2e_user",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "at": 1792658760,
+      "event": "mock_provider_effect",
+      "detail": "{\"operation_id\":\"6d671f52f50a4119b30fc13aabf689d9\",\"state\":\"sent\"}"
+    },
+    {
+      "seq": 7,
+      "user": "realtime_e2e_user",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "at": 1792658760,
+      "event": "send_confirmed",
+      "detail": "{\"kind\":\"initial\",\"operation_id\":\"6d671f52f50a4119b30fc13aabf689d9\",\"sent_at\":1792658760}"
+    },
+    {
+      "seq": 8,
+      "user": "realtime_e2e_user",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "at": 1792658760,
+      "event": "queued_notices_cancelled",
+      "detail": "{\"reason\":\"confirmed_problem\"}"
+    },
+    {
+      "seq": 9,
+      "user": "realtime_e2e_user",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "at": 1792658760,
+      "event": "user_action",
+      "detail": "{\"action\":\"confirm\",\"at\":null}"
+    },
+    {
+      "seq": 10,
+      "user": "realtime_e2e_user",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "at": 1792658760,
+      "event": "queued_notices_cancelled",
+      "detail": "{\"reason\":\"rescheduled\"}"
+    },
+    {
+      "seq": 11,
+      "user": "realtime_e2e_user",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "at": 1792658760,
+      "event": "user_action",
+      "detail": "{\"action\":\"schedule\",\"at\":\"2026-10-22T16:46:08+08:00\"}"
+    },
+    {
+      "seq": 12,
+      "user": "realtime_e2e_user",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "at": 1792658768,
+      "event": "notice_queued",
+      "detail": "{\"kind\":\"appointment\",\"operation_id\":\"d87119c9dd9f4e0b90a58d0a38eff674\",\"slot\":\"6da10f417ea24a04a858556b9932a2a2\"}"
+    },
+    {
+      "seq": 13,
+      "user": "realtime_e2e_user",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "at": 1792658768,
+      "event": "send_submitted",
+      "detail": "{\"operation_id\":\"d87119c9dd9f4e0b90a58d0a38eff674\",\"simulated_behavior\":\"success\"}"
+    },
+    {
+      "seq": 14,
+      "user": "realtime_e2e_user",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "at": 1792658768,
+      "event": "mock_provider_effect",
+      "detail": "{\"operation_id\":\"d87119c9dd9f4e0b90a58d0a38eff674\",\"state\":\"sent\"}"
+    },
+    {
+      "seq": 15,
+      "user": "realtime_e2e_user",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "at": 1792658768,
+      "event": "send_confirmed",
+      "detail": "{\"kind\":\"appointment\",\"operation_id\":\"d87119c9dd9f4e0b90a58d0a38eff674\",\"sent_at\":1792658768}"
+    }
+  ]
+}

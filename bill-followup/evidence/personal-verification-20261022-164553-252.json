@@ -1,0 +1,33 @@
+{
+  "recorded_at_utc": "2026-10-22T08:49:41.028053+00:00",
+  "executor": "用户本人执行；Codex只读核查证据并登记，未代为重跑",
+  "review_project": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup",
+  "suite": {
+    "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\results.json",
+    "tests_run": 35,
+    "successful": true,
+    "expected_descriptions_exactly_match_source_docstrings": 35
+  },
+  "realtime_e2e": {
+    "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\realtime-e2e-20261022T084559992884Z\\report.json",
+    "outcome": "PASS",
+    "production_source_unchanged": true
+  },
+  "evidence_json_files_read_successfully": 45,
+  "encoding_findings": {
+    "outer_Tee_logs": "UTF-16文件，保存前已发生中文误解码；原样保留，切换读取编码无法完整恢复",
+    "canonical_suite_and_realtime_evidence": "UTF-8，35项中文预期与源码逐项相同；原始stderr及真实时钟JSON中文正常",
+    "tests_rerun_for_encoding_issue": 0
+  },
+  "earlier_Codex_runs": "原包历史验收由Codex执行，不记入用户个人执行范围",
+  "user_contribution_confirmed": "亲自检查环境、解压、运行重复消费与退款60+40/重放案例、运行35项验收和真实时钟测试。未声明用户编写业务源码或测试。",
+  "sources_sha256": {
+    "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\results.json": "3b52f55a4f4aa9bae4d1eb1bb9b8aae7b59ec3da47709c1d7eaf86c929b5888c",
+    "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\stderr.txt": "079d005c934465f944fd263cad1931bfa42ec46548f7332fa65091003b554719",
+    "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\realtime-e2e-20261022T084559992884Z\\report.json": "5adf9ad15fa632b4423da1c8d64f2eb52568cce7d280ebc9226dc265ba45e093",
+    "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\personal-acceptance-20261022-164553-252\\suite-output.txt": "fa8ee73d87e0008da896a9d2710158ef53fa9a2e1741accdadcd3119a83c72a3",
+    "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\personal-acceptance-20261022-164553-252\\realtime-output.txt": "a4d2de2ed32f687f9f93059d3d68eaeca86702e618cefa826841a05426ca3f5b",
+    "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\personal-acceptance-20261022-164553-252\\execution-summary.json": "3fb7cc033fa52c6417b35332c9f8f0e78a600f12603d2d2b68384fd346ea5266"
+  },
+  "package_policy": "原提交包与原始日志不修改；本登记为单独补充记录"
+}

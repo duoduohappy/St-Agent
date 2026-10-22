@@ -1,0 +1,12 @@
+{"cycle":1,"notifications":[]}
+{"cycle":2,"notifications":[]}
+{"cycle":3,"notifications":[]}
+{"cycle":4,"notifications":[]}
+{"cycle":5,"notifications":[]}
+{"cycle":6,"notifications":[]}
+{"cycle":7,"notifications":[]}
+{"cycle":8,"notifications":[]}
+{"cycle":9,"notifications":[{"operation_id":"d3e4726e78b14b0c822d4509283d0d1e","result":"sent","user":"realtime_e2e_user"}]}
+{"cycle":10,"notifications":[]}
+{"cycle":11,"notifications":[]}
+{"cycle":12,"notifications":[]}

@@ -1,0 +1,21 @@
+test_acceptance (unittest.loader._FailedTest.test_acceptance) ... ERROR
+
+======================================================================
+ERROR: test_acceptance (unittest.loader._FailedTest.test_acceptance)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_acceptance
+Traceback (most recent call last):
+  File "C:\Users\TempAdmin\AppData\Local\Programs\Python\Python311\Lib\unittest\loader.py", line 419, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TempAdmin\AppData\Local\Programs\Python\Python311\Lib\unittest\loader.py", line 362, in _get_module_from_name
+    __import__(name)
+  File "D:\DocumentsChatGPT\gis\bill-followup\tests\test_acceptance.py", line 10, in <module>
+    from followup.engine import DAY, Engine, stamp
+ModuleNotFoundError: No module named 'followup'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

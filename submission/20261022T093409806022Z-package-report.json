@@ -1,0 +1,28 @@
+{
+  "archive": "D:\\DocumentsChatGPT\\gis\\bill-followup\\delivery\\bill-followup-final-20261022T093409806022Z.zip",
+  "bytes": 6396231,
+  "sha256": "a5c84b41258cfbd8c0df98bb1ce9810a960836a22babe8406ae5d1f7eee2b32c",
+  "files": 568,
+  "zip_crc_and_each_file_hash_verified": true,
+  "latest_tests": 35,
+  "tests_successful": true,
+  "supplemental_realtime_e2e": {
+    "outcome": "PASS",
+    "evidence": "evidence/realtime-e2e-20261022T081045850285Z/report.json",
+    "production_source_unchanged": true,
+    "previous_35_tests_not_rerun": true
+  },
+  "personal_verification": {
+    "suite_tests": 35,
+    "suite_successful": true,
+    "realtime_outcome": "PASS",
+    "evidence": "evidence/personal-review-20261022-164553-252"
+  },
+  "content_review": "evidence/final-content-review-20261022T093409806022Z.json",
+  "content_review_passed": true,
+  "production_source_unchanged_from_previous_delivery": true,
+  "business_tests_rerun_during_finalization": 0,
+  "collaboration_cutoff_beijing": "2026-10-22T17:34:06.334000+08:00",
+  "collaboration_records": 175,
+  "collaboration_unpaired_calls_within_cutoff": []
+}

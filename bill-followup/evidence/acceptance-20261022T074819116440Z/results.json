@@ -1,0 +1,13 @@
+{
+  "tests_run": 1,
+  "successful": false,
+  "cases": [
+    {
+      "id": "unittest.loader._FailedTest.test_acceptance",
+      "expected": null,
+      "outcome": "ERROR",
+      "traceback": "ImportError: Failed to import test module: test_acceptance\nTraceback (most recent call last):\n  File \"C:\\Users\\TempAdmin\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\unittest\\loader.py\", line 419, in _find_test_path\n    module = self._get_module_from_name(name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\TempAdmin\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\unittest\\loader.py\", line 362, in _get_module_from_name\n    __import__(name)\n  File \"D:\\DocumentsChatGPT\\gis\\bill-followup\\tests\\test_acceptance.py\", line 10, in <module>\n    from followup.engine import DAY, Engine, stamp\nModuleNotFoundError: No module named 'followup'\n\n",
+      "evidence": "test_acceptance/evidence.json"
+    }
+  ]
+}

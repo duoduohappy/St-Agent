@@ -1,0 +1,196 @@
+{
+  "test": "realtime_e2e_background_appointment",
+  "outcome": "PASS",
+  "started": {
+    "epoch_seconds": 1792658760.0097241,
+    "beijing": "2026-10-22T16:46:00.009724+08:00",
+    "monotonic_seconds": 662.015
+  },
+  "timeout_seconds": 25,
+  "post_send_observation_seconds": 3.2,
+  "assertions": [
+    {
+      "description": "夹具中首次提醒已完成，后续仅观察独立约定提醒",
+      "passed": true,
+      "at": {
+        "epoch_seconds": 1792658760.847269,
+        "beijing": "2026-10-22T16:46:00.847269+08:00",
+        "monotonic_seconds": 662.859
+      }
+    },
+    {
+      "description": "通过正式用户动作创建有效明确约定，不缩短未回复24小时或退款72小时规则",
+      "passed": true,
+      "at": {
+        "epoch_seconds": 1792658760.871363,
+        "beijing": "2026-10-22T16:46:00.871362+08:00",
+        "monotonic_seconds": 662.875
+      }
+    },
+    {
+      "description": "生产DAY常量仍为86400秒",
+      "passed": true,
+      "at": {
+        "epoch_seconds": 1792658760.871363,
+        "beijing": "2026-10-22T16:46:00.871362+08:00",
+        "monotonic_seconds": 662.875
+      }
+    },
+    {
+      "description": "独立进程在到期前至少2秒启动，具有提前发送观察窗口",
+      "passed": true,
+      "at": {
+        "epoch_seconds": 1792658760.8786628,
+        "beijing": "2026-10-22T16:46:00.878662+08:00",
+        "monotonic_seconds": 662.89
+      }
+    },
+    {
+      "description": "到期前多次只读观察，约定通知与通道记录均为零",
+      "passed": true,
+      "at": {
+        "epoch_seconds": 1792658771.2950683,
+        "beijing": "2026-10-22T16:46:11.295068+08:00",
+        "monotonic_seconds": 673.312
+      }
+    },
+    {
+      "description": "到期后后台独立进程自行发送，无新输入/advance/手动检查",
+      "passed": true,
+      "at": {
+        "epoch_seconds": 1792658771.2950683,
+        "beijing": "2026-10-22T16:46:11.295068+08:00",
+        "monotonic_seconds": 673.312
+      }
+    },
+    {
+      "description": "继续等待至少3.2秒后仍只有1条约定通知",
+      "passed": true,
+      "at": {
+        "epoch_seconds": 1792658771.2950683,
+        "beijing": "2026-10-22T16:46:11.295068+08:00",
+        "monotonic_seconds": 673.312
+      }
+    },
+    {
+      "description": "模拟通道只产生1条实际发送记录",
+      "passed": true,
+      "at": {
+        "epoch_seconds": 1792658771.2950683,
+        "beijing": "2026-10-22T16:46:11.295068+08:00",
+        "monotonic_seconds": 673.312
+      }
+    },
+    {
+      "description": "等待期间提交与确认各一次，没有重复发送尝试",
+      "passed": true,
+      "at": {
+        "epoch_seconds": 1792658771.2950683,
+        "beijing": "2026-10-22T16:46:11.295068+08:00",
+        "monotonic_seconds": 673.312
+      }
+    },
+    {
+      "description": "夹具安排后原始输入与事实数量不变，证明无新事件输入",
+      "passed": true,
+      "at": {
+        "epoch_seconds": 1792658771.3178122,
+        "beijing": "2026-10-22T16:46:11.317812+08:00",
+        "monotonic_seconds": 673.328
+      }
+    },
+    {
+      "description": "独立约定未改变未回复追加次数",
+      "passed": true,
+      "at": {
+        "epoch_seconds": 1792658771.3178122,
+        "beijing": "2026-10-22T16:46:11.317812+08:00",
+        "monotonic_seconds": 673.328
+      }
+    },
+    {
+      "description": "测试进程已在有界清理内停止",
+      "passed": true,
+      "at": {
+        "epoch_seconds": 1792658771.3178122,
+        "beijing": "2026-10-22T16:46:11.317812+08:00",
+        "monotonic_seconds": 673.328
+      }
+    }
+  ],
+  "scope": "真实时钟、独立SQLite库、独立持续运行进程、本地模拟通知通道。安排后父进程只读观察，不再输入事件或调用advance/check/cycle。",
+  "production_source_sha256_before": {
+    "followup\\engine.py": "5389d8abd9c2c0d96fa899301b0e9e504c03ccb8f9127e1a262f0df83144ee31",
+    "followup\\__main__.py": "49433158c327b3d67efd5e224096d1c4a3a944e9afa1fa026dc808b8045e4bea"
+  },
+  "due_epoch_seconds": 1792658768,
+  "due_beijing": "2026-10-22T16:46:08+08:00",
+  "fixture_finished": {
+    "epoch_seconds": 1792658760.871363,
+    "beijing": "2026-10-22T16:46:00.871362+08:00",
+    "monotonic_seconds": 662.875
+  },
+  "initial_notification_count": 1,
+  "baseline_history_seq": 11,
+  "baseline_input_count": 2,
+  "baseline_fact_count": 2,
+  "fixture": "tests/realtime_e2e.py：正式Engine接口创建重复问题→首次提醒→确认有问题→明确约定8秒后提醒",
+  "process": {
+    "argv": [
+      "C:\\Users\\TempAdmin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "-u",
+      "-m",
+      "followup",
+      "--db",
+      "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\realtime-e2e-20261022T084559992884Z\\realtime.sqlite",
+      "run"
+    ],
+    "cwd": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup",
+    "pid": 31696,
+    "started": {
+      "epoch_seconds": 1792658760.8723602,
+      "beijing": "2026-10-22T16:46:00.872360+08:00",
+      "monotonic_seconds": 662.89
+    },
+    "stdin": "DEVNULL",
+    "environment_overrides": {
+      "PYTHONUTF8": "1"
+    },
+    "poll_interval": "生产默认1秒"
+  },
+  "first_sent_observed": {
+    "epoch_seconds": 1792658768.0665634,
+    "beijing": "2026-10-22T16:46:08.066563+08:00",
+    "monotonic_seconds": 670.078
+  },
+  "recorded_sent_at_beijing": "2026-10-22T16:46:08+08:00",
+  "pre_due_readonly_samples": 137,
+  "post_send_observed_seconds": 3.2340000000000373,
+  "process_cleanup": {
+    "requested_at": {
+      "epoch_seconds": 1792658771.2950683,
+      "beijing": "2026-10-22T16:46:11.295068+08:00",
+      "monotonic_seconds": 673.312
+    },
+    "alive_before_cleanup": true,
+    "method": "terminate_then_wait",
+    "exit_code": 1,
+    "finished_at": {
+      "epoch_seconds": 1792658771.304699,
+      "beijing": "2026-10-22T16:46:11.304698+08:00",
+      "monotonic_seconds": 673.312
+    },
+    "process_still_running": false
+  },
+  "production_source_sha256_after": {
+    "followup\\engine.py": "5389d8abd9c2c0d96fa899301b0e9e504c03ccb8f9127e1a262f0df83144ee31",
+    "followup\\__main__.py": "49433158c327b3d67efd5e224096d1c4a3a944e9afa1fa026dc808b8045e4bea"
+  },
+  "production_source_unchanged": true,
+  "finished": {
+    "epoch_seconds": 1792658771.3178122,
+    "beijing": "2026-10-22T16:46:11.317812+08:00",
+    "monotonic_seconds": 673.328
+  },
+  "evidence_directory": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\realtime-e2e-20261022T084559992884Z"
+}

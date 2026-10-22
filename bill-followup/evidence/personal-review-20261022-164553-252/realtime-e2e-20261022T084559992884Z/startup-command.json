@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "C:\\Users\\TempAdmin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "-u",
+    "-m",
+    "followup",
+    "--db",
+    "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\realtime-e2e-20261022T084559992884Z\\realtime.sqlite",
+    "run"
+  ],
+  "cwd": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup",
+  "pid": 31696,
+  "started": {
+    "epoch_seconds": 1792658760.8723602,
+    "beijing": "2026-10-22T16:46:00.872360+08:00",
+    "monotonic_seconds": 662.89
+  },
+  "stdin": "DEVNULL",
+  "environment_overrides": {
+    "PYTHONUTF8": "1"
+  },
+  "poll_interval": "生产默认1秒"
+}

@@ -1,0 +1,10 @@
+{
+  "note": "命令行配置示例；程序通过CLI参数配置，不自动加载此文件。",
+  "db": "data/followup.sqlite",
+  "clock": "simulated",
+  "initial_beijing_time": "2026-10-22T09:10:00+08:00",
+  "trusted_simulated_user": "alice",
+  "runner_interval_seconds": 1,
+  "external_provider": "local_sqlite_simulator",
+  "credentials_required": false
+}

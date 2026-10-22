@@ -1,0 +1,27 @@
+{
+  "argv": [
+    "C:\\Users\\TempAdmin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "tools/suite.py"
+  ],
+  "cwd": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup",
+  "exit_code": 0,
+  "source_sha256": {
+    "followup\\engine.py": "5389d8abd9c2c0d96fa899301b0e9e504c03ccb8f9127e1a262f0df83144ee31",
+    "followup\\__init__.py": "ce7e9e6b44ae41f7238e27668df7017a98ecdc0fb22a4227d94cb2f391520d4e",
+    "followup\\__main__.py": "49433158c327b3d67efd5e224096d1c4a3a944e9afa1fa026dc808b8045e4bea",
+    "tests\\realtime_e2e.py": "9d443375aaa6ab4880d86720a7fc14e5151069576d8dd8a919212a8c9e1c32ab",
+    "tests\\test_acceptance.py": "223518a6ed824030fd0bc02942cdf913c7751eb4fa65e49f3cd5cb940ef9c38d",
+    "tools\\build_demo.py": "56289120670794a93cfa27edf541b30c5461142bf9c0657f33b8da31e4d7135b",
+    "tools\\check_demo.py": "c5e2260a72660e15fbedbf65188bc1e5c93fe7db484a796505a831b2d0aae68a",
+    "tools\\export_collaboration.py": "3ded9f72dffe3ca42c1081ba9fc23204c98660b57b123eed745f07a0ac082039",
+    "tools\\package_delivery.py": "900dadb4bfa8e3df98373d509c5934b0d5a93f968f715def54f85de66b196019",
+    "tools\\run_acceptance.py": "ba496e25bc9560442092d57cc09d63b9b389195d5616f3a7890d59365fe6c5a3",
+    "tools\\stage_one.py": "9cefd1971b2219e9eb5afa2ad66fd05b19854bc2001cc7aaac57b3ea5ed08264",
+    "tools\\suite.py": "2ddcbfe14517dd2664e013cab8f95a6ddfb3455288c0ee25ec6ac7fce606d33f",
+    "tools\\verify_clean.py": "97c8b80881de936f5de747d86f859c56fbf04595c460cb4959afac08fe6fcdfc"
+  },
+  "environment_overrides": {
+    "PYTHONUTF8": "1",
+    "FOLLOWUP_EVIDENCE": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z"
+  }
+}

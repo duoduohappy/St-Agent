@@ -1,0 +1,75 @@
+{
+  "observed_at": {
+    "epoch_seconds": 1792656657.8259056,
+    "beijing": "2026-10-22T16:10:57.825905+08:00",
+    "monotonic_seconds": 2112.843
+  },
+  "appointment_notices": [
+    {
+      "user": "realtime_e2e_user",
+      "id": "d3e4726e78b14b0c822d4509283d0d1e",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "kind": "appointment",
+      "slot": "03022035478647bc9166b73228e4dfea",
+      "status": "sent",
+      "created": 1792656654,
+      "submitted": 1792656654,
+      "sent_at": 1792656654,
+      "body": "{\"message\":\"疑似重复消费，请确认是否为两次正常购买；尚未证实错扣\",\"transaction_ids\":[\"RT1\",\"RT2\"]}",
+      "behavior": "success",
+      "attempts": 1
+    }
+  ],
+  "appointment_provider": [
+    {
+      "user": "realtime_e2e_user",
+      "op": "d3e4726e78b14b0c822d4509283d0d1e",
+      "state": "sent",
+      "sent_at": 1792656654,
+      "body": "{\"message\":\"疑似重复消费，请确认是否为两次正常购买；尚未证实错扣\",\"transaction_ids\":[\"RT1\",\"RT2\"]}"
+    }
+  ],
+  "new_history": [
+    {
+      "seq": 12,
+      "user": "realtime_e2e_user",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "at": 1792656654,
+      "event": "notice_queued",
+      "detail": "{\"kind\":\"appointment\",\"operation_id\":\"d3e4726e78b14b0c822d4509283d0d1e\",\"slot\":\"03022035478647bc9166b73228e4dfea\"}"
+    },
+    {
+      "seq": 13,
+      "user": "realtime_e2e_user",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "at": 1792656654,
+      "event": "send_submitted",
+      "detail": "{\"operation_id\":\"d3e4726e78b14b0c822d4509283d0d1e\",\"simulated_behavior\":\"success\"}"
+    },
+    {
+      "seq": 14,
+      "user": "realtime_e2e_user",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "at": 1792656654,
+      "event": "mock_provider_effect",
+      "detail": "{\"operation_id\":\"d3e4726e78b14b0c822d4509283d0d1e\",\"state\":\"sent\"}"
+    },
+    {
+      "seq": 15,
+      "user": "realtime_e2e_user",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "at": 1792656654,
+      "event": "send_confirmed",
+      "detail": "{\"kind\":\"appointment\",\"operation_id\":\"d3e4726e78b14b0c822d4509283d0d1e\",\"sent_at\":1792656654}"
+    }
+  ],
+  "appointments": [
+    {
+      "user": "realtime_e2e_user",
+      "id": "03022035478647bc9166b73228e4dfea",
+      "issue": "dup:af232f9af9705b21a49fa0fa219f79c6",
+      "due": 1792656654,
+      "status": "sent"
+    }
+  ]
+}

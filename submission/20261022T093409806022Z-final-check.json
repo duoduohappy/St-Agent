@@ -1,0 +1,19 @@
+{
+  "archive": "D:\\DocumentsChatGPT\\gis\\bill-followup\\delivery\\bill-followup-final-20261022T093409806022Z.zip",
+  "bytes": 6396231,
+  "MiB": 6.1,
+  "zip_entries": 569,
+  "required_materials_present": true,
+  "user_original_files_verified": 104,
+  "active_document_links_valid": true,
+  "excluded_caches_absent": true,
+  "collaboration_records_byte_equal_to_all_eligible_source_records_through_cutoff": 175,
+  "collaboration_cutoff_beijing": "2026-10-22T17:34:06.334000+08:00",
+  "source_line_range": [
+    39,
+    826
+  ],
+  "unpaired_calls_within_cutoff": [],
+  "sha256": "a5c84b41258cfbd8c0df98bb1ce9810a960836a22babe8406ae5d1f7eee2b32c",
+  "archive_not_modified_during_final_check": true
+}

@@ -1,0 +1,11 @@
+{"cycle":1,"notifications":[]}
+{"cycle":2,"notifications":[]}
+{"cycle":3,"notifications":[]}
+{"cycle":4,"notifications":[]}
+{"cycle":5,"notifications":[]}
+{"cycle":6,"notifications":[]}
+{"cycle":7,"notifications":[]}
+{"cycle":8,"notifications":[{"operation_id":"d87119c9dd9f4e0b90a58d0a38eff674","result":"sent","user":"realtime_e2e_user"}]}
+{"cycle":9,"notifications":[]}
+{"cycle":10,"notifications":[]}
+{"cycle":11,"notifications":[]}

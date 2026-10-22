@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "C:\\Users\\TempAdmin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "-u",
+    "-m",
+    "followup",
+    "--db",
+    "D:\\DocumentsChatGPT\\gis\\bill-followup\\evidence\\realtime-e2e-20261022T081045850285Z\\realtime.sqlite",
+    "run"
+  ],
+  "cwd": "D:\\DocumentsChatGPT\\gis\\bill-followup",
+  "pid": 31116,
+  "started": {
+    "epoch_seconds": 1792656646.1818514,
+    "beijing": "2026-10-22T16:10:46.181851+08:00",
+    "monotonic_seconds": 2101.187
+  },
+  "stdin": "DEVNULL",
+  "environment_overrides": {
+    "PYTHONUTF8": "1"
+  },
+  "poll_interval": "生产默认1秒"
+}

@@ -1,0 +1,380 @@
+{
+  "test": "test_31_conflicting_refund_association",
+  "expectation": "同到账ID改指另一退款时，两边均待核对，不能误判另一退款全额到账。",
+  "steps": [
+    {
+      "input_facts": [
+        {
+          "type": "refund",
+          "id": "R1",
+          "amount": 10000,
+          "confirmed_at": "2026-10-19T09:10:00+08:00"
+        },
+        {
+          "type": "refund",
+          "id": "R2",
+          "amount": 10000,
+          "confirmed_at": "2026-10-19T09:10:00+08:00"
+        },
+        {
+          "type": "receipt",
+          "id": "E1",
+          "refund_id": "R1",
+          "amount": 6000,
+          "at": "2026-10-22T09:10:00+08:00"
+        },
+        {
+          "type": "receipt",
+          "id": "E2",
+          "refund_id": "R2",
+          "amount": 10000,
+          "at": "2026-10-22T09:10:00+08:00"
+        }
+      ],
+      "ingest_results": [
+        "accepted",
+        "accepted",
+        "accepted",
+        "accepted"
+      ]
+    },
+    {
+      "input_facts": [
+        {
+          "type": "receipt",
+          "id": "E1",
+          "refund_id": "R2",
+          "amount": 6000,
+          "at": "2026-10-22T09:10:00+08:00"
+        }
+      ],
+      "ingest_results": [
+        "conflict_pending_review"
+      ]
+    },
+    {
+      "label": "association_conflict_both_sides",
+      "snapshot": {
+        "now": 1792631400,
+        "now_beijing": "2026-10-22T09:10:00+08:00",
+        "user": "alice",
+        "mode": "active",
+        "issues": [],
+        "facts": [
+          {
+            "user": "alice",
+            "kind": "refund",
+            "id": "R1",
+            "payload": "{\"amount\":10000,\"confirmed_at\":1792372200,\"id\":\"R1\",\"type\":\"refund\"}",
+            "conflict": 0
+          },
+          {
+            "user": "alice",
+            "kind": "refund",
+            "id": "R2",
+            "payload": "{\"amount\":10000,\"confirmed_at\":1792372200,\"id\":\"R2\",\"type\":\"refund\"}",
+            "conflict": 0
+          },
+          {
+            "user": "alice",
+            "kind": "receipt",
+            "id": "E1",
+            "payload": "{\"amount\":6000,\"at\":1792631400,\"id\":\"E1\",\"refund_id\":\"R1\",\"type\":\"receipt\"}",
+            "conflict": 1
+          },
+          {
+            "user": "alice",
+            "kind": "receipt",
+            "id": "E2",
+            "payload": "{\"amount\":10000,\"at\":1792631400,\"id\":\"E2\",\"refund_id\":\"R2\",\"type\":\"receipt\"}",
+            "conflict": 0
+          }
+        ],
+        "inputs": [
+          {
+            "seq": 1,
+            "user": "alice",
+            "received": 1792631400,
+            "payload": "{\"amount\":10000,\"confirmed_at\":\"2026-10-19T09:10:00+08:00\",\"id\":\"R1\",\"type\":\"refund\"}",
+            "result": "accepted"
+          },
+          {
+            "seq": 2,
+            "user": "alice",
+            "received": 1792631400,
+            "payload": "{\"amount\":10000,\"confirmed_at\":\"2026-10-19T09:10:00+08:00\",\"id\":\"R2\",\"type\":\"refund\"}",
+            "result": "accepted"
+          },
+          {
+            "seq": 3,
+            "user": "alice",
+            "received": 1792631400,
+            "payload": "{\"amount\":6000,\"at\":\"2026-10-22T09:10:00+08:00\",\"id\":\"E1\",\"refund_id\":\"R1\",\"type\":\"receipt\"}",
+            "result": "accepted"
+          },
+          {
+            "seq": 4,
+            "user": "alice",
+            "received": 1792631400,
+            "payload": "{\"amount\":10000,\"at\":\"2026-10-22T09:10:00+08:00\",\"id\":\"E2\",\"refund_id\":\"R2\",\"type\":\"receipt\"}",
+            "result": "accepted"
+          },
+          {
+            "seq": 5,
+            "user": "alice",
+            "received": 1792631400,
+            "payload": "{\"amount\":6000,\"at\":\"2026-10-22T09:10:00+08:00\",\"id\":\"E1\",\"refund_id\":\"R2\",\"type\":\"receipt\"}",
+            "result": "conflict_pending_review"
+          }
+        ],
+        "notices": [],
+        "appointments": [],
+        "history": [
+          {
+            "seq": 1,
+            "user": "alice",
+            "issue": null,
+            "at": 1792631400,
+            "event": "fact_received",
+            "detail": "{\"payload\":{\"amount\":10000,\"confirmed_at\":\"2026-10-19T09:10:00+08:00\",\"id\":\"R1\",\"type\":\"refund\"},\"result\":\"accepted\"}"
+          },
+          {
+            "seq": 2,
+            "user": "alice",
+            "issue": null,
+            "at": 1792631400,
+            "event": "fact_received",
+            "detail": "{\"payload\":{\"amount\":10000,\"confirmed_at\":\"2026-10-19T09:10:00+08:00\",\"id\":\"R2\",\"type\":\"refund\"},\"result\":\"accepted\"}"
+          },
+          {
+            "seq": 3,
+            "user": "alice",
+            "issue": null,
+            "at": 1792631400,
+            "event": "fact_received",
+            "detail": "{\"payload\":{\"amount\":6000,\"at\":\"2026-10-22T09:10:00+08:00\",\"id\":\"E1\",\"refund_id\":\"R1\",\"type\":\"receipt\"},\"result\":\"accepted\"}"
+          },
+          {
+            "seq": 4,
+            "user": "alice",
+            "issue": null,
+            "at": 1792631400,
+            "event": "fact_received",
+            "detail": "{\"payload\":{\"amount\":10000,\"at\":\"2026-10-22T09:10:00+08:00\",\"id\":\"E2\",\"refund_id\":\"R2\",\"type\":\"receipt\"},\"result\":\"accepted\"}"
+          },
+          {
+            "seq": 5,
+            "user": "alice",
+            "issue": null,
+            "at": 1792631400,
+            "event": "fact_received",
+            "detail": "{\"payload\":{\"amount\":6000,\"at\":\"2026-10-22T09:10:00+08:00\",\"id\":\"E1\",\"refund_id\":\"R2\",\"type\":\"receipt\"},\"result\":\"conflict_pending_review\"}"
+          }
+        ],
+        "refund_facts": [
+          {
+            "refund_id": "R1",
+            "expected": 10000,
+            "confirmed_at": 1792372200,
+            "trusted_received": 0,
+            "received_total": null,
+            "remaining": null,
+            "complete": true,
+            "conflict": true,
+            "pending_input_ids": [],
+            "reliable": false,
+            "receipt_ids": [
+              "E1"
+            ],
+            "verified_full": false
+          },
+          {
+            "refund_id": "R2",
+            "expected": 10000,
+            "confirmed_at": 1792372200,
+            "trusted_received": 10000,
+            "received_total": null,
+            "remaining": null,
+            "complete": true,
+            "conflict": true,
+            "pending_input_ids": [
+              5
+            ],
+            "reliable": false,
+            "receipt_ids": [
+              "E2"
+            ],
+            "verified_full": false
+          }
+        ]
+      }
+    }
+  ],
+  "final_alice": {
+    "now": 1792631400,
+    "now_beijing": "2026-10-22T09:10:00+08:00",
+    "user": "alice",
+    "mode": "active",
+    "issues": [],
+    "facts": [
+      {
+        "user": "alice",
+        "kind": "refund",
+        "id": "R1",
+        "payload": "{\"amount\":10000,\"confirmed_at\":1792372200,\"id\":\"R1\",\"type\":\"refund\"}",
+        "conflict": 0
+      },
+      {
+        "user": "alice",
+        "kind": "refund",
+        "id": "R2",
+        "payload": "{\"amount\":10000,\"confirmed_at\":1792372200,\"id\":\"R2\",\"type\":\"refund\"}",
+        "conflict": 0
+      },
+      {
+        "user": "alice",
+        "kind": "receipt",
+        "id": "E1",
+        "payload": "{\"amount\":6000,\"at\":1792631400,\"id\":\"E1\",\"refund_id\":\"R1\",\"type\":\"receipt\"}",
+        "conflict": 1
+      },
+      {
+        "user": "alice",
+        "kind": "receipt",
+        "id": "E2",
+        "payload": "{\"amount\":10000,\"at\":1792631400,\"id\":\"E2\",\"refund_id\":\"R2\",\"type\":\"receipt\"}",
+        "conflict": 0
+      }
+    ],
+    "inputs": [
+      {
+        "seq": 1,
+        "user": "alice",
+        "received": 1792631400,
+        "payload": "{\"amount\":10000,\"confirmed_at\":\"2026-10-19T09:10:00+08:00\",\"id\":\"R1\",\"type\":\"refund\"}",
+        "result": "accepted"
+      },
+      {
+        "seq": 2,
+        "user": "alice",
+        "received": 1792631400,
+        "payload": "{\"amount\":10000,\"confirmed_at\":\"2026-10-19T09:10:00+08:00\",\"id\":\"R2\",\"type\":\"refund\"}",
+        "result": "accepted"
+      },
+      {
+        "seq": 3,
+        "user": "alice",
+        "received": 1792631400,
+        "payload": "{\"amount\":6000,\"at\":\"2026-10-22T09:10:00+08:00\",\"id\":\"E1\",\"refund_id\":\"R1\",\"type\":\"receipt\"}",
+        "result": "accepted"
+      },
+      {
+        "seq": 4,
+        "user": "alice",
+        "received": 1792631400,
+        "payload": "{\"amount\":10000,\"at\":\"2026-10-22T09:10:00+08:00\",\"id\":\"E2\",\"refund_id\":\"R2\",\"type\":\"receipt\"}",
+        "result": "accepted"
+      },
+      {
+        "seq": 5,
+        "user": "alice",
+        "received": 1792631400,
+        "payload": "{\"amount\":6000,\"at\":\"2026-10-22T09:10:00+08:00\",\"id\":\"E1\",\"refund_id\":\"R2\",\"type\":\"receipt\"}",
+        "result": "conflict_pending_review"
+      }
+    ],
+    "notices": [],
+    "appointments": [],
+    "history": [
+      {
+        "seq": 1,
+        "user": "alice",
+        "issue": null,
+        "at": 1792631400,
+        "event": "fact_received",
+        "detail": "{\"payload\":{\"amount\":10000,\"confirmed_at\":\"2026-10-19T09:10:00+08:00\",\"id\":\"R1\",\"type\":\"refund\"},\"result\":\"accepted\"}"
+      },
+      {
+        "seq": 2,
+        "user": "alice",
+        "issue": null,
+        "at": 1792631400,
+        "event": "fact_received",
+        "detail": "{\"payload\":{\"amount\":10000,\"confirmed_at\":\"2026-10-19T09:10:00+08:00\",\"id\":\"R2\",\"type\":\"refund\"},\"result\":\"accepted\"}"
+      },
+      {
+        "seq": 3,
+        "user": "alice",
+        "issue": null,
+        "at": 1792631400,
+        "event": "fact_received",
+        "detail": "{\"payload\":{\"amount\":6000,\"at\":\"2026-10-22T09:10:00+08:00\",\"id\":\"E1\",\"refund_id\":\"R1\",\"type\":\"receipt\"},\"result\":\"accepted\"}"
+      },
+      {
+        "seq": 4,
+        "user": "alice",
+        "issue": null,
+        "at": 1792631400,
+        "event": "fact_received",
+        "detail": "{\"payload\":{\"amount\":10000,\"at\":\"2026-10-22T09:10:00+08:00\",\"id\":\"E2\",\"refund_id\":\"R2\",\"type\":\"receipt\"},\"result\":\"accepted\"}"
+      },
+      {
+        "seq": 5,
+        "user": "alice",
+        "issue": null,
+        "at": 1792631400,
+        "event": "fact_received",
+        "detail": "{\"payload\":{\"amount\":6000,\"at\":\"2026-10-22T09:10:00+08:00\",\"id\":\"E1\",\"refund_id\":\"R2\",\"type\":\"receipt\"},\"result\":\"conflict_pending_review\"}"
+      }
+    ],
+    "refund_facts": [
+      {
+        "refund_id": "R1",
+        "expected": 10000,
+        "confirmed_at": 1792372200,
+        "trusted_received": 0,
+        "received_total": null,
+        "remaining": null,
+        "complete": true,
+        "conflict": true,
+        "pending_input_ids": [],
+        "reliable": false,
+        "receipt_ids": [
+          "E1"
+        ],
+        "verified_full": false
+      },
+      {
+        "refund_id": "R2",
+        "expected": 10000,
+        "confirmed_at": 1792372200,
+        "trusted_received": 10000,
+        "received_total": null,
+        "remaining": null,
+        "complete": true,
+        "conflict": true,
+        "pending_input_ids": [
+          5
+        ],
+        "reliable": false,
+        "receipt_ids": [
+          "E2"
+        ],
+        "verified_full": false
+      }
+    ]
+  },
+  "final_bob": {
+    "now": 1792631400,
+    "now_beijing": "2026-10-22T09:10:00+08:00",
+    "user": "bob",
+    "mode": null,
+    "issues": [],
+    "facts": [],
+    "inputs": [],
+    "notices": [],
+    "appointments": [],
+    "history": [],
+    "refund_facts": []
+  }
+}

@@ -1,0 +1,3 @@
+[1022/155805.509:ERROR:third_party\crashpad\crashpad\util\win\registration_protocol_win.cc:136] TransactNamedPipe: 管道已结束。 (0x6D)
+[25184:28244:1022/155805.718:ERROR:chrome\installer\util\google_update_settings_win.cc:270] Failed opening key Software\Google\Update\ClientStateMedium\{8A69D345-D564-463c-AFF1-A69D9E530F96} to set usagestats; result: 5
+106819 bytes written to file D:\DocumentsChatGPT\gis\bill-followup\evidence\demo-20261022T075802548394Z\browser-check-20261022T075804080246Z\preview.png

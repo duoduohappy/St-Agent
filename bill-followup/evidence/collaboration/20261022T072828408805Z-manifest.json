@@ -1,0 +1,200 @@
+{
+  "exported_at_utc": "2026-10-22T07:28:28.410054+00:00",
+  "source_basename": "rollout-2026-10-22T12-55-12-01a161f6-9687-7510-8808-1474e5a5e3b5.jsonl",
+  "source_bytes_at_snapshot": 619973,
+  "source_snapshot_sha256": "459588e1db228cecd2f1b1f65ea39d1b8fce5ae6e69bc3d118086b6544f6f73a",
+  "export_file": "20261022T072828408805Z-visible-original.jsonl",
+  "export_sha256": "d9c2091f9aa0fb26b763ddd4028f5d5e81a1c510c1e6e18747176ba3f3ccf368",
+  "selected_original_lines": 21,
+  "index": [
+    {
+      "source_line": 39,
+      "export_line": 1,
+      "timestamp": "2026-10-22T07:13:06.880Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null
+    },
+    {
+      "source_line": 42,
+      "export_line": 2,
+      "timestamp": "2026-10-22T07:14:48.264Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null
+    },
+    {
+      "source_line": 43,
+      "export_line": 3,
+      "timestamp": "2026-10-22T07:14:53.405Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_eb35c31a2e3348168de5fe15eccff1ed"
+    },
+    {
+      "source_line": 46,
+      "export_line": 4,
+      "timestamp": "2026-10-22T07:14:54.548Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_eb35c31a2e3348168de5fe15eccff1ed"
+    },
+    {
+      "source_line": 53,
+      "export_line": 5,
+      "timestamp": "2026-10-22T07:15:45.115Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null
+    },
+    {
+      "source_line": 57,
+      "export_line": 6,
+      "timestamp": "2026-10-22T07:17:52.694Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null
+    },
+    {
+      "source_line": 64,
+      "export_line": 7,
+      "timestamp": "2026-10-22T07:20:23.200Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null
+    },
+    {
+      "source_line": 67,
+      "export_line": 8,
+      "timestamp": "2026-10-22T07:20:30.013Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null
+    },
+    {
+      "source_line": 68,
+      "export_line": 9,
+      "timestamp": "2026-10-22T07:20:33.638Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_f3c0175e8b8b408382c56a8085173e62"
+    },
+    {
+      "source_line": 71,
+      "export_line": 10,
+      "timestamp": "2026-10-22T07:20:35.942Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_f3c0175e8b8b408382c56a8085173e62"
+    },
+    {
+      "source_line": 76,
+      "export_line": 11,
+      "timestamp": "2026-10-22T07:20:45.857Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null
+    },
+    {
+      "source_line": 77,
+      "export_line": 12,
+      "timestamp": "2026-10-22T07:20:48.633Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_063ed68f4abe4b11baeff8351e21ba08"
+    },
+    {
+      "source_line": 80,
+      "export_line": 13,
+      "timestamp": "2026-10-22T07:20:52.581Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_063ed68f4abe4b11baeff8351e21ba08"
+    },
+    {
+      "source_line": 82,
+      "export_line": 14,
+      "timestamp": "2026-10-22T07:20:58.417Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_f136b324d36547ccb37a0d897dfd0357"
+    },
+    {
+      "source_line": 86,
+      "export_line": 15,
+      "timestamp": "2026-10-22T07:21:02.271Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_f136b324d36547ccb37a0d897dfd0357"
+    },
+    {
+      "source_line": 90,
+      "export_line": 16,
+      "timestamp": "2026-10-22T07:21:35.832Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_feb834f257114b0e944cc45f94f8a900"
+    },
+    {
+      "source_line": 94,
+      "export_line": 17,
+      "timestamp": "2026-10-22T07:21:39.418Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_feb834f257114b0e944cc45f94f8a900"
+    },
+    {
+      "source_line": 98,
+      "export_line": 18,
+      "timestamp": "2026-10-22T07:24:49.255Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_78c69c45c0ec47118ffe4e1d032f81ff"
+    },
+    {
+      "source_line": 101,
+      "export_line": 19,
+      "timestamp": "2026-10-22T07:24:52.036Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_78c69c45c0ec47118ffe4e1d032f81ff"
+    },
+    {
+      "source_line": 106,
+      "export_line": 20,
+      "timestamp": "2026-10-22T07:24:59.502Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null
+    },
+    {
+      "source_line": 109,
+      "export_line": 21,
+      "timestamp": "2026-10-22T07:28:25.258Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_290d23c59285464dbb500b72998b6974"
+    }
+  ],
+  "excluded_record_counts_since_start": {
+    "event_msg/item_completed": 25,
+    "token_usage_record/None": 7,
+    "event_msg/token_count": 7,
+    "response_item/reasoning": 8,
+    "event_msg/task_complete": 1,
+    "event_msg/thread_settings_applied": 1,
+    "event_msg/task_started": 1,
+    "turn_context/None": 1
+  },
+  "unpaired_call_ids_at_snapshot": [
+    "call_290d23c59285464dbb500b72998b6974"
+  ],
+  "scope": "正式分析请求起，用户消息、助手可见回复、工具调用及返回；每条选中行保持原始字节。非平台完整导出。",
+  "gaps": [
+    "当前仍执行中的调用或尚未刷盘的工具结果可能不在快照；以最后一次快照为准。",
+    "嵌套工具返回只能保留平台JSONL实际写入内容，平台未写入或截断的部分无法恢复。",
+    "隐藏推理、系统/开发者信息、重复事件镜像、正式协作前历史不在导出范围。",
+    "未调用子Agent；无子任务记录。未取得平台完整导出接口的验证。",
+    "部分当前工具schema元信息不在response_item可见导出中。"
+  ]
+}

@@ -1,0 +1,747 @@
+{
+  "collected_at_utc": "2026-10-22T09:14:25.790239+00:00",
+  "executor": "用户本人执行；Codex仅收集核查材料",
+  "source_project": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup",
+  "tests_rerun_during_collection": 0,
+  "copied_files": [
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\invocation.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/invocation.json",
+      "bytes": 1755,
+      "sha256": "c645de3cf5497fe6caaaf1e268d4eea9daccf3da17e0438672e4483d82730236",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\REPORT.md",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/REPORT.md",
+      "bytes": 7253,
+      "sha256": "6d96ef66b110d7a69c09c627ad9fc5da7c12c5b9fc8760946139fe94ee4beac0",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\results.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/results.json",
+      "bytes": 10199,
+      "sha256": "3b52f55a4f4aa9bae4d1eb1bb9b8aae7b59ec3da47709c1d7eaf86c929b5888c",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\stderr.txt",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/stderr.txt",
+      "bytes": 6633,
+      "sha256": "079d005c934465f944fd263cad1931bfa42ec46548f7332fa65091003b554719",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\stdout.txt",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_01_duplicate_pair\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_01_duplicate_pair/evidence.json",
+      "bytes": 15816,
+      "sha256": "3797a19f4bce61529847c83e31e9da73bccfad9bc7046cb6d01f874848adb4f3",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_01_duplicate_pair\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_01_duplicate_pair/state.sqlite",
+      "bytes": 77824,
+      "sha256": "85f57da4502ee23cd37aa7a97e7280a096d5931d3dbbba0ab4fc8621ce600b2d",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_02_normal_replay\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_02_normal_replay/evidence.json",
+      "bytes": 19883,
+      "sha256": "f1d1aa509074f57cf9aa1bcb574978cb058c0cf06a56bcfb98b7ebe9a9f2624e",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_02_normal_replay\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_02_normal_replay/state.sqlite",
+      "bytes": 77824,
+      "sha256": "64b776ab2bb5d658e903a6d4dce84e1bee3c85ceffc02d32b28da8ccf17b33d7",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_03_three_pairs\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_03_three_pairs/evidence.json",
+      "bytes": 28027,
+      "sha256": "c3af7134737468d82f50b590e5e33451c2b7d628d70c17589d289672f03eb27e",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_03_three_pairs\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_03_three_pairs/state.sqlite",
+      "bytes": 77824,
+      "sha256": "9d5d5c2377eb5523432d3e82e80480d7cca2f642d4ab0a5afd9dd99cecd1d1c3",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_04_partial_full_replay\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_04_partial_full_replay/evidence.json",
+      "bytes": 29493,
+      "sha256": "3cec2c24858bd4fcaf43ae9aecd009bb919f51a940fcf1ec340959dabbf1b1a1",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_04_partial_full_replay\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_04_partial_full_replay/state.sqlite",
+      "bytes": 77824,
+      "sha256": "47e42b9796005ed0f12b9d3e528f454e76442833689c53fbb53a96eeb722fef6",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_05_receipt_before_request\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_05_receipt_before_request/evidence.json",
+      "bytes": 10030,
+      "sha256": "8b42d485e6c742ae6359323e53a991fe78b9e94ef3fe923c8c82d022112a8d7e",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_05_receipt_before_request\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_05_receipt_before_request/state.sqlite",
+      "bytes": 77824,
+      "sha256": "7b09ee355929303ca72883e1e513fe46859533d4f408bd87b47e898a15147115",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_06_unanswered_limit\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_06_unanswered_limit/evidence.json",
+      "bytes": 42748,
+      "sha256": "3ea4addd372516876337423f48e785eb8d6a4f455aa5d2fd7ab4a8d861dc52a6",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_06_unanswered_limit\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_06_unanswered_limit/state.sqlite",
+      "bytes": 77824,
+      "sha256": "08cd725120751dbffe6a6a80be7779e250cf2da3f909169bdfd2fb24652efc26",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_07_tomorrow_preserves_quota\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_07_tomorrow_preserves_quota/evidence.json",
+      "bytes": 41884,
+      "sha256": "8d9f85b82ca831f19c388dc26084d1ed0a747c008d5c27d4d497adf49b2e3bab",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_07_tomorrow_preserves_quota\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_07_tomorrow_preserves_quota/state.sqlite",
+      "bytes": 77824,
+      "sha256": "dbdc3102619e6da72bc7b83eb7fa522b33fe78e2f2d134faf49306f37e940b04",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_08_confirm_stops_chain\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_08_confirm_stops_chain/evidence.json",
+      "bytes": 23701,
+      "sha256": "2c39815c988502c01512890bee5ae9b85bd317bfe864c6f74958aa9bcf48fc1d",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_08_confirm_stops_chain\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_08_confirm_stops_chain/state.sqlite",
+      "bytes": 77824,
+      "sha256": "a33656791bb47c779ef439940637bc46c86a69b40da583f9de80a1b7c45a39fe",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_09_closed_receives_fact\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_09_closed_receives_fact/evidence.json",
+      "bytes": 18379,
+      "sha256": "494bf31022ede26fa5d163bc3309bf950510092d6e01f24cfbdb95e808a819c5",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_09_closed_receives_fact\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_09_closed_receives_fact/state.sqlite",
+      "bytes": 77824,
+      "sha256": "569c192627050ec30d929dca524772c13e928988a4fb7a0c2a79dd5b133ea4d9",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_10_restart\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_10_restart/evidence.json",
+      "bytes": 22476,
+      "sha256": "ef193fea83483f8f0002ce6a8c0887ff16a26b564e0f28f45023e78e81d8d03b",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_10_restart\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_10_restart/state.sqlite",
+      "bytes": 77824,
+      "sha256": "4b60bf4ffb4b00ebb43c531f6c7e2f1552cf3fa3ecf62b5aa4177621120bd252",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_11_pause_resume_latest\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_11_pause_resume_latest/evidence.json",
+      "bytes": 13175,
+      "sha256": "a60ea01b83630f6e41dc0a3025ded643d81944bc25fabad363d45952051d6bf9",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_11_pause_resume_latest\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_11_pause_resume_latest/state.sqlite",
+      "bytes": 77824,
+      "sha256": "aba5be0c0636e36ad6616c52b1f431b70e0b40a1f9f87c584eff04f3b4154614",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_12_pause_no_burst\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_12_pause_no_burst/evidence.json",
+      "bytes": 26577,
+      "sha256": "907d1ee1703323fb0e5383e9088c580e6e029dd096da20da32e06598f8f1cfef",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_12_pause_no_burst\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_12_pause_no_burst/state.sqlite",
+      "bytes": 77824,
+      "sha256": "4fe1e7e2ee4e16864fe142014c8e51f37b5c1eb9994a02376876212ab5b2c7b7",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_13_close_layers\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_13_close_layers/evidence.json",
+      "bytes": 38426,
+      "sha256": "874a44bd66062f1e54da6392592ba3e718a1ba8567a63e745625469f5141dacc",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_13_close_layers\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_13_close_layers/state.sqlite",
+      "bytes": 77824,
+      "sha256": "3b7ff23377736920c5082df1fd9f01ec91476d4429ca8996a139e5d1e0db1d74",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_14_close_before_send_concurrent\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_14_close_before_send_concurrent/evidence.json",
+      "bytes": 19208,
+      "sha256": "17d902f6c51d174026c5059ea2d91a8f88ac6e3754e09a32b7579557b970ef45",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_14_close_before_send_concurrent\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_14_close_before_send_concurrent/state.sqlite",
+      "bytes": 77824,
+      "sha256": "0260c3a0e3501d9f08c1cc85a38f1cd4487c0ffc76cba650f652710d49a2df33",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_15_send_before_close_concurrent\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_15_send_before_close_concurrent/evidence.json",
+      "bytes": 19904,
+      "sha256": "6f8504eefa2347ec00f82698d38b158e58639a5ad876ab9f8e98fe586ee68b3e",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_15_send_before_close_concurrent\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_15_send_before_close_concurrent/state.sqlite",
+      "bytes": 77824,
+      "sha256": "deac45b07ecd2624a30ae588a13e26a6f993169bcf644f500308b90083cc00d6",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_16_unknown_sent_reconcile_once\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_16_unknown_sent_reconcile_once/evidence.json",
+      "bytes": 29741,
+      "sha256": "278f01b6b3b00788a855c416b753cebfcace44625229bbd05af1559b70f9829c",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_16_unknown_sent_reconcile_once\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_16_unknown_sent_reconcile_once/state.sqlite",
+      "bytes": 77824,
+      "sha256": "e9001d0338bbafd912ffcc6cdcd7d9025647d5d6e938122066c145d9904fb1db",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_17_unknown_stays_unknown\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_17_unknown_stays_unknown/evidence.json",
+      "bytes": 20461,
+      "sha256": "72f83be2577618641505623826a7707f2546359391f85360a97790a868f46382",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_17_unknown_stays_unknown\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_17_unknown_stays_unknown/state.sqlite",
+      "bytes": 77824,
+      "sha256": "c33b75ee12e2fba11cb5f5669a39c6eea1792b482e443bf522b172dc10f13682",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_18_user_isolation_injection\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_18_user_isolation_injection/evidence.json",
+      "bytes": 18034,
+      "sha256": "e3acf53c32fc230204d792c042143e18012ed469f74fcad1a305436768c36485",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_18_user_isolation_injection\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_18_user_isolation_injection/state.sqlite",
+      "bytes": 77824,
+      "sha256": "b576e5289e7dc6e71ea4a8378f28a4f08b3ca5d4ab77d65c06970c09a8e27314",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_19_missing_receipt_id\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_19_missing_receipt_id/evidence.json",
+      "bytes": 13935,
+      "sha256": "f6672c64f25281cf95a2af80562b74165b213aba8b7f71efe1f73ea9af9b910e",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_19_missing_receipt_id\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_19_missing_receipt_id/state.sqlite",
+      "bytes": 77824,
+      "sha256": "0c8175c08f21c676f0592d14df8fb7700f57bbd3b7238c67c301edc15cee5581",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_20_receipt_conflict\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_20_receipt_conflict/evidence.json",
+      "bytes": 13997,
+      "sha256": "9a03b6898baf6af231ded04b8f7d00fb028d1a52b807c65b610014d68acf0ac7",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_20_receipt_conflict\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_20_receipt_conflict/state.sqlite",
+      "bytes": 77824,
+      "sha256": "fc92be4863036bb06a95f3bef576766dafc0ad8876de51a47093543dfa5f2f5c",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_21_date_needs_time\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_21_date_needs_time/evidence.json",
+      "bytes": 27509,
+      "sha256": "27911e669ed5cbafbc60e3ae64de7040f8e75a7d81ee94d99c1d7bed227be65f",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_21_date_needs_time\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_21_date_needs_time/state.sqlite",
+      "bytes": 77824,
+      "sha256": "269998e07a75dccce1c5f9492dd31afb8de1d84449073c9a5884029295272bc7",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_22_appointment_independent\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_22_appointment_independent/evidence.json",
+      "bytes": 36389,
+      "sha256": "9c2ce3a31d7b7cfd3d8bd0d358a5fe810a40281a849e941617f381cca3e54583",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_22_appointment_independent\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_22_appointment_independent/state.sqlite",
+      "bytes": 77824,
+      "sha256": "1cebfc6f38ce3477525d2a9d11ea36bcc8e2ad26757b29d2db1ab81c463f44ed",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_23_partial_preserves_quota\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_23_partial_preserves_quota/evidence.json",
+      "bytes": 28090,
+      "sha256": "f47ffb0cc9cbc26deb0bc35c84b473815f6c33a23233ec30a79063d609e76f75",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_23_partial_preserves_quota\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_23_partial_preserves_quota/state.sqlite",
+      "bytes": 77824,
+      "sha256": "125e94e06dc99e49f5321b5666cdfcd846fc8d099776740791623de673a41636",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_24_exact_boundaries\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_24_exact_boundaries/evidence.json",
+      "bytes": 35065,
+      "sha256": "ef714bbd57f6ff70d4b08ec32f274333eabf373033e2ec2398010e6c33277165",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_24_exact_boundaries\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_24_exact_boundaries/state.sqlite",
+      "bytes": 77824,
+      "sha256": "bc8fc1e368f5293ced305afe82a69b022c630804229d11479125fa1b8a02b1a9",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_25_known_failure_retry\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_25_known_failure_retry/evidence.json",
+      "bytes": 26417,
+      "sha256": "d7c6d306dd6d54dad2376a2d4eba157aab5b69ad4e6126bac1f09b951d763149",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_25_known_failure_retry\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_25_known_failure_retry/state.sqlite",
+      "bytes": 77824,
+      "sha256": "5d7db58911c5ba38d944e1e1a108a5b3217a7cd20f0666a5c7deed8275a6bf24",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_26_crash_after_send\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_26_crash_after_send/evidence.json",
+      "bytes": 18749,
+      "sha256": "a7f1f5e8a5238b7dc68594f5b933936c3ab0012463295a397fca610787289b6a",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_26_crash_after_send\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_26_crash_after_send/state.sqlite",
+      "bytes": 77824,
+      "sha256": "2eb31fe3de2e7501ab249619a6965cd0f88a2cdb4585adca61317e45679d7af7",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_27_runner_consumes_persisted_event\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_27_runner_consumes_persisted_event/evidence.json",
+      "bytes": 10999,
+      "sha256": "62f2e018d1573fc0c3bae7ef931b8da484f60d55c0b578d3d4522ea4575c9324",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_27_runner_consumes_persisted_event\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_27_runner_consumes_persisted_event/state.sqlite",
+      "bytes": 77824,
+      "sha256": "89056838f3e55d33f650d721b64679839eba4cfcbf525a83758d875be13a85e8",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_28_missing_request_data\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_28_missing_request_data/evidence.json",
+      "bytes": 3512,
+      "sha256": "67bd13030c4ed0ce0db8f66058036158ea3f2b605ba2d6d9017df71aaaab2732",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_28_missing_request_data\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_28_missing_request_data/state.sqlite",
+      "bytes": 77824,
+      "sha256": "2e3b94b1c0883c84ec8e66c0c6b614c547e0f0048273273ed9013d97e302ebaa",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_29_paused_existing_no_auto_resolution\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_29_paused_existing_no_auto_resolution/evidence.json",
+      "bytes": 21323,
+      "sha256": "30ede644eede816b90197ba4fd83b04b81cfc78650d5ba589df2d35b62eea9f8",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_29_paused_existing_no_auto_resolution\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_29_paused_existing_no_auto_resolution/state.sqlite",
+      "bytes": 77824,
+      "sha256": "264028f0a469490612b64f068f745fbc8e31d6b1cfa3b6dbfcf14fa0dc4e6dd7",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_30_incomplete_request_enrichment\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_30_incomplete_request_enrichment/evidence.json",
+      "bytes": 12252,
+      "sha256": "c93345a6dc7edc1547c80eda2083839fcbf2b351931553118f05007c368c6505",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_30_incomplete_request_enrichment\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_30_incomplete_request_enrichment/state.sqlite",
+      "bytes": 77824,
+      "sha256": "fb0b19ec79ddae3afbfe9e3ebd96f5e6f8c72ba40310a6b23d28cac2cd6aef01",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_31_conflicting_refund_association\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_31_conflicting_refund_association/evidence.json",
+      "bytes": 12184,
+      "sha256": "342bce489d4197d7201ab739f22b26c13c1f0053c3760d8a024448e2531ec5bc",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_31_conflicting_refund_association\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_31_conflicting_refund_association/state.sqlite",
+      "bytes": 77824,
+      "sha256": "85f15403c3a001634878bd40802c014d62103e5dcc625a6f2bbeb4bcdfe8dee9",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_32_unordered_oracle_and_refund_permutations\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_32_unordered_oracle_and_refund_permutations/evidence.json",
+      "bytes": 56717,
+      "sha256": "23c9f03756b3aca73238355da295465cd9b692325b94ee40b594c8faf172503e",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_32_unordered_oracle_and_refund_permutations\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_32_unordered_oracle_and_refund_permutations/state.sqlite",
+      "bytes": 98304,
+      "sha256": "57c7d2c2f99cd553963abe940dce20963bffb4d87b273e15230a790e7a781405",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_33_issue_close_before_send\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_33_issue_close_before_send/evidence.json",
+      "bytes": 19271,
+      "sha256": "68bfd27d7c683deb1c81321cecff28fa92dccdf9a9fdc6380dbfc5463608a623",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_33_issue_close_before_send\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_33_issue_close_before_send/state.sqlite",
+      "bytes": 77824,
+      "sha256": "2ea862406ee694a189928faaeeb63ca329818d2a080c8ca8cc58fb5269ba34e7",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_34_receipt_after_plan_refreshes_body\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_34_receipt_after_plan_refreshes_body/evidence.json",
+      "bytes": 34874,
+      "sha256": "7e64e162c06b8a01a8411e2a20f5f9d172058f5e28c08449be6d21873d472c49",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_34_receipt_after_plan_refreshes_body\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_34_receipt_after_plan_refreshes_body/state.sqlite",
+      "bytes": 77824,
+      "sha256": "fad3c4faf818f2fbd4edf8c284e992f62f9d771ef622c2091c7781064dc0b17d",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_35_unknown_not_sent_retry_after_reconcile\\evidence.json",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_35_unknown_not_sent_retry_after_reconcile/evidence.json",
+      "bytes": 22461,
+      "sha256": "9ebb5365550d69b2d589d4eddcbbb6593484f2d4a29a777b4c4e978a0d3a6bc7",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\acceptance-20261022T084553401827Z\\test_35_unknown_not_sent_retry_after_reconcile\\state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/acceptance-20261022T084553401827Z/test_35_unknown_not_sent_retry_after_reconcile/state.sqlite",
+      "bytes": 77824,
+      "sha256": "531271a17d2450d61943cba4442f24d7b6d244f931479a7a693d595647bc9cce",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\realtime-e2e-20261022T084559992884Z\\final-database-state.json",
+      "destination": "evidence/personal-review-20261022-164553-252/realtime-e2e-20261022T084559992884Z/final-database-state.json",
+      "bytes": 8055,
+      "sha256": "1cad89ee5f588034a25b9bd4d86fe2cdf5e79cbf0143b4fb7c02635087a2ea13",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\realtime-e2e-20261022T084559992884Z\\final-state.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/realtime-e2e-20261022T084559992884Z/final-state.sqlite",
+      "bytes": 77824,
+      "sha256": "0ba1e5c69ce2803856419ecea5d42e6caf4b49653b533cab1e854b0361c17308",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\realtime-e2e-20261022T084559992884Z\\fixture-final-snapshot.json",
+      "destination": "evidence/personal-review-20261022-164553-252/realtime-e2e-20261022T084559992884Z/fixture-final-snapshot.json",
+      "bytes": 5743,
+      "sha256": "d55546a9e7afb78b861ed46e8fce8a4de20bfb6216ea32a8b68c6bb268799be7",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\realtime-e2e-20261022T084559992884Z\\fixture-input-output.json",
+      "destination": "evidence/personal-review-20261022-164553-252/realtime-e2e-20261022T084559992884Z/fixture-input-output.json",
+      "bytes": 2290,
+      "sha256": "6f7562f98c9dfd966fd4012106b4e22a74a5e4434a7a24132c4b0c2045e5db8e",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\realtime-e2e-20261022T084559992884Z\\last-observation.json",
+      "destination": "evidence/personal-review-20261022-164553-252/realtime-e2e-20261022T084559992884Z/last-observation.json",
+      "bytes": 2559,
+      "sha256": "c5931ff137eebec5e810399ab025e3591cd2c9d90178a2acb18af9591e87fdd0",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\realtime-e2e-20261022T084559992884Z\\observations.jsonl",
+      "destination": "evidence/personal-review-20261022-164553-252/realtime-e2e-20261022T084559992884Z/observations.jsonl",
+      "bytes": 185426,
+      "sha256": "9bd6f417c2ca768cd64d75e834de0ac79318bac62392b94a960f31a1daf6c284",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\realtime-e2e-20261022T084559992884Z\\process-stderr.txt",
+      "destination": "evidence/personal-review-20261022-164553-252/realtime-e2e-20261022T084559992884Z/process-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\realtime-e2e-20261022T084559992884Z\\process-stdout.txt",
+      "destination": "evidence/personal-review-20261022-164553-252/realtime-e2e-20261022T084559992884Z/process-stdout.txt",
+      "bytes": 448,
+      "sha256": "4f06eeec7119406f624966031cb16136d108c89fcdd110528051425754e22aeb",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\realtime-e2e-20261022T084559992884Z\\realtime.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/realtime-e2e-20261022T084559992884Z/realtime.sqlite",
+      "bytes": 77824,
+      "sha256": "50507ee82bddf7fc511ef5c85c41575416cd84534f35662f77f62e460464d406",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\realtime-e2e-20261022T084559992884Z\\realtime.sqlite-shm",
+      "destination": "evidence/personal-review-20261022-164553-252/realtime-e2e-20261022T084559992884Z/realtime.sqlite-shm",
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\realtime-e2e-20261022T084559992884Z\\realtime.sqlite-wal",
+      "destination": "evidence/personal-review-20261022-164553-252/realtime-e2e-20261022T084559992884Z/realtime.sqlite-wal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\realtime-e2e-20261022T084559992884Z\\report.json",
+      "destination": "evidence/personal-review-20261022-164553-252/realtime-e2e-20261022T084559992884Z/report.json",
+      "bytes": 6830,
+      "sha256": "5adf9ad15fa632b4423da1c8d64f2eb52568cce7d280ebc9226dc265ba45e093",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\realtime-e2e-20261022T084559992884Z\\REPORT.md",
+      "destination": "evidence/personal-review-20261022-164553-252/realtime-e2e-20261022T084559992884Z/REPORT.md",
+      "bytes": 817,
+      "sha256": "de93cb719091046d3f2160da7ecff9a57d7ca9a9b16e747bb38a75ccf662a5e1",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\realtime-e2e-20261022T084559992884Z\\sending-records.json",
+      "destination": "evidence/personal-review-20261022-164553-252/realtime-e2e-20261022T084559992884Z/sending-records.json",
+      "bytes": 6089,
+      "sha256": "86842b15642ac4d4b75ba35c8aeaaac55fc1201452fe833d9f16fb1898b42bce",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\realtime-e2e-20261022T084559992884Z\\startup-command.json",
+      "destination": "evidence/personal-review-20261022-164553-252/realtime-e2e-20261022T084559992884Z/startup-command.json",
+      "bytes": 692,
+      "sha256": "e82e226095a895338a24eaa8c47f77854bff677058b1ba9e52ee96633d08dbb4",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\personal-acceptance-20261022-164553-252\\execution-summary.json",
+      "destination": "evidence/personal-review-20261022-164553-252/personal-acceptance-20261022-164553-252/execution-summary.json",
+      "bytes": 380,
+      "sha256": "3fb7cc033fa52c6417b35332c9f8f0e78a600f12603d2d2b68384fd346ea5266",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\personal-acceptance-20261022-164553-252\\realtime-output.txt",
+      "destination": "evidence/personal-review-20261022-164553-252/personal-acceptance-20261022-164553-252/realtime-output.txt",
+      "bytes": 12712,
+      "sha256": "a4d2de2ed32f687f9f93059d3d68eaeca86702e618cefa826841a05426ca3f5b",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\evidence\\personal-acceptance-20261022-164553-252\\suite-output.txt",
+      "destination": "evidence/personal-review-20261022-164553-252/personal-acceptance-20261022-164553-252/suite-output.txt",
+      "bytes": 10574,
+      "sha256": "fa8ee73d87e0008da896a9d2710158ef53fa9a2e1741accdadcd3119a83c72a3",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\data\\refund-receipt40.json",
+      "destination": "evidence/personal-review-20261022-164553-252/manual-cases/refund-receipt40.json",
+      "bytes": 97,
+      "sha256": "2907a4e7e30af3a45bc5879086ab181cd0cc3bada75fcd3042f9bc3e0501e941",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\data\\refund-receipt60.json",
+      "destination": "evidence/personal-review-20261022-164553-252/manual-cases/refund-receipt60.json",
+      "bytes": 97,
+      "sha256": "ceeb0e199c0b0fd4757ea01e64c12afb6098e4203907cb474096f17d013b0c7e",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\data\\refund-request.json",
+      "destination": "evidence/personal-review-20261022-164553-252/manual-cases/refund-request.json",
+      "bytes": 90,
+      "sha256": "475f4d584fd4d7f09f9d8d6c3801373e852fadf3346b5a9b1f48a7f4f6c27090",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\data\\refund-review.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/manual-cases/refund-review.sqlite",
+      "bytes": 77824,
+      "sha256": "e04b3767cfd9d1a9a7040b7e578e02ec7beff00e180983278b397f56ee90affd",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\bill-followup-review-20261022-163817\\bill-followup\\data\\review.sqlite",
+      "destination": "evidence/personal-review-20261022-164553-252/manual-cases/review.sqlite",
+      "bytes": 77824,
+      "sha256": "92bb4c7a24377deee8cf57b1813ec895eefda3da1e5d57b0027d4072257f8824",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\AppData\\Local\\Temp\\codex-clipboard-60e89d72-cc73-4a1a-abcd-96426ece920e.png",
+      "destination": "evidence/personal-review-20261022-164553-252/screenshots/replay-last-chapter.png",
+      "bytes": 402939,
+      "sha256": "74ce1ab156590dff44c7a0a252634d47dd65277e51215ced6ce843b773929b79",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\AppData\\Local\\Temp\\codex-clipboard-d40457e3-8709-4f17-8138-12f2ce494800.png",
+      "destination": "evidence/personal-review-20261022-164553-252/screenshots/replay-control.png",
+      "bytes": 320039,
+      "sha256": "204825024cc1ea87334969212235b81a1ac70647ab680158ff618cd7ae38195e",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\AppData\\Local\\Temp\\codex-clipboard-f7ce04f6-14fe-4d6a-88c0-572f206103f3.png",
+      "destination": "evidence/personal-review-20261022-164553-252/screenshots/replay-seek.png",
+      "bytes": 393663,
+      "sha256": "924762410422da0ace09a7b5a1d982f8c7288b0dc053510c9484d992de79f71b",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\AppData\\Local\\Temp\\codex-clipboard-6546df13-1bbe-4288-8fd4-41cb93f80c66.png",
+      "destination": "evidence/personal-review-20261022-164553-252/screenshots/refund-full-and-replay.png",
+      "bytes": 46174,
+      "sha256": "c7fe915be6c3db73c3f343073aced946b7ae4b2f7a283ee7b96453cd5bf020ef",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\AppData\\Local\\Temp\\codex-clipboard-4f623ab5-8f7b-4d3e-98a2-6db8b50f6915.png",
+      "destination": "evidence/personal-review-20261022-164553-252/screenshots/refund-partial.png",
+      "bytes": 15858,
+      "sha256": "da4065b4eec884fe10e49d55c0276a0c42053ebbc00aae054e49444454bec7a3",
+      "byte_identical": true
+    },
+    {
+      "source": "C:\\Users\\TempAdmin\\AppData\\Local\\Temp\\codex-clipboard-f0010d83-e1dc-4b23-842b-d2ae0d28edc7.png",
+      "destination": "evidence/personal-review-20261022-164553-252/screenshots/personal-exit-codes.png",
+      "bytes": 84945,
+      "sha256": "ec73e44a229f08ad749ef7810f5569d5c25bd2e8d41fc9971b855ae7f8cd1ec2",
+      "byte_identical": true
+    }
+  ],
+  "screenshots_not_found": [],
+  "independent_understanding_evidence": false,
+  "understanding_note": "六道参考回答及问答不作为独立理解核查或独立完成编码的证明。",
+  "results": {
+    "suite_tests_run": 35,
+    "suite_successful": true,
+    "realtime_outcome": "PASS",
+    "manual_duplicate": "用户明确报告通过，数据库副本佐证",
+    "manual_refund_and_replay": "用户明确报告通过，截图与数据库副本佐证",
+    "replay_interactions": "用户明确报告暂停、章节切换、进度拖动均通过；属于用户报告及截图，不冒充Codex代执行"
+  }
+}

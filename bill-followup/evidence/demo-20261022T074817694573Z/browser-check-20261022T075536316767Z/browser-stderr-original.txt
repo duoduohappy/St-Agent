@@ -1,0 +1,4 @@
+[1022/155538.071:ERROR:third_party\crashpad\crashpad\util\win\registration_protocol_win.cc:136] TransactNamedPipe: 管道已结束。 (0x6D)
+[1022/155538.085:ERROR:third_party\crashpad\crashpad\client\crashpad_client_win.cc:849] crash server failed to launch, no dump captured
+[21376:18952:1022/155538.120:ERROR:components\device_event_log\device_event_log_impl.cc:257] [15:55:38.121] USB: usb_device_win.cc:66 Failed to open \\?\usb#root_hub30#4&e55adab&0&0#{f18a0e88-c30c-11d0-8815-00a0c906bed8}: 拒绝访问。 (0x5)
+[1022/155539.090:ERROR:third_party\crashpad\crashpad\client\crashpad_client_win.cc:154] crash server failed to launch

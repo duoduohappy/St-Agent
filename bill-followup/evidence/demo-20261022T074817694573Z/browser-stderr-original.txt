@@ -1,0 +1,2 @@
+[1022/155457.084:ERROR:third_party\crashpad\crashpad\util\win\registration_protocol_win.cc:136] TransactNamedPipe: 管道已结束。 (0x6D)
+[1022/155457.645:ERROR:third_party\crashpad\crashpad\client\crashpad_client_win.cc:144] crash server failed to launch, self-terminating

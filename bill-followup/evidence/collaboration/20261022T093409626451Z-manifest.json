@@ -1,0 +1,1636 @@
+{
+  "exported_at_utc": "2026-10-22T09:34:09.627634+00:00",
+  "source_basename": "rollout-2026-10-22T12-55-12-01a161f6-9687-7510-8808-1474e5a5e3b5.jsonl",
+  "source_bytes_at_snapshot": 6940981,
+  "source_snapshot_sha256": "0ca9533464aa13861159a2c334fad28c203b7c8a368ea08b11a4332320a617dc",
+  "export_file": "20261022T093409626451Z-visible-original.jsonl",
+  "export_sha256": "0c10db4a765b70d84d673a9b2009482acf079585e0ded44c580d379d570746a9",
+  "selected_original_lines": 175,
+  "index": [
+    {
+      "source_line": 39,
+      "export_line": 1,
+      "timestamp": "2026-10-22T07:13:06.880Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "fd8f09b06df7d9d2eaad6bb3022d62fa89593fe5581cebb54abd65dddd07d331"
+    },
+    {
+      "source_line": 42,
+      "export_line": 2,
+      "timestamp": "2026-10-22T07:14:48.264Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "9dc9777e723b9413022bb84e2a551ce26ff4ee0727d89e23d3e979c2cf567ac5"
+    },
+    {
+      "source_line": 43,
+      "export_line": 3,
+      "timestamp": "2026-10-22T07:14:53.405Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_eb35c31a2e3348168de5fe15eccff1ed",
+      "sha256": "c0bcfb93db8dd474b3a7b2112eb1a8ae97250ed1b00624b65ab7e82b65b29c6f"
+    },
+    {
+      "source_line": 46,
+      "export_line": 4,
+      "timestamp": "2026-10-22T07:14:54.548Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_eb35c31a2e3348168de5fe15eccff1ed",
+      "sha256": "f282cdb8a8d6ee5972e52464c21762f3bb459a9a307922dc4c51e9337855795e"
+    },
+    {
+      "source_line": 53,
+      "export_line": 5,
+      "timestamp": "2026-10-22T07:15:45.115Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "79d9091e467990e835e75441a6fcd402439d8419d5d992ff21f48d18644fa598"
+    },
+    {
+      "source_line": 57,
+      "export_line": 6,
+      "timestamp": "2026-10-22T07:17:52.694Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "26f1817673944adac0be348e60c763d2b18a06aea29dccb7456dbaf1c9fb0369"
+    },
+    {
+      "source_line": 64,
+      "export_line": 7,
+      "timestamp": "2026-10-22T07:20:23.200Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "4af1115cee96165ce0ba635c4073daeb496796bf90354f3a7f2e9cb0937fc890"
+    },
+    {
+      "source_line": 67,
+      "export_line": 8,
+      "timestamp": "2026-10-22T07:20:30.013Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "8ab99ff7e7d557721735a7da057fef1dad07cbb9aedd42680a4e27554e36b586"
+    },
+    {
+      "source_line": 68,
+      "export_line": 9,
+      "timestamp": "2026-10-22T07:20:33.638Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_f3c0175e8b8b408382c56a8085173e62",
+      "sha256": "ae364d83dc63c71bbaf4a020fb5d7bbf514e8576fdf92e3a3b96c9f3b4a12e58"
+    },
+    {
+      "source_line": 71,
+      "export_line": 10,
+      "timestamp": "2026-10-22T07:20:35.942Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_f3c0175e8b8b408382c56a8085173e62",
+      "sha256": "6d8624950c827ab8f85f3d8a56bacc3f4bab4502ed2f42cfda95a232d0caac70"
+    },
+    {
+      "source_line": 76,
+      "export_line": 11,
+      "timestamp": "2026-10-22T07:20:45.857Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "5b9652c98bf64e802f7342d388a0ee8ca50e05d23feba631eb8d2b7f420bcf25"
+    },
+    {
+      "source_line": 77,
+      "export_line": 12,
+      "timestamp": "2026-10-22T07:20:48.633Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_063ed68f4abe4b11baeff8351e21ba08",
+      "sha256": "45a7429d8d4abe3b14176101b3b31330fd2913527f1b7993b029cc6ec31ae161"
+    },
+    {
+      "source_line": 80,
+      "export_line": 13,
+      "timestamp": "2026-10-22T07:20:52.581Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_063ed68f4abe4b11baeff8351e21ba08",
+      "sha256": "2ef44a6b2ea6e211c1619f9413d89cda30ad08e9ce33baa298364603e09ec18e"
+    },
+    {
+      "source_line": 82,
+      "export_line": 14,
+      "timestamp": "2026-10-22T07:20:58.417Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_f136b324d36547ccb37a0d897dfd0357",
+      "sha256": "2fdd036d4491321bccda9389b11127b533ceab91f1367725c334c0fe3c7175cc"
+    },
+    {
+      "source_line": 86,
+      "export_line": 15,
+      "timestamp": "2026-10-22T07:21:02.271Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_f136b324d36547ccb37a0d897dfd0357",
+      "sha256": "7760f4b07114bb4504b80331ab7cf380a8f2e7316c05992dfa8532b48a43aa86"
+    },
+    {
+      "source_line": 90,
+      "export_line": 16,
+      "timestamp": "2026-10-22T07:21:35.832Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_feb834f257114b0e944cc45f94f8a900",
+      "sha256": "0994f63740d0c2feb73cf07fd2a0ec792bf2a09c2d49ed8aa18631e312030808"
+    },
+    {
+      "source_line": 94,
+      "export_line": 17,
+      "timestamp": "2026-10-22T07:21:39.418Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_feb834f257114b0e944cc45f94f8a900",
+      "sha256": "cf9a642466c8a957a2c16a0e9883a9a27cd7371b8a17bb3cf0a723435563405a"
+    },
+    {
+      "source_line": 98,
+      "export_line": 18,
+      "timestamp": "2026-10-22T07:24:49.255Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_78c69c45c0ec47118ffe4e1d032f81ff",
+      "sha256": "01f11ad6f30ee0a75e9552694d7dcbf42942cd10d87e7f22d106ba5271dec9e9"
+    },
+    {
+      "source_line": 101,
+      "export_line": 19,
+      "timestamp": "2026-10-22T07:24:52.036Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_78c69c45c0ec47118ffe4e1d032f81ff",
+      "sha256": "f4a73698fac1b1f814585245cd644b2c44a30cb1b93e74a585ff2cd8f4c8daeb"
+    },
+    {
+      "source_line": 106,
+      "export_line": 20,
+      "timestamp": "2026-10-22T07:24:59.502Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "98ad85d7789517663ec6bc195b07fc3619e9bdd605a1c55bfe22d9b4583fa139"
+    },
+    {
+      "source_line": 109,
+      "export_line": 21,
+      "timestamp": "2026-10-22T07:28:25.258Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_290d23c59285464dbb500b72998b6974",
+      "sha256": "07045246399a2fcbc48f077f6d4656bb5dfa66b22c61c9933e9ef25feb066440"
+    },
+    {
+      "source_line": 113,
+      "export_line": 22,
+      "timestamp": "2026-10-22T07:28:34.377Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_290d23c59285464dbb500b72998b6974",
+      "sha256": "97d13cde778dcbc49e6e02dfb2ce97fa6645e3cd9907a4f2b3885ae210df7821"
+    },
+    {
+      "source_line": 117,
+      "export_line": 23,
+      "timestamp": "2026-10-22T07:29:29.062Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_258a21d1ffbf4ff9af2c32614e9fbcbc",
+      "sha256": "c251a8ed4554e5c22c9bf27933018b243e67d5993c993cfb838ace4ab4610901"
+    },
+    {
+      "source_line": 121,
+      "export_line": 24,
+      "timestamp": "2026-10-22T07:29:47.312Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_258a21d1ffbf4ff9af2c32614e9fbcbc",
+      "sha256": "0c27ffcfc35b7ad09d834a8af64961edfd457aade691a9079baedf2edb18569f"
+    },
+    {
+      "source_line": 126,
+      "export_line": 25,
+      "timestamp": "2026-10-22T07:29:59.667Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "3a307b23a8a3ede132a1e05305a7b62564147ac8be265bc040a11441a1351fd0"
+    },
+    {
+      "source_line": 131,
+      "export_line": 26,
+      "timestamp": "2026-10-22T07:30:46.375Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_dab621bbfb0e46eca95f65d28630355b",
+      "sha256": "837ae7d57e23a02345c7821ef7c4168e9c881026e913fa129ba1e48fde9371fe"
+    },
+    {
+      "source_line": 134,
+      "export_line": 27,
+      "timestamp": "2026-10-22T07:30:49.374Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_dab621bbfb0e46eca95f65d28630355b",
+      "sha256": "c820f7ab2ba73cab962cb811baaacde4cda6f8aac52b7e6850044173a77af869"
+    },
+    {
+      "source_line": 138,
+      "export_line": 28,
+      "timestamp": "2026-10-22T07:32:07.280Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_a51febe473574642b8bb9e2276f51149",
+      "sha256": "6881078e3331661cdb347b15c65c7c2bf4a2b49ccab3635ba598be3d147d1227"
+    },
+    {
+      "source_line": 142,
+      "export_line": 29,
+      "timestamp": "2026-10-22T07:32:23.357Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_a51febe473574642b8bb9e2276f51149",
+      "sha256": "3937c074a72ae9b8bd5a7616ad865c391406d5d663c53117c92a694cbc4b983f"
+    },
+    {
+      "source_line": 152,
+      "export_line": 30,
+      "timestamp": "2026-10-22T07:42:15.949Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "b95c8e489c5d8e5914dd0fb5001bf3a2ef01a0d538fb5bc54182577435dc723d"
+    },
+    {
+      "source_line": 156,
+      "export_line": 31,
+      "timestamp": "2026-10-22T07:42:15.956Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "8acdcf4f9cb205ad8c20d33a3bd55136feb6ab6d7ef74d49ffd81727b8e1d0dc"
+    },
+    {
+      "source_line": 159,
+      "export_line": 32,
+      "timestamp": "2026-10-22T07:42:15.961Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "9af7320de341e9ff8eda4c6e529cec01e268777a6b394d861060c34b2b35bb28"
+    },
+    {
+      "source_line": 162,
+      "export_line": 33,
+      "timestamp": "2026-10-22T07:43:58.122Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "7d7e66f905031268543aa19da143122d6bf73643c8ecae3fb618409c5afa4c5e"
+    },
+    {
+      "source_line": 163,
+      "export_line": 34,
+      "timestamp": "2026-10-22T07:43:59.760Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_5200060cc82944e29910c2bf75e73751",
+      "sha256": "97a3dd58d2b7f4c3d0624c6f60dab5530a9cfde3fb0ce00744048ae2941b2e3d"
+    },
+    {
+      "source_line": 166,
+      "export_line": 35,
+      "timestamp": "2026-10-22T07:44:03.214Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_5200060cc82944e29910c2bf75e73751",
+      "sha256": "1eb2c908d748a656a7966e53bce5257771f05cc12c3a27cb66d4c926b1508a8d"
+    },
+    {
+      "source_line": 170,
+      "export_line": 36,
+      "timestamp": "2026-10-22T07:44:17.058Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_e2dc8fca88174325bf8ea85c4d1f4832",
+      "sha256": "6fd89c2b8a7a4db0d786bafa9a79a7b86ba36cb5bef05fcbecef9838d2f61e8a"
+    },
+    {
+      "source_line": 173,
+      "export_line": 37,
+      "timestamp": "2026-10-22T07:44:27.707Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_e2dc8fca88174325bf8ea85c4d1f4832",
+      "sha256": "33f7338d2001a21c8f6d70dc19c3dfa0d366df437f59d95c1d81c0879b18129c"
+    },
+    {
+      "source_line": 177,
+      "export_line": 38,
+      "timestamp": "2026-10-22T07:44:32.548Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_a728babb21b745dcb37cd9acaf35f1ec",
+      "sha256": "03cdd457afdb53305b135eb2f8853b0a1d2807490c1d1b76f83dabc6af687949"
+    },
+    {
+      "source_line": 180,
+      "export_line": 39,
+      "timestamp": "2026-10-22T07:44:36.035Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_a728babb21b745dcb37cd9acaf35f1ec",
+      "sha256": "113a7c154cb0f07432d70935ced2fe8be68ae61c98bbddce01eec016f9012b94"
+    },
+    {
+      "source_line": 191,
+      "export_line": 40,
+      "timestamp": "2026-10-22T07:45:49.601Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "a294138bd9d2759f16fa8e6955760598f485185a4e23f44315d8ba6fa2c6d45f"
+    },
+    {
+      "source_line": 192,
+      "export_line": 41,
+      "timestamp": "2026-10-22T07:48:15.742Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_3c0be522e4db4ee69b93ca1f6f9f5275",
+      "sha256": "8f49bcc530a9ab70c0340e8f578daea2497ae899aa2339753864314d5481577b"
+    },
+    {
+      "source_line": 196,
+      "export_line": 42,
+      "timestamp": "2026-10-22T07:48:19.402Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_3c0be522e4db4ee69b93ca1f6f9f5275",
+      "sha256": "9d1b94bca740ec5ed124a686969feb97045015c5d6a9ff77ea04074bc24e1212"
+    },
+    {
+      "source_line": 201,
+      "export_line": 43,
+      "timestamp": "2026-10-22T07:48:30.102Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "3599139bf6989fd8654cc8cc9cf6719109e51f79a16b492657983d0485e43650"
+    },
+    {
+      "source_line": 202,
+      "export_line": 44,
+      "timestamp": "2026-10-22T07:52:00.369Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_0c0f639942d14f0284f10885f8eac513",
+      "sha256": "f8e630573ce9523542a6b022c9cd0cafbc5df27b0c0f205792a7d4762c8cfd20"
+    },
+    {
+      "source_line": 205,
+      "export_line": 45,
+      "timestamp": "2026-10-22T07:52:13.505Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_0c0f639942d14f0284f10885f8eac513",
+      "sha256": "c46648da939355d05dfe11a7167a739e98630ebe1b91b77917ed98e5e9d29fcc"
+    },
+    {
+      "source_line": 210,
+      "export_line": 46,
+      "timestamp": "2026-10-22T07:52:23.212Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_699352d876854d64b638dd8dc8282b33",
+      "sha256": "2dd86649941c802240762e755af97e1472a81c61d22d093e3f22685d57ffc0c2"
+    },
+    {
+      "source_line": 212,
+      "export_line": 47,
+      "timestamp": "2026-10-22T07:52:23.691Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_699352d876854d64b638dd8dc8282b33",
+      "sha256": "85ba0b4ba48793abed546d002bbcc5887fbb76544582868107a3b92331ec04c7"
+    },
+    {
+      "source_line": 216,
+      "export_line": 48,
+      "timestamp": "2026-10-22T07:52:42.669Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_91d6baf480fc4421ab6741fbd674a27c",
+      "sha256": "004656724651dc944814ebbe53387b7d4fdcc0170549e65363b99f02a579b321"
+    },
+    {
+      "source_line": 219,
+      "export_line": 49,
+      "timestamp": "2026-10-22T07:52:45.232Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_91d6baf480fc4421ab6741fbd674a27c",
+      "sha256": "c3a69cc5a8c528ffded8cff17b07c429fd0c35421efd85e6cf1d46e20a9e4ac7"
+    },
+    {
+      "source_line": 223,
+      "export_line": 50,
+      "timestamp": "2026-10-22T07:53:54.128Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_c2621f869a4c4fbd9cae280fe56f3992",
+      "sha256": "08d39aa532cfff68a3e3ef539e8f55e0d01a94246a6d6dc7933e357283d9114d"
+    },
+    {
+      "source_line": 226,
+      "export_line": 51,
+      "timestamp": "2026-10-22T07:54:05.194Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_c2621f869a4c4fbd9cae280fe56f3992",
+      "sha256": "26556368cd44ffe7a7bebe405e7a1a1db3745d5bf1e00e701fb82aa74febe0b5"
+    },
+    {
+      "source_line": 233,
+      "export_line": 52,
+      "timestamp": "2026-10-22T07:54:53.835Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_ac9672e32e1f40cea01f5c9a6bf1cd7f",
+      "sha256": "23f7378f4b928e539f162a94c018369f470fd4e8cb74103e7f5af9093006e4ca"
+    },
+    {
+      "source_line": 237,
+      "export_line": 53,
+      "timestamp": "2026-10-22T07:54:57.762Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_ac9672e32e1f40cea01f5c9a6bf1cd7f",
+      "sha256": "cea0024287053d0e631c4c372217618747818252150a5efb78e0e8629974f6c2"
+    },
+    {
+      "source_line": 242,
+      "export_line": 54,
+      "timestamp": "2026-10-22T07:55:08.426Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "18ea9d5b30762b725a549651dead5a541a94981d0fdafbe99a1e1824999f2a4f"
+    },
+    {
+      "source_line": 243,
+      "export_line": 55,
+      "timestamp": "2026-10-22T07:55:11.171Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_6d4e68179d41482d98970cbbec8104db",
+      "sha256": "48b111c814502e190778c59a7269e26e5482b75084ba39df89e8a8e777abb4ae"
+    },
+    {
+      "source_line": 246,
+      "export_line": 56,
+      "timestamp": "2026-10-22T07:55:12.488Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_6d4e68179d41482d98970cbbec8104db",
+      "sha256": "bf2a0d6da0a2c619a63d448c8f9bc8b4a119c2178a4f685ace35c16064f52c2a"
+    },
+    {
+      "source_line": 250,
+      "export_line": 57,
+      "timestamp": "2026-10-22T07:55:34.967Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_3c96144bd7ac4b9697c59f0fc0381604",
+      "sha256": "e7390b39976f70b7f5794ce44c8ff49cdc5b9fe074599568067913aa1a0371a6"
+    },
+    {
+      "source_line": 254,
+      "export_line": 58,
+      "timestamp": "2026-10-22T07:55:43.007Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_3c96144bd7ac4b9697c59f0fc0381604",
+      "sha256": "9a396691d02f122351dc3ad055364f414e357203b4821b2f0ad9321456206664"
+    },
+    {
+      "source_line": 258,
+      "export_line": 59,
+      "timestamp": "2026-10-22T07:56:05.412Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_5283bbf07003464b9f2cb45de89a27c8",
+      "sha256": "bbbfb04d7dcda81f65ea3735753b6132b3f9ef12694e409037f6a8a96e508fec"
+    },
+    {
+      "source_line": 262,
+      "export_line": 60,
+      "timestamp": "2026-10-22T07:56:09.174Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_5283bbf07003464b9f2cb45de89a27c8",
+      "sha256": "11271ea7ff6be9d7dd32be50c629d04aa6d8159ff4294a6d106aabc4bb62869f"
+    },
+    {
+      "source_line": 264,
+      "export_line": 61,
+      "timestamp": "2026-10-22T07:56:14.924Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_282b6f8647f849ee81690ae94fdea839",
+      "sha256": "78576b019c03c81bc2679c4dc00a67bf3dee571cea1cd43a94721f4524c28120"
+    },
+    {
+      "source_line": 267,
+      "export_line": 62,
+      "timestamp": "2026-10-22T07:56:17.338Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_282b6f8647f849ee81690ae94fdea839",
+      "sha256": "aaf42a3f112717f2f1c729d1b91ad71f59bf0be91a684eeb57d8fcfe37647e68"
+    },
+    {
+      "source_line": 278,
+      "export_line": 63,
+      "timestamp": "2026-10-22T07:57:29.536Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "7f04a672aafa55ea516f49a22e848e0b204d910646b14c4eb576cec0af6c764a"
+    },
+    {
+      "source_line": 279,
+      "export_line": 64,
+      "timestamp": "2026-10-22T07:57:59.921Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_088c181846ee4fafa7dcd193c7e0aa9e",
+      "sha256": "09459f933bb32c9b2bbca161750dec1137e247ac526c9692a7ac9467f6488f07"
+    },
+    {
+      "source_line": 283,
+      "export_line": 65,
+      "timestamp": "2026-10-22T07:58:06.888Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_088c181846ee4fafa7dcd193c7e0aa9e",
+      "sha256": "72f3478b988b1398b92223a96259bb6fdcd627955d31d4e29363370ce99d7db4"
+    },
+    {
+      "source_line": 289,
+      "export_line": 66,
+      "timestamp": "2026-10-22T07:58:53.453Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_96e550d887f8416ab53730ff0dabc321",
+      "sha256": "00b7cd0d18171d46c1cab06f4a338e47a01d390a326fc64da59b9cfc441df6ad"
+    },
+    {
+      "source_line": 292,
+      "export_line": 67,
+      "timestamp": "2026-10-22T07:59:03.018Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_96e550d887f8416ab53730ff0dabc321",
+      "sha256": "8e00612202e6f00c837baa9aaaa44d16791c1f0cbbcfad2a3d9f8bb2bd59b5ba"
+    },
+    {
+      "source_line": 296,
+      "export_line": 68,
+      "timestamp": "2026-10-22T07:59:28.156Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_f459ff4e06a74335a82c675d6ad5bb88",
+      "sha256": "17e6b70a71a9d792e6bcb3b9c613a7b56704f3b76daee2aee09b8c3e42c47e56"
+    },
+    {
+      "source_line": 299,
+      "export_line": 69,
+      "timestamp": "2026-10-22T07:59:30.378Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_f459ff4e06a74335a82c675d6ad5bb88",
+      "sha256": "7be8dd918e240b101275c4afdfc21d8eaeaa63fc253df31652d3d356a8fcba64"
+    },
+    {
+      "source_line": 303,
+      "export_line": 70,
+      "timestamp": "2026-10-22T07:59:42.919Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_0cb132cc4f824d45b46a9ba88e09ae48",
+      "sha256": "38939fb3d0d6eda1afcf8f9e611cfa2c815f31f4ad3e03bdb347b4fe209494e3"
+    },
+    {
+      "source_line": 307,
+      "export_line": 71,
+      "timestamp": "2026-10-22T07:59:44.248Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_0cb132cc4f824d45b46a9ba88e09ae48",
+      "sha256": "57378b72b593be4c6104819d24eeff2583051cc46c3aa815958884d4c1e748f5"
+    },
+    {
+      "source_line": 312,
+      "export_line": 72,
+      "timestamp": "2026-10-22T08:00:07.749Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "87210a84f3381ac7993f0114174ea8352df990c49e9d0d085a7b859c83e9b772"
+    },
+    {
+      "source_line": 313,
+      "export_line": 73,
+      "timestamp": "2026-10-22T08:00:09.819Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_71ef1fe08de54c2783a20d3fc8d5b24b",
+      "sha256": "90439a620c4f2cb73fdfe4b1f3fab49d6b7872888330352fda9c54ed1b55cf12"
+    },
+    {
+      "source_line": 316,
+      "export_line": 74,
+      "timestamp": "2026-10-22T08:00:11.692Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_71ef1fe08de54c2783a20d3fc8d5b24b",
+      "sha256": "dfa555a2aaa3863c25233082a60fb80535c213f95038daf84f96c5a326cb83ad"
+    },
+    {
+      "source_line": 324,
+      "export_line": 75,
+      "timestamp": "2026-10-22T08:02:52.438Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "da5fbb95fd85d2b670f0345964f4015f0fad5abac8c1c9f2543ec0c48399ac50"
+    },
+    {
+      "source_line": 331,
+      "export_line": 76,
+      "timestamp": "2026-10-22T08:03:53.985Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "1e24f062bfda049ee5570ce3f43e26bd7e5917e2a7292f9f3312d4924e7840d0"
+    },
+    {
+      "source_line": 334,
+      "export_line": 77,
+      "timestamp": "2026-10-22T08:03:53.998Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "5db84d73c54cb82d39c86ad3f5b7a9d1faf176fadd5fd3b27dcd08631ec6bf37"
+    },
+    {
+      "source_line": 337,
+      "export_line": 78,
+      "timestamp": "2026-10-22T08:04:09.861Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "4554b61652ff28e53f5c81c7980c5bce44ff4b4ac2db8bd5f5e510ccb7519a94"
+    },
+    {
+      "source_line": 338,
+      "export_line": 79,
+      "timestamp": "2026-10-22T08:04:10.587Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_a542a5cb1253492cb7595cd61ce30b84",
+      "sha256": "bcc480e40b2ec75107476c3bef85d00f882216d6f995d53378f3b7e70bbf8f52"
+    },
+    {
+      "source_line": 341,
+      "export_line": 80,
+      "timestamp": "2026-10-22T08:04:13.725Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_a542a5cb1253492cb7595cd61ce30b84",
+      "sha256": "eb9a48b8b22512c714746af08d06cdeae873afb5a4609b9ab256dcf03df293f7"
+    },
+    {
+      "source_line": 345,
+      "export_line": 81,
+      "timestamp": "2026-10-22T08:04:39.562Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_8663a9bc692b44a4bfb10afef1f7cc39",
+      "sha256": "36dcfc2230239661f9b5e31e1c97428dc5044abf653cac473c83646dd331b853"
+    },
+    {
+      "source_line": 348,
+      "export_line": 82,
+      "timestamp": "2026-10-22T08:04:41.039Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_8663a9bc692b44a4bfb10afef1f7cc39",
+      "sha256": "198d948ab507ba8d11812eae946c956c684305e306ba844eadebf4851b00ea8e"
+    },
+    {
+      "source_line": 353,
+      "export_line": 83,
+      "timestamp": "2026-10-22T08:05:49.507Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "6fa579d79e79da0f7d5294aef3d35b50f464dc02433bd3d0be6b55ea11a4cad7"
+    },
+    {
+      "source_line": 360,
+      "export_line": 84,
+      "timestamp": "2026-10-22T08:08:26.259Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "ae514f03d0a2afe1cb736b68d21d59b61c9d77931b4d16e9e6650dcb2b57501a"
+    },
+    {
+      "source_line": 363,
+      "export_line": 85,
+      "timestamp": "2026-10-22T08:08:33.151Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "f12f54d9dc0b12c10b257971d40f3e8353a7a11b6af48e429d9fef92cddded40"
+    },
+    {
+      "source_line": 364,
+      "export_line": 86,
+      "timestamp": "2026-10-22T08:08:35.449Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_e1c3c362dd1e4fffaa24a593616b536f",
+      "sha256": "2e2f139ec8aa1c242564a9f6b9eb10e8bcea9f5493d892361daad345dcce1dfd"
+    },
+    {
+      "source_line": 367,
+      "export_line": 87,
+      "timestamp": "2026-10-22T08:08:37.110Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_e1c3c362dd1e4fffaa24a593616b536f",
+      "sha256": "71363efcb363f181668ecfb286e53f399181dcecae65385b9cf4f70f66f4fd0b"
+    },
+    {
+      "source_line": 375,
+      "export_line": 88,
+      "timestamp": "2026-10-22T08:10:44.043Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_f52e3e71ae524b3ca3a4ee697d2363a2",
+      "sha256": "e78559803ae81ff0998c2e16a343cd740ab5ea752e788c98f556e09c7c862223"
+    },
+    {
+      "source_line": 378,
+      "export_line": 89,
+      "timestamp": "2026-10-22T08:10:54.905Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_f52e3e71ae524b3ca3a4ee697d2363a2",
+      "sha256": "100fb3b2b8b63b0a43065dc1df790827d500fec454736e60d74781b4e8b62780"
+    },
+    {
+      "source_line": 383,
+      "export_line": 90,
+      "timestamp": "2026-10-22T08:11:03.555Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_b55f2231d1da401c9f1e3159d8c0dd5b",
+      "sha256": "241357a76095c2fc4fb9414954984981bed9de3fe5eb22d035e52e847634280e"
+    },
+    {
+      "source_line": 385,
+      "export_line": 91,
+      "timestamp": "2026-10-22T08:11:03.797Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_b55f2231d1da401c9f1e3159d8c0dd5b",
+      "sha256": "e85c9227272dc09a8c65651f902f84c15ae77ccc6f7a54df12fd2721ca3765df"
+    },
+    {
+      "source_line": 390,
+      "export_line": 92,
+      "timestamp": "2026-10-22T08:11:32.399Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "14f5eb4ff9864f30622e3b3aba91f06255944512dbfd086e1b2f74ef9d6e216a"
+    },
+    {
+      "source_line": 393,
+      "export_line": 93,
+      "timestamp": "2026-10-22T08:13:11.479Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_0b5938bac3964ae3aaae9613ef916192",
+      "sha256": "cdc5602357192091400be0e1eca034bbe4ac0b3774f4b42967e62ef4f87e4b83"
+    },
+    {
+      "source_line": 397,
+      "export_line": 94,
+      "timestamp": "2026-10-22T08:13:20.996Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_0b5938bac3964ae3aaae9613ef916192",
+      "sha256": "bf95fc1abdec39c23f8f3c17419180230cacf048713f8bd0b08eb38c83c2b1a1"
+    },
+    {
+      "source_line": 402,
+      "export_line": 95,
+      "timestamp": "2026-10-22T08:13:48.253Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "1f6a43a1c25697fa878befff2b403f7582584008070d04877adef09ea3bf39a8"
+    },
+    {
+      "source_line": 409,
+      "export_line": 96,
+      "timestamp": "2026-10-22T08:14:55.745Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "0f04b1a06b9e9bc9ee94521daedbadcd7a7e73bc8f184e26acccf15789f62223"
+    },
+    {
+      "source_line": 414,
+      "export_line": 97,
+      "timestamp": "2026-10-22T08:15:13.158Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "534fbed7eef71aea7601e910d7b499b04fb6d6f49b7b042e31e0f2f77b0c8e6e"
+    },
+    {
+      "source_line": 427,
+      "export_line": 98,
+      "timestamp": "2026-10-22T08:21:49.097Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "74c4d1b5376aa4b1ecaf57818bab3afdb26f753b089fe48f52242a850b20b9a3"
+    },
+    {
+      "source_line": 430,
+      "export_line": 99,
+      "timestamp": "2026-10-22T08:21:49.110Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "4a156f53d687cb0e0652cb6c683d3746bf46334797cbea5e5816c9f9d4d7f734"
+    },
+    {
+      "source_line": 433,
+      "export_line": 100,
+      "timestamp": "2026-10-22T08:23:36.144Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "181dd433f384b8d20c1fba1e7a7599107ccf365f5003700dc845c2f03cd5ae27"
+    },
+    {
+      "source_line": 440,
+      "export_line": 101,
+      "timestamp": "2026-10-22T08:24:58.289Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "70aae8a66be2cfab7ccf5417d2963f2ab5809711800e5c7360d107e73e6c9ab4"
+    },
+    {
+      "source_line": 445,
+      "export_line": 102,
+      "timestamp": "2026-10-22T08:25:17.059Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "a7fb029b9ebaf11c53838b20568f7680ce3c27b240244e97fb2f58658bbac4f0"
+    },
+    {
+      "source_line": 452,
+      "export_line": 103,
+      "timestamp": "2026-10-22T08:27:20.875Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "affdbabe0fc7af8032ee62d5e309cd097c219d87903cf6853206b2f1b46601d8"
+    },
+    {
+      "source_line": 457,
+      "export_line": 104,
+      "timestamp": "2026-10-22T08:27:49.350Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "fc28bf2863380d24b4f97eea7e524e4492442a073fcbafbaa99e408005333201"
+    },
+    {
+      "source_line": 469,
+      "export_line": 105,
+      "timestamp": "2026-10-22T08:31:31.583Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "1e95f97c38bd6b89ff88cafeaa0bb319d5f1de895a7d5d4f74dc5d1cd1c60d9c"
+    },
+    {
+      "source_line": 472,
+      "export_line": 106,
+      "timestamp": "2026-10-22T08:31:31.593Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "be416469195062b65ea0370e01639ae674290702fe4425dd580ab04fb734e9d7"
+    },
+    {
+      "source_line": 479,
+      "export_line": 107,
+      "timestamp": "2026-10-22T08:33:45.938Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "a748dc9cbb76af8b33a1d4b1c06efd6d679bdd0579919208c83b2132d5935890"
+    },
+    {
+      "source_line": 493,
+      "export_line": 108,
+      "timestamp": "2026-10-22T08:41:46.798Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "08443740f6750626310499d91cabadf5a3f52d104b8ddb24c4887a5bffa74d3c"
+    },
+    {
+      "source_line": 496,
+      "export_line": 109,
+      "timestamp": "2026-10-22T08:41:46.803Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "2a36606aad9bf6d227cb8727340028403b2fbe4c861460929c455aee966ce3c3"
+    },
+    {
+      "source_line": 503,
+      "export_line": 110,
+      "timestamp": "2026-10-22T08:44:14.624Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "2d2fe972653f60055b272a9a7a3cf006e39b95f910a67da7d19fa05e8f0f724e"
+    },
+    {
+      "source_line": 510,
+      "export_line": 111,
+      "timestamp": "2026-10-22T08:45:10.088Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "41b51a59c57e61a2b6f6f05931f268690395eddd1bd323258fd98b03297c133b"
+    },
+    {
+      "source_line": 517,
+      "export_line": 112,
+      "timestamp": "2026-10-22T08:45:50.780Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "00856f081bb650dee83dec95fbcfa699346fb4579b59b14d5c4488a69294cdb8"
+    },
+    {
+      "source_line": 524,
+      "export_line": 113,
+      "timestamp": "2026-10-22T08:47:19.972Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "a81751d26356288f819f45c700a797706534038989105d3ba31979878899c961"
+    },
+    {
+      "source_line": 527,
+      "export_line": 114,
+      "timestamp": "2026-10-22T08:47:27.420Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "619c969b2b705394084b3a56e33b49e870eaacdc82eb515ba39656901a13b863"
+    },
+    {
+      "source_line": 528,
+      "export_line": 115,
+      "timestamp": "2026-10-22T08:47:30.224Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_fd4fd1a39e054603be57997e017b1493",
+      "sha256": "7477e4cac3a683ec4410dd03fea41cbd1eee2d13d081c9d08972d393e80b95dc"
+    },
+    {
+      "source_line": 531,
+      "export_line": 116,
+      "timestamp": "2026-10-22T08:47:32.338Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_fd4fd1a39e054603be57997e017b1493",
+      "sha256": "6708dc2103f7586a6db67c0c8cb8c160ee65fa831c8f63235b775930bebc7b0b"
+    },
+    {
+      "source_line": 536,
+      "export_line": 117,
+      "timestamp": "2026-10-22T08:47:40.602Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "e7a444b8842f7152662fe60e7e74ac1ba0851859d6458b56d1092d1020b969e9"
+    },
+    {
+      "source_line": 538,
+      "export_line": 118,
+      "timestamp": "2026-10-22T08:47:49.779Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_6c491fbeb33942f59a7924b69c743ce6",
+      "sha256": "5a6eca0ec49719fe3aa8bfcaf11020fe9e227775295e84f521106dafc5d90289"
+    },
+    {
+      "source_line": 541,
+      "export_line": 119,
+      "timestamp": "2026-10-22T08:47:51.371Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_6c491fbeb33942f59a7924b69c743ce6",
+      "sha256": "3d913bfe9d45b7bb8fddc517b96b4078317f95af2b7ef4240c1649596d402b10"
+    },
+    {
+      "source_line": 545,
+      "export_line": 120,
+      "timestamp": "2026-10-22T08:48:18.227Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_bc3f7e68f5f34e198c7c7a5667ba8f59",
+      "sha256": "286292d4fadff2be55b79e096e874a02da5c3268a0a41c513a4b1f6704d32627"
+    },
+    {
+      "source_line": 548,
+      "export_line": 121,
+      "timestamp": "2026-10-22T08:48:19.708Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_bc3f7e68f5f34e198c7c7a5667ba8f59",
+      "sha256": "cf836a77346d83376b5e75008a4ae05b9be8d6f15ff8b7adc1bd0163da0c641e"
+    },
+    {
+      "source_line": 555,
+      "export_line": 122,
+      "timestamp": "2026-10-22T08:48:45.284Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "93cca23d1ebb56bf7fa70592997174eeb3a7ec1277135514cfe35c4758743a35"
+    },
+    {
+      "source_line": 560,
+      "export_line": 123,
+      "timestamp": "2026-10-22T08:49:40.032Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_cce589fb6a6b4e208277e55c4c0ef583",
+      "sha256": "f7b84786050cc66b3b95ba9c9490ecf2e1a1f5b2e2ab121b1843cd6ddbffd017"
+    },
+    {
+      "source_line": 563,
+      "export_line": 124,
+      "timestamp": "2026-10-22T08:49:42.079Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_cce589fb6a6b4e208277e55c4c0ef583",
+      "sha256": "c68743af929891c128e8dd904cfbf2940a82091025640a2737086973d0688c4b"
+    },
+    {
+      "source_line": 568,
+      "export_line": 125,
+      "timestamp": "2026-10-22T08:50:13.544Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "29b68f259033c4e1b9e0a9bf3ea44aff1375c40ff2fb37f10052e3381cffd85f"
+    },
+    {
+      "source_line": 576,
+      "export_line": 126,
+      "timestamp": "2026-10-22T08:51:32.981Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "4b1bec511708d84decbdba37bd1a0de31224f428260cab4a6a88e44ecbc65282"
+    },
+    {
+      "source_line": 579,
+      "export_line": 127,
+      "timestamp": "2026-10-22T08:51:40.399Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "4fd886e66516aec703a38773efa252e2b454646b16d57ea6150103b1b74b61e4"
+    },
+    {
+      "source_line": 580,
+      "export_line": 128,
+      "timestamp": "2026-10-22T08:51:43.869Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_ab77bfde5e4544aa92560d1d3cb7b9e6",
+      "sha256": "070c69b67758a887340eac0075b1cb2b05eefa3dd13b0e8f96936fcca2062927"
+    },
+    {
+      "source_line": 583,
+      "export_line": 129,
+      "timestamp": "2026-10-22T08:51:44.934Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_ab77bfde5e4544aa92560d1d3cb7b9e6",
+      "sha256": "c93914e96a7282b7fb1cfecc08009080c0ccdbc009a2904209b0571c11341860"
+    },
+    {
+      "source_line": 590,
+      "export_line": 130,
+      "timestamp": "2026-10-22T08:53:21.030Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "a8f8788abbec8f343e0af07a2442e77498d1dc519b9e663362c14923b677de2b"
+    },
+    {
+      "source_line": 597,
+      "export_line": 131,
+      "timestamp": "2026-10-22T08:54:55.124Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "e336be6eb180eb8bde28d6ac8adc2ca7fa6b7ebe636e941fc582a544075eb8d2"
+    },
+    {
+      "source_line": 602,
+      "export_line": 132,
+      "timestamp": "2026-10-22T08:55:13.023Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "07d9729d3f68c7d482bfddeffaa3ae17c1476c103064738fde5d6fd91ccd9301"
+    },
+    {
+      "source_line": 609,
+      "export_line": 133,
+      "timestamp": "2026-10-22T08:56:21.317Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "7b05235c845dd8ba73c4bb341b4d4f8d48623414b6922dd97098ec2fe905a98a"
+    },
+    {
+      "source_line": 616,
+      "export_line": 134,
+      "timestamp": "2026-10-22T08:57:03.327Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "31cad4643b7638bde61708973119e633e33192e0865f889b635072654e4465b7"
+    },
+    {
+      "source_line": 623,
+      "export_line": 135,
+      "timestamp": "2026-10-22T08:57:44.472Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "e937fd0683ad9e25bd48288b398ea6d447e8b5117b15ff1e6401b0f83ebbf633"
+    },
+    {
+      "source_line": 630,
+      "export_line": 136,
+      "timestamp": "2026-10-22T08:58:22.286Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "5382d9210fe81bf9bf37ec7cf8719c5a4441be8abe7dd67d41f692f1c574561c"
+    },
+    {
+      "source_line": 637,
+      "export_line": 137,
+      "timestamp": "2026-10-22T08:58:54.217Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "1edc28b532611adefccdc7a3a4b8cc881710f5b67981b982579ec345143fd55c"
+    },
+    {
+      "source_line": 642,
+      "export_line": 138,
+      "timestamp": "2026-10-22T08:59:32.697Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "4c5287f049404f8cc5785fd16b3642319d3ad096ad303821fd7ec9600120641c"
+    },
+    {
+      "source_line": 649,
+      "export_line": 139,
+      "timestamp": "2026-10-22T09:00:19.363Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "dcb12bcda8620969436ac37b77617cbd02088abc1860b4cae055845a00bd7050"
+    },
+    {
+      "source_line": 654,
+      "export_line": 140,
+      "timestamp": "2026-10-22T09:00:52.258Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "fc358004d970a350df2f03c4cf2c937a563fac0e5ab2d81edef49ffdb61d3ea5"
+    },
+    {
+      "source_line": 661,
+      "export_line": 141,
+      "timestamp": "2026-10-22T09:01:31.445Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "c7b85851356d4e84e7d2cda7b62d90aa703489d74f0b6a79cd278566ac39feac"
+    },
+    {
+      "source_line": 666,
+      "export_line": 142,
+      "timestamp": "2026-10-22T09:01:59.508Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "6ee971ac14169451f5e93dcc95bc69dad1cf7109b1384e0bdd1eceef829f6625"
+    },
+    {
+      "source_line": 673,
+      "export_line": 143,
+      "timestamp": "2026-10-22T09:02:41.689Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "6ff68cd7db05b5eaefab0c2b79f156fc2c162bc96c733f22faa85840ecebf44d"
+    },
+    {
+      "source_line": 678,
+      "export_line": 144,
+      "timestamp": "2026-10-22T09:03:14.866Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "51bd04f537f1ff5394ae776f5f0dcbcc2dd2d6b419c92db56bb64cd02c3f5a38"
+    },
+    {
+      "source_line": 685,
+      "export_line": 145,
+      "timestamp": "2026-10-22T09:10:26.682Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "2d0a25d97a418b46c1be51d2fb19cda68ce264b97c6692db3aad8b60ef5280f4"
+    },
+    {
+      "source_line": 690,
+      "export_line": 146,
+      "timestamp": "2026-10-22T09:10:42.629Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "43549c29034bdd0864591d2c4328466b15d14e6dbaac55165b16ae76c33fc5e9"
+    },
+    {
+      "source_line": 697,
+      "export_line": 147,
+      "timestamp": "2026-10-22T09:11:45.055Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "81b684adb4b98c0e0fb7ef5923a9524ab366bf303019376c4d973a8f9e54c9e3"
+    },
+    {
+      "source_line": 700,
+      "export_line": 148,
+      "timestamp": "2026-10-22T09:11:53.589Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "99b2a37f69b0421b3aa1810279e5a8af19ae135e73761194473b7f7f998d8164"
+    },
+    {
+      "source_line": 701,
+      "export_line": 149,
+      "timestamp": "2026-10-22T09:11:56.169Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_d7051bb8ed184ed89185fa80e1797b13",
+      "sha256": "831ddf2d92ab85b6befdf99b1522ddaec353b459cb31136433bb239ad9efb74d"
+    },
+    {
+      "source_line": 704,
+      "export_line": 150,
+      "timestamp": "2026-10-22T09:11:57.200Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_d7051bb8ed184ed89185fa80e1797b13",
+      "sha256": "8598a2e4f365067dd0701f60566faafb84f4a8a3c000c5f7d8bd416a5a83097f"
+    },
+    {
+      "source_line": 710,
+      "export_line": 151,
+      "timestamp": "2026-10-22T09:12:57.648Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_f42c2eed82944ef9947bf4b77535dd4a",
+      "sha256": "367b58ecdfcf30bd2925535c1a6670850d6c5f796ca2ecab3ba66ac5220e7a1c"
+    },
+    {
+      "source_line": 713,
+      "export_line": 152,
+      "timestamp": "2026-10-22T09:12:58.826Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_f42c2eed82944ef9947bf4b77535dd4a",
+      "sha256": "ccf3845a40c43b568af923573123c24172553bbfad2b5ffc65d6b1abbdae2759"
+    },
+    {
+      "source_line": 720,
+      "export_line": 153,
+      "timestamp": "2026-10-22T09:13:37.087Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "2425974e312b205dc6753b7e1f0c0039a24e9f94b9bbc221172d225812b85e7c"
+    },
+    {
+      "source_line": 721,
+      "export_line": 154,
+      "timestamp": "2026-10-22T09:14:24.688Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_862a0acc2dcb4bdca7b2226cb88b8c89",
+      "sha256": "784520c8d08e818b442dd51da907318ea26b13c2b31b3be903ec5d25e4876b09"
+    },
+    {
+      "source_line": 725,
+      "export_line": 155,
+      "timestamp": "2026-10-22T09:14:26.099Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_862a0acc2dcb4bdca7b2226cb88b8c89",
+      "sha256": "1ce270eb3a8261f224a31ca2c78f03ac0a903f733f9353700b59896dda0288fb"
+    },
+    {
+      "source_line": 735,
+      "export_line": 156,
+      "timestamp": "2026-10-22T09:15:48.572Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_d91c694ab181437d831b1dbf5b4a0cc0",
+      "sha256": "f829cc965747be40b89ccb95a3e27993471d84ea69d71524e9918c21fadceecf"
+    },
+    {
+      "source_line": 738,
+      "export_line": 157,
+      "timestamp": "2026-10-22T09:15:49.648Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_d91c694ab181437d831b1dbf5b4a0cc0",
+      "sha256": "8672fcd52ab048e6d5db8f9d6e8ca12fc74e7394ab605b971dc7815f6e53db73"
+    },
+    {
+      "source_line": 744,
+      "export_line": 158,
+      "timestamp": "2026-10-22T09:18:17.504Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_90a3a9dd1a364cc29f8f716716ce13ec",
+      "sha256": "8ead8d31db58a7510b9821befa9eb24e79c70b615a172a127febb222fe63ed42"
+    },
+    {
+      "source_line": 746,
+      "export_line": 159,
+      "timestamp": "2026-10-22T09:18:18.002Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_90a3a9dd1a364cc29f8f716716ce13ec",
+      "sha256": "063bc5651a3cfae8bdb5aaf2960bd2f75b3d8a25017c7884440d3d7dcbfc7bff"
+    },
+    {
+      "source_line": 750,
+      "export_line": 160,
+      "timestamp": "2026-10-22T09:19:55.288Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_07f70eae06bf40f7b3b6a882f4614afc",
+      "sha256": "867e8378d86115ed915a003445b9d34f58e1b8d5b0415b37dc82a85e358a1797"
+    },
+    {
+      "source_line": 754,
+      "export_line": 161,
+      "timestamp": "2026-10-22T09:19:56.855Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_07f70eae06bf40f7b3b6a882f4614afc",
+      "sha256": "8de477c9c1c4335c780b86021a845edffe514a397cc08d45a91ce3e7a49b14c9"
+    },
+    {
+      "source_line": 759,
+      "export_line": 162,
+      "timestamp": "2026-10-22T09:20:07.621Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "7d44bcb9a0388a8fc62e05f023e44977cbbea30800c755e5e83a1aff91e8272d"
+    },
+    {
+      "source_line": 769,
+      "export_line": 163,
+      "timestamp": "2026-10-22T09:25:25.097Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_dd548cf1f6b5436990d0bd8f02b90dae",
+      "sha256": "c202e08277caeb01b4c94413548f29be48d1df1ca515ce31b0b6b63e439db5ae"
+    },
+    {
+      "source_line": 773,
+      "export_line": 164,
+      "timestamp": "2026-10-22T09:25:29.552Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_dd548cf1f6b5436990d0bd8f02b90dae",
+      "sha256": "1fa668d6995c0e247038d0d0b35269ebbcc4c9258bfd38a80365ceac4dbc7191"
+    },
+    {
+      "source_line": 782,
+      "export_line": 165,
+      "timestamp": "2026-10-22T09:27:49.718Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_5d750721b1434fc9ab6f783c813d078c",
+      "sha256": "641028daf21d3befeb085133dbe27ba02c244fc17fa6eb1eafdcb0cb821cd6b6"
+    },
+    {
+      "source_line": 786,
+      "export_line": 166,
+      "timestamp": "2026-10-22T09:27:51.184Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_5d750721b1434fc9ab6f783c813d078c",
+      "sha256": "99a53d14b4232ddb82c3bb356e87e1b0d374bdf610fdaae5d4f9e881f25c35cb"
+    },
+    {
+      "source_line": 792,
+      "export_line": 167,
+      "timestamp": "2026-10-22T09:28:37.602Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_13115a4075b5494c94192edd4d746b7e",
+      "sha256": "e64d52fa3b679e95bf3ee39319621afc917cc303da70f20921ae0723736140eb"
+    },
+    {
+      "source_line": 794,
+      "export_line": 168,
+      "timestamp": "2026-10-22T09:28:38.556Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_13115a4075b5494c94192edd4d746b7e",
+      "sha256": "96134cdcad03ac7b0214bf67a30cd01ead20113197203af6b07c22118573ee55"
+    },
+    {
+      "source_line": 798,
+      "export_line": 169,
+      "timestamp": "2026-10-22T09:28:48.526Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_797ddb68e18f451da271da46af83041e",
+      "sha256": "fa7c842e3f0603013ce6f7aacf9d1a80bf46b9fcb911f0ebc1da89c550027b93"
+    },
+    {
+      "source_line": 801,
+      "export_line": 170,
+      "timestamp": "2026-10-22T09:28:49.481Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_797ddb68e18f451da271da46af83041e",
+      "sha256": "c01dcfda693fbbe0a46fff0260e284af90119d82bfb62d75585729ee1ea1ef4f"
+    },
+    {
+      "source_line": 805,
+      "export_line": 171,
+      "timestamp": "2026-10-22T09:29:11.598Z",
+      "type": "custom_tool_call",
+      "role": null,
+      "call_id": "call_028172d3347746cb9331ad379a14e407",
+      "sha256": "5e83e4b9f51ae04c8386ee186cef4bb3de641f877c55a3ee8e6e200c5c5008ac"
+    },
+    {
+      "source_line": 809,
+      "export_line": 172,
+      "timestamp": "2026-10-22T09:29:15.809Z",
+      "type": "custom_tool_call_output",
+      "role": null,
+      "call_id": "call_028172d3347746cb9331ad379a14e407",
+      "sha256": "3fe380f9824ae570221d4d08813dffa2f474fa3974c04e09eca849bbf9fb2a0a"
+    },
+    {
+      "source_line": 818,
+      "export_line": 173,
+      "timestamp": "2026-10-22T09:31:58.499Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "8bedab5d782fae69d08f19047b0e68e47583f9fe075561da4ed6b868ac79c29f"
+    },
+    {
+      "source_line": 821,
+      "export_line": 174,
+      "timestamp": "2026-10-22T09:31:58.504Z",
+      "type": "message",
+      "role": "user",
+      "call_id": null,
+      "sha256": "cc40aed73bb37cf335a57a232c6d5207adbbd9e07d85c53a7698f5bc7248c528"
+    },
+    {
+      "source_line": 826,
+      "export_line": 175,
+      "timestamp": "2026-10-22T09:34:06.334Z",
+      "type": "message",
+      "role": "assistant",
+      "call_id": null,
+      "sha256": "67a7d8e75200c4d1d0dec50b4fba626b1026fdd84c87e0ef018a21030dc4aca8"
+    }
+  ],
+  "excluded_record_counts_since_start": {
+    "event_msg/item_completed": 230,
+    "token_usage_record/None": 71,
+    "event_msg/token_count": 82,
+    "response_item/reasoning": 96,
+    "event_msg/task_complete": 22,
+    "event_msg/thread_settings_applied": 29,
+    "event_msg/task_started": 24,
+    "turn_context/None": 24,
+    "response_item/message": 27,
+    "response_item/additional_tools": 4,
+    "world_state/None": 4
+  },
+  "unpaired_call_ids_at_snapshot": [],
+  "scope": "截至明确截止点，本地日志中用户/助手可见消息及工具调用返回的完整原始记录；不声称平台全量完整。",
+  "complete_prefix_requested": true,
+  "record_label": "完整记录（限定本地来源、可见记录范围和截止点）",
+  "first_provided_record": {
+    "source_line": 39,
+    "export_line": 1,
+    "timestamp": "2026-10-22T07:13:06.880Z",
+    "type": "message",
+    "role": "user",
+    "call_id": null,
+    "sha256": "fd8f09b06df7d9d2eaad6bb3022d62fa89593fe5581cebb54abd65dddd07d331"
+  },
+  "last_provided_record": {
+    "source_line": 826,
+    "export_line": 175,
+    "timestamp": "2026-10-22T09:34:06.334Z",
+    "type": "message",
+    "role": "assistant",
+    "call_id": null,
+    "sha256": "67a7d8e75200c4d1d0dec50b4fba626b1026fdd84c87e0ef018a21030dc4aca8"
+  },
+  "cutoff_beijing": "2026-10-22T17:34:06.334000+08:00",
+  "source_line_range": [
+    39,
+    826
+  ],
+  "all_provided_lines_byte_verified": true,
+  "all_eligible_records_through_cutoff_included": true,
+  "visible_records_after_declared_cutoff_not_included": 1,
+  "gaps": [
+    "截止之后的封存、打包、校验、回复不在提供范围，不循环补入。",
+    "隐藏推理、系统/开发者指令、重复事件镜像、正式起点前历史明确排除。",
+    "提供来源实际保存的工具内容；不重建来源中不存在的内容。",
+    "本地来源以外是否另有平台记录未核实，不推测缺失原因。",
+    "未调用子Agent或其他聊天委托，无相应子任务记录。"
+  ]
+}
